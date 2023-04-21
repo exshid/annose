@@ -2,7 +2,7 @@ import { type Metadata } from 'next/types';
 import { allPosts } from 'contentlayer/generated';
 import { compareDesc } from 'date-fns';
 import { FileText } from 'lucide-react';
-
+import { NameCard} from '@/components/name' ;
 import { blogConfig } from '@/config';
 import { Button } from '@/components/button';
 import { HeroSection } from '@/components/hero-section';
@@ -38,6 +38,7 @@ export default function Home() {
 
   return (
     <div className="flex h-full flex-col space-y-4 px-6 pb-12 sm:px-12">
+<NameCard name ='Rose'/>
       <HeroSection />
       <section className="flex w-full flex-col space-y-4">
         {latestPosts.map((post) => (
