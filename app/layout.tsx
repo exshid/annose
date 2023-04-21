@@ -79,15 +79,15 @@ export default function RootLayout({ children }: RootLayoutProps) {
       )}
     >
       <head />
-      <body className=" min-h-screen w-full	bg-slate-200 dark:bg-lightdarkish">
+      <body className="min-h-screen w-full	bg-slate-200 dark:bg-lightdarkish">
         <FontStyleProvider>
-          <section className="sticky top-0 z-30 w-11/12	 h-full self-start sm:w-full">
+          <section className="sticky top-0 z-30 w-11/12 h-full self-start sm:w-full">
             <Header />
           </section>
           <main className="w-11/12 sm:w-full">
             {children}
           </main>
-          <section className="sm:w-full">
+          <section className="w-11/12 sm:w-full">
             <Footer />
           </section>
            <Search posts={allPosts} />
