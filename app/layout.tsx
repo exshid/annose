@@ -79,36 +79,18 @@ export default function RootLayout({ children }: RootLayoutProps) {
       )}
     >
       <head />
-      <body className="grid min-h-screen grid-cols-1 grid-rows-layout bg-slate-200 dark:bg-lightdarkish sm:grid-cols-layout">
+      <body className=" min-h-screen w-full	bg-slate-200 dark:bg-lightdarkish">
         <FontStyleProvider>
-          <section className="sticky top-0 z-30 col-span-1 row-span-1 row-start-1 h-full self-start sm:col-start-2">
+          <section className="sticky top-0 z-30 w-11/12	 h-full self-start sm:w-full">
             <Header />
           </section>
-          <main className="col-span-1 row-start-2 sm:col-start-2">
+          <main className="w-11/12 sm:w-full">
             {children}
           </main>
-          <section className="col-span-3 row-span-1 row-start-3 sm:col-span-1 sm:col-start-2">
+          <section className="sm:w-full">
             <Footer />
           </section>
-          <div // left column
-            className={cn(
-              'col-span-1 col-start-1 row-span-3 row-start-1 hidden sm:block',
-              'bg-white',
-              'dark:bg-darkish',
-            )}
-          >
-            <div className="invisible h-full w-full  dark:visible" />
-          </div>
-          <div // right column
-            className={cn(
-              'col-span-1 col-start-3 row-span-3 row-start-1 hidden sm:block',
-              'bg-white',
-              'dark:bg-darkish',
-            )}
-          >
-            <div className="invisible h-full w-full dark:visible" />
-          </div>
-          <Search posts={allPosts} />
+           <Search posts={allPosts} />
           <Analytics />
         </FontStyleProvider>
       </body>
