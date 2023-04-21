@@ -94,7 +94,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
             className={cn(
               'col-span-1 col-start-1 row-span-3 row-start-1 hidden sm:block',
               'bg-white',
-              'dark:bg-lightdarkish',
+              'dark:bg-darkish',
             )}
           >
             <div className="invisible h-full w-full  dark:visible" />
@@ -103,7 +103,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
             className={cn(
               'col-span-1 col-start-3 row-span-3 row-start-1 hidden sm:block',
               'bg-white',
-              'dark:bg-lightdarkish',
+              'dark:bg-darkish',
             )}
           >
             <div className="invisible h-full w-full dark:visible" />
