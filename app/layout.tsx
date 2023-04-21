@@ -94,7 +94,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
             className={cn(
               'col-span-1 col-start-1 row-span-3 row-start-1 hidden bg-gradient-to-r sm:block',
               'bg-white',
-              'dark:bg-black',
+              'dark:bg-lightdarkish',
             )}
           >
             <div className="invisible h-full w-full bg-gradient-to-l from-rose-50 to-slate-700 opacity-25 dark:visible" />
@@ -103,7 +103,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
             className={cn(
               'col-span-1 col-start-3 row-span-3 row-start-1 hidden bg-gradient-to-l sm:block',
               'bg-white',
-              'dark:bg-black',
+              'dark:bg-lightdarkish',
             )}
           >
             <div className="invisible h-full w-full bg-gradient-to-r from-rose-50 to-slate-700 opacity-25 dark:visible" />
