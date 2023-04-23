@@ -54,13 +54,9 @@ const blogConfig = {
     buyMeAPizza: 'https://buymeacoffee.com/kfirfitousi',
   },
   topics: [
-    'Web Development',
-    'React',
-    'TypeScript',
-    'Next.js',
-    'Rust',
-    'Design',
-    'Computer Vision',
+    'Author',
+    'Editor',
+    'Literary Agent',
   ],
 };
 

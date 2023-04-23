@@ -5,7 +5,7 @@ import GraphemeSplitter from 'grapheme-splitter';
 import { Pause, Play } from 'lucide-react';
 import Typist from 'react-typist-component';
 import Balancer from 'react-wrap-balancer';
-
+import {NameCard} from './name';
 import { blogConfig } from '@/config';
 import { cn } from '@/lib/utils';
 
@@ -50,9 +50,8 @@ export function HeroSection() {
     <section
       className={cn(
         'flex flex-col items-center justify-center space-y-2',
-        'relative h-40 w-full rounded-md px-4 shadow-lg',
-        'bg-slate-300 dark:bg-slate-800/50',
-      )}
+        'relative  w-full rounded-md px-4 shadow-lg',
+              )}
     >
       <Typist
         typingDelay={100}
@@ -62,11 +61,8 @@ export function HeroSection() {
       >
         <h1 className="block w-full text-center text-3xl font-bold text-slate-800 dark:text-rose-50 xs:text-4xl sm:text-5xl">
           <Balancer>
-            Welcome to my blog
-            <span className="ml-2 inline-block origin-[70%_70%] animate-wave">
-              👋
-            </span>
-          </Balancer>
+            <NameCard name = 'Rose'/>
+                      </Balancer>
         </h1>
       </Typist>
       <p className="text-center text-lg text-slate-800 dark:text-rose-50 xs:text-2xl">

@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import placeholder from '../public/images/placeholder.jpg'
-import {NameCard} from './name';
+import { HeroSection } from '@/components/hero-section';
 type PhotoCardProps = {
     photo: string;
   };
@@ -9,7 +9,7 @@ type PhotoCardProps = {
     
     return (
         <div className="flex justify-around	items-center">
-<div className='bg-white dark:bg-lightdarkish p-5'>
+<div className='bg-white rounded-lg	dark:bg-lightdarkish p-5'>
     <Image 
           src={placeholder}
           alt="Picture of the author"
@@ -18,7 +18,7 @@ type PhotoCardProps = {
     
     />
 </div>
-    <NameCard name="Rose"/>
+    <HeroSection/>
     </div>
         );
   }
