@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import placeholder from '../public/images/placeholder.jpg'
-import NameCard from './name';
+import {NameCard} from './name';
 type PhotoCardProps = {
     photo: string;
   };
@@ -16,7 +16,7 @@ type PhotoCardProps = {
           height={500}
     
     />
-    <NameCard/>
+    <NameCard name="Rose"/>
 </div>
         );
   }
