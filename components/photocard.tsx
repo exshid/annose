@@ -8,8 +8,8 @@ type PhotoCardProps = {
   export function PhotoCard() {
     
     return (
-        <div className="flex">
-<div className='bg-white dark:bg-darkish p-5'>
+        <div className="flex justify-around	items-center">
+<div className='bg-white dark:bg-lightdarkish p-5'>
     <Image 
           src={placeholder}
           alt="Picture of the author"
