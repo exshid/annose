@@ -50,7 +50,7 @@ export function HeroSection() {
     <section
       className={cn(
         'flex flex-col items-center justify-center space-y-2',
-        'relative w-full rounded-md px-4g',
+        'relative rounded-md px-4',
       )}
     >
       <Typist
@@ -75,7 +75,7 @@ export function HeroSection() {
               dispatch({ type: 'setDone', payload: 'subtitle' });
             }}
           >
-            I write about{' '}
+            {' '}
           </Typist>
         )}
         {subtitleDone && (
