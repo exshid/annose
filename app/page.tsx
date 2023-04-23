@@ -39,7 +39,6 @@ export default function Home() {
   return (
     <div className="flex h-full flex-col space-y-4 px-6 pb-12 sm:px-12">
 <PhotoCard/>
-      <HeroSection />
       <section className="flex w-full flex-col space-y-4">
         {latestPosts.map((post) => (
           <PostCard key={post._id} post={post} />
