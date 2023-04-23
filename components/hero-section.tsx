@@ -54,21 +54,21 @@ export function HeroSection() {
       )}
     >
       <Typist
-        typingDelay={100}
+        typingDelay={10}
         splitter={splitter}
         pause={isPaused}
         onTypingDone={() => dispatch({ type: 'setDone', payload: 'title' })}
       >
-        <h1 className="block w-full text-center text-3xl font-bold text-slate-800 dark:text-rose-50 xs:text-4xl sm:text-5xl">
+         <h1 className='text-9xl font-black uppercase bg-gradient-to-r from-teal-400 via-teal-500 to-teal-600 bg-clip-text text-transparent'>
           <Balancer>
-                    <h1 className='text-9xl	font-black uppercase bg-gradient-to-r from-teal-400 via-teal-500 to-teal-600 bg-clip-text text-transparent'>Rose</h1>
+          Rose
           </Balancer>
-        </h1>
+          </h1>
       </Typist>
       <p className="text-center text-lg text-slate-800 dark:text-rose-50 xs:text-2xl">
         {titleDone && (
           <Typist
-            typingDelay={100}
+            typingDelay={1000}
             startDelay={1000}
             pause={isPaused}
             onTypingDone={() => {
