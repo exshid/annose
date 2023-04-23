@@ -49,12 +49,12 @@ export function HeroSection() {
   return (
     <section
       className={cn(
-        'flex flex-col items-center justify-center space-y-2',
+        'flex flex-col items-center min-w-[30vw] justify-center space-y-2',
         'relative rounded-md px-4',
       )}
     >
       <Typist
-        typingDelay={10}
+        typingDelay={100}
         splitter={splitter}
         pause={isPaused}
         onTypingDone={() => dispatch({ type: 'setDone', payload: 'title' })}
@@ -65,7 +65,7 @@ export function HeroSection() {
           </Balancer>
           </h1>
       </Typist>
-      <h2 className="text-center min-h-[20vh] text-9xl font-black uppercase bg-gradient-to-r from-rose-400 via-rose-500 to-rose-600 bg-clip-text text-transparent xs:text-2xl">
+      <h2 className="text-center min-h-[20vh] text-9xl font-black uppercase bg-gradient-to-r from-rose-500 via-rose-600 to-rose-700 bg-clip-text text-transparent">
         {titleDone && (
           <Typist
             typingDelay={2000}
