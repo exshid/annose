@@ -8,7 +8,8 @@ type PhotoCardProps = {
   export function PhotoCard() {
     
     return (
-<div className='bg-white dark:bg-lightdarkish flex'>
+        <div className="flex">
+<div className='bg-white dark:bg-darkish p-5'>
     <Image 
           src={placeholder}
           alt="Picture of the author"
@@ -16,7 +17,8 @@ type PhotoCardProps = {
           height={500}
     
     />
-    <NameCard name="Rose"/>
 </div>
+    <NameCard name="Rose"/>
+    </div>
         );
   }
