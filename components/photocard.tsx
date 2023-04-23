@@ -5,7 +5,7 @@ type PhotoCardProps = {
     photo: string;
   };
   
-  export function PhotoCard({ photo }: PhotoCardProps) {
+  export function PhotoCard() {
     
     return (
 <div className='bg-white dark:bg-lightdarkish flex'>
