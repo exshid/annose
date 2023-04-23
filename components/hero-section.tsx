@@ -61,7 +61,7 @@ export function HeroSection() {
       >
         <h1 className="block w-full text-center text-3xl font-bold text-slate-800 dark:text-rose-50 xs:text-4xl sm:text-5xl">
           <Balancer>
-                    <h1 className='text-9xl	font-black uppercase bg-gradient-to-r from-teal-400 via-teal-500 to-teal-600 bg-clip-text text-transparent'>{name}</h1>
+                    <h1 className='text-9xl	font-black uppercase bg-gradient-to-r from-teal-400 via-teal-500 to-teal-600 bg-clip-text text-transparent'>Rose</h1>
           </Balancer>
         </h1>
       </Typist>
