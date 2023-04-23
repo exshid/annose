@@ -7,7 +7,7 @@ import { blogConfig } from '@/config';
 import { Button } from '@/components/button';
 import { HeroSection } from '@/components/hero-section';
 import { PostCard } from '@/components/post-card';
-
+import PhotoCard from '@/components/photocard';
 const { title, description } = blogConfig.pages.home;
 
 const ogImage = {
