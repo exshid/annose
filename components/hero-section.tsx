@@ -59,16 +59,16 @@ export function HeroSection() {
         pause={isPaused}
         onTypingDone={() => dispatch({ type: 'setDone', payload: 'title' })}
       >
-         <h1 className='text-9xl font-black uppercase bg-gradient-to-r from-teal-400 via-teal-500 to-teal-600 bg-clip-text text-transparent'>
+         <h1 className='min-w-[30vw] text-9xl font-black uppercase bg-gradient-to-r from-teal-400 via-teal-500 to-teal-600 bg-clip-text text-transparent'>
           <Balancer>
           Rose
           </Balancer>
           </h1>
       </Typist>
-      <p className="text-center text-lg text-slate-800 dark:text-rose-50 xs:text-2xl">
+      <h2 className="text-center min-h-[20vh] text-9xl font-black uppercase bg-gradient-to-r from-rose-400 via-rose-500 to-rose-600 bg-clip-text text-transparent xs:text-2xl">
         {titleDone && (
           <Typist
-            typingDelay={1000}
+            typingDelay={2000}
             startDelay={1000}
             pause={isPaused}
             onTypingDone={() => {
@@ -89,31 +89,7 @@ export function HeroSection() {
             ))}
           </Typist>
         )}
-      </p>
-      <button
-        className="absolute right-3 top-1"
-        onClick={() => dispatch({ type: 'togglePause' })}
-      >
-        {isPaused ? (
-          <Play
-            className={cn(
-              'h-4 w-4',
-              'text-slate-400/50 hover:text-accent',
-              'dark:text-rose-50/20 dark:hover:text-accent-dark',
-            )}
-            aria-label="Play animation"
-          />
-        ) : (
-          <Pause
-            className={cn(
-              'h-4 w-4',
-              'text-slate-400/50 hover:text-accent',
-              'dark:text-rose-50/20 dark:hover:text-accent-dark',
-            )}
-            aria-label="Pause animation"
-          />
-        )}
-      </button>
+      </h2>
     </section>
   );
 }
