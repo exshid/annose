@@ -54,7 +54,7 @@ export function HeroSection() {
       )}
     >
       <Typist
-        typingDelay={1000}
+        typingDelay={0}
         splitter={splitter}
         pause={isPaused}
         onTypingDone={() => dispatch({ type: 'setDone', payload: 'title' })}
@@ -63,7 +63,7 @@ export function HeroSection() {
           Rose
           </h1>
       </Typist>
-      <h2 className="text-center min-h-[20vh] text-5xl font-black uppercase bg-gradient-to-r from-rose-500 via-rose-600 to-rose-700 bg-clip-text text-transparent">
+      <h2 className="text-center min-h-[20vh] min-w-[30vw] text-5xl font-black uppercase bg-gradient-to-r from-rose-500 via-rose-600 to-rose-700 bg-clip-text text-transparent">
         {titleDone && (
           <Typist
             typingDelay={3500}
