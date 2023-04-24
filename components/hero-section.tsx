@@ -67,7 +67,7 @@ export function HeroSection() {
         {titleDone && (
           <Typist
             typingDelay={3500}
-            startDelay={1000}
+            startDelay={100}
             pause={isPaused}
             onTypingDone={() => {
               dispatch({ type: 'setDone', payload: 'subtitle' });
