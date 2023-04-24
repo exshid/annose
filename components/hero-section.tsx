@@ -54,7 +54,7 @@ export function HeroSection() {
       )}
     >
       <Typist
-        typingDelay={100}
+        typingDelay={1000}
         splitter={splitter}
         pause={isPaused}
         onTypingDone={() => dispatch({ type: 'setDone', payload: 'title' })}
@@ -68,7 +68,7 @@ export function HeroSection() {
       <h2 className="text-center min-h-[20vh] text-5xl font-black uppercase bg-gradient-to-r from-rose-500 via-rose-600 to-rose-700 bg-clip-text text-transparent">
         {titleDone && (
           <Typist
-            typingDelay={2000}
+            typingDelay={3500}
             startDelay={1000}
             pause={isPaused}
             onTypingDone={() => {
@@ -81,7 +81,7 @@ export function HeroSection() {
         {subtitleDone && (
           <Typist typingDelay={100} backspaceDelay={75} pause={isPaused} loop>
             {blogConfig.topics.map((topic) => (
-              <span key={topic} className="font-semibold">
+              <span key={topic}>
                 {topic}
                 <Typist.Delay ms={1000} />
                 <Typist.Backspace count={topic.length} />
