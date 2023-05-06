@@ -7,7 +7,7 @@ type BooksProps = {
   export function Books() {
     
     return (
-        <div className="flex bg-gradient-to-r from-amber-500 via-orange-500 to-orange-600 h-screen w-full justify-around items-center">
+        <div className="flex bg-gradient-to-r from-emerald-400 to-cyan-400 h-screen w-full justify-around items-center">
     </div>
         );
   }
