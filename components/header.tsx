@@ -38,7 +38,7 @@ export function Header() {
           : 'py-8',
         'flex flex-row items-center justify-between px-4 xs:px-8',
         'transition-[padding,background-color] duration-300 ease-in-out',
-        'text-slate-700 backdrop-blur dark:text-rose-50',
+        'text-slate-700 dark:text-rose-50',
       )}
     >
       <NavigationBar className="flex-grow mix-blend-color-dodge max-xs:mr-2" />
