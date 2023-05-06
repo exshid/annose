@@ -49,7 +49,7 @@ export function HeroSection() {
   return (
     <section
       className={cn(
-        'flex flex-col items-center min-w-[30vw] justify-center space-y-2',
+        'flex flex-col items-center h-full w-3/6 justify-center space-y-2',
         'relative rounded-md px-4',
       )}
     >
