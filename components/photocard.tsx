@@ -8,7 +8,7 @@ type PhotoCardProps = {
   export function PhotoCard() {
     
     return (
-        <div className="flex justify-around	items-center">
+        <div className="flex h-[96vh] justify-around items-center">
     <HeroSection/>
 <div className='bg-white rounded-lg	dark:bg-lightdarkish p-5'>
     <Image 
