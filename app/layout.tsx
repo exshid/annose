@@ -81,7 +81,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
       <head />
       <body className="min-h-screen w-full bg-slate-200 dark:bg-darkish">
         <FontStyleProvider>
-        <section className="sticky top-0 z-30 w-11/12 h-full sm:w-full">
+        <section className="fixed top-0 z-30 w-11/12 h-full sm:w-full">
             <Header />
           </section>
           <main className="w-11/12 sm:w-full">
