@@ -14,6 +14,7 @@ type PhotoCardProps = {
     <Image 
           src={placeholder}
           alt="Picture of the author"
+          height={555}
         className="!relative h-full object-cover w-11/12"/> </div>
     </div>
         );
