@@ -50,7 +50,7 @@ export function HeroSection() {
     <section
       className={cn(
         'flex flex-col items-center h-full w-1/2 justify-center space-y-2',
-        'relative rounded-md px-4',
+        'relative px-4',
       )}
     >
       <Typist
@@ -59,7 +59,7 @@ export function HeroSection() {
         pause={isPaused}
         onTypingDone={() => dispatch({ type: 'setDone', payload: 'title' })}
       >
-         <h1 className='text-9xl font-black uppercase bg-gradient-to-r from-teal-400 via-teal-500 to-teal-600 bg-clip-text text-transparent'>
+         <h1 className='text-9xl mb-5 font-black uppercase bg-gradient-to-r from-teal-400 via-teal-500 to-teal-600 bg-clip-text text-transparent'>
           Rose
           </h1>
       </Typist>
