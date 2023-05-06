@@ -14,33 +14,33 @@
   }
 }
 
-.top-animation {
-  background: linear-gradient(270deg, #1be1e3, #ffffff);
-  background-size: 400% 400%;
+.books-animation {
+  background: linear-gradient(270deg, #08c39b, #049eae, #0b2325);
+  background-size: 600% 600%;
 
-  -webkit-animation: TopSection 7s ease infinite;
-  -moz-animation: TopSection 7s ease infinite;
-  -o-animation: TopSection 7s ease infinite;
-  animation: TopSection 7s ease infinite;
+  -webkit-animation: BooksSection 20s ease infinite;
+  -moz-animation: BooksSection 20s ease infinite;
+  -o-animation: BooksSection 20s ease infinite;
+  animation: BooksSection 20s ease infinite;
 }
 
-@-webkit-keyframes TopSection {
-  0%{background-position:93% 0%}
-  50%{background-position:0% 100%}
-  100%{background-position:93% 0%}
+@-webkit-keyframes BooksSection {
+  0%{background-position:9% 0%}
+  50%{background-position:92% 100%}
+  100%{background-position:9% 0%}
 }
-@-moz-keyframes TopSection {
-  0%{background-position:93% 0%}
-  50%{background-position:0% 100%}
-  100%{background-position:93% 0%}
+@-moz-keyframes BooksSection {
+  0%{background-position:9% 0%}
+  50%{background-position:92% 100%}
+  100%{background-position:9% 0%}
 }
-@-o-keyframes TopSection {
-  0%{background-position:93% 0%}
-  50%{background-position:0% 100%}
-  100%{background-position:93% 0%}
+@-o-keyframes BooksSection {
+  0%{background-position:9% 0%}
+  50%{background-position:92% 100%}
+  100%{background-position:9% 0%}
 }
-@keyframes TopSection {
-  0%{background-position:93% 0%}
-  50%{background-position:0% 100%}
-  100%{background-position:93% 0%}
+@keyframes BooksSection {
+  0%{background-position:9% 0%}
+  50%{background-position:92% 100%}
+  100%{background-position:9% 0%}
 }

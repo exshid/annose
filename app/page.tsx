@@ -8,6 +8,8 @@ import { Button } from '@/components/button';
 import { HeroSection } from '@/components/hero-section';
 import { PostCard } from '@/components/post-card';
 import {PhotoCard} from '@/components/photocard';
+import {Books} from '@/components/books';
+
 const { title, description } = blogConfig.pages.home;
 
 const ogImage = {
@@ -39,6 +41,7 @@ export default function Home() {
   return (
     <div className="flex h-full flex-col space-y-4 pb-12">
 <PhotoCard/>
+<Books/>
       <section className="flex w-full flex-col space-y-4">
         {latestPosts.map((post) => (
           <PostCard key={post._id} post={post} />
