@@ -9,8 +9,8 @@ type PhotoCardProps = {
     
     return (
         <div className="flex justify-around	items-center">
-<div className='bg-white rounded-lg	dark:bg-lightdarkish p-5'>
     <HeroSection/>
+<div className='bg-white rounded-lg	dark:bg-lightdarkish p-5'>
     <Image 
           src={placeholder}
           alt="Picture of the author"
