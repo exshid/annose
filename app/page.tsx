@@ -7,7 +7,7 @@ import { blogConfig } from '@/config';
 import { Button } from '@/components/button';
 import { HeroSection } from '@/components/hero-section';
 import { PostCard } from '@/components/post-card';
-import { IntroSection } from '@/components/intro-section';
+import { Contact } from '@/components/contact';
 import {PhotoCard} from '@/components/photocard';
 import {Books} from '@/components/books';
 
@@ -42,8 +42,9 @@ export default function Home() {
   return (
     <div className="flex h-full flex-col pb-12">
 <PhotoCard/>
-      <IntroSection/>
 <Books/>
+<Contact/>
+ {/* 
       <section className="flex w-full flex-col">
         {latestPosts.map((post) => (
           <PostCard key={post._id} post={post} />
@@ -55,6 +56,7 @@ export default function Home() {
           icon={<FileText className="h-4 w-4" />}
         />
       </section>
+      */} 
     </div>
   );
 }
