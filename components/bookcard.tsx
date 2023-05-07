@@ -14,6 +14,8 @@ type BookCardProps = {
           height={550}
           width={350}
         className="!relative h-full object-cover rounded-lg w-full p-5"/>
+    <div className="bg-white dark:bg-lightdarkish h-1/4	w-full">Book Name</div>
     </div>
+
         );
   }
