@@ -60,7 +60,7 @@ export function HeroSection() {
       >
 <p className="jakarta-font">A few lines of introduction here.</p>
          <h1 className='hero-font font-black uppercase bg-gradient-to-r from-teal-400 via-teal-500 to-teal-600 bg-clip-text text-transparent'>
-          Name<br />Here
+          A. B. CDEF
           </h1>
       </Typist>
       <h2 className="font-inter text-center flex justify-start min-h-[10vh] min-w-[30vw] text-5xl font-black uppercase bg-gradient-to-r from-rose-500 via-rose-600 to-rose-700 bg-clip-text text-transparent">
