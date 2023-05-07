@@ -29,10 +29,10 @@ type ContactProps = {
                 </p>
                 <form action="" className="sm:w-2/3 w-full px-4 lg:px-0 mx-auto">
                     <div className="pb-2 pt-4">
-                        <input type="email" name="email" id="email" placeholder="Email" className="block w-full p-4 border-[#6b7280] dark:border-white text-lg rounded-sm bg-darkish"/>
+                        <input type="email" name="email" id="email" placeholder="Email" className="block w-full p-4 border border-[#6b7280] dark:border-white text-lg rounded-sm"/>
                     </div>
                     <div className="pb-2 pt-4">
-                        <input className="block w-full p-4 text-lg border-[#6b7280] dark:border-white rounded-sm bg-darkish" type="password" name="password" id="password" placeholder="Password" />
+                        <input className="block w-full p-4 text-lg border dark:border-white rounded-sm" type="password" name="password" id="password" placeholder="Password" />
                     </div>
                     <div className="px-4 pb-2 pt-4">
                         <button className="uppercase block w-full p-4 text-lg rounded-full bg-gradient-to-r from-emerald-400 to-cyan-400 focus:outline-none">sign in</button>
