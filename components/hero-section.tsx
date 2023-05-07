@@ -63,7 +63,7 @@ export function HeroSection() {
           Name<br />Here
           </h1>
       </Typist>
-      <h2 className="text-center flex justify-start min-h-[10vh] min-w-[30vw] text-5xl font-black uppercase bg-gradient-to-r from-rose-500 via-rose-600 to-rose-700 bg-clip-text text-transparent">
+      <h2 className="font-['Plus_Jakarta_Sans'] text-center flex justify-start min-h-[10vh] min-w-[30vw] text-5xl font-bold uppercase bg-gradient-to-r from-rose-500 via-rose-600 to-rose-700 bg-clip-text text-transparent">
         {titleDone && (
           <Typist
             typingDelay={3500}
