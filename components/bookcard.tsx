@@ -14,7 +14,7 @@ type BookCardProps = {
           height={550}
           width={350}
         className="!relative h-full object-cover rounded-lg w-full p-5"/>
-    <div className="flex justify-center items-center absolute bg-white rounded-b-lg dark:bg-lightdarkish h-1/6 w-full bottom-0 group-hover:delay-1000 group-hover:opacity-0 transition">
+    <div className="flex justify-center items-center absolute bg-white rounded-b-lg dark:bg-lightdarkish h-1/6 w-full bottom-0 group-hover:delay-500 group-hover:opacity-0 transition">
       <h3 className="text-xl dark:text-white">Book Name</h3></div>
     </div>
 
