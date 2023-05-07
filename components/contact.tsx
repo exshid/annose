@@ -14,7 +14,7 @@ type ContactProps = {
             <div className="absolute bg-darkish opacity-60 inset-0 z-0"></div>
             <div className="w-full px-24 z-10">
                 <h1 className="text-5xl font-bold text-left tracking-wide">Get In Touch</h1>
-                <p className="text-3xl my-4">Email me at email@example.com</p>
+                <p className="text-3xl my-4">Email me at<br/> email@example.com</p>
             </div>
 
         </div>
@@ -24,18 +24,18 @@ type ContactProps = {
                 <h1 className="my-6">
                 </h1>
 
-                <p className="text-gray-100">
-                    or use email your account
+                <p className="text-3xl my-4 text-darkish dark:text-white">
+              OR SIGN UP FOR MY NEWSLETTER
                 </p>
                 <form action="" className="sm:w-2/3 w-full px-4 lg:px-0 mx-auto">
                     <div className="pb-2 pt-4">
-                        <input type="email" name="email" id="email" placeholder="Email" className="block w-full p-4 text-lg rounded-sm bg-darkish"/>
+                        <input type="email" name="email" id="email" placeholder="Email" className="block w-full p-4 border-[#6b7280] dark:border-white text-lg rounded-sm bg-darkish"/>
                     </div>
                     <div className="pb-2 pt-4">
-                        <input className="block w-full p-4 text-lg rounded-sm bg-darkish" type="password" name="password" id="password" placeholder="Password" />
+                        <input className="block w-full p-4 text-lg border-[#6b7280] dark:border-white rounded-sm bg-darkish" type="password" name="password" id="password" placeholder="Password" />
                     </div>
                     <div className="px-4 pb-2 pt-4">
-                        <button className="uppercase block w-full p-4 text-lg rounded-full bg-indigo-500 hover:bg-indigo-600 focus:outline-none">sign in</button>
+                        <button className="uppercase block w-full p-4 text-lg rounded-full bg-gradient-to-r from-emerald-400 to-cyan-400 focus:outline-none">sign in</button>
                     </div>
 
                     <div className="p-4 text-center inset-x-0 flex justify-center space-x-4 mt-16 lg:hidden ">
