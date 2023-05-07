@@ -49,7 +49,7 @@ export function HeroSection() {
   return (
     <div
       className={cn(
-        'flex flex-col-reverse items-start h-full w-1/2 justify-center px-28 relative',
+        'flex flex-col-reverse items-start h-full w-3/5 justify-center px-28 relative',
       )}
     >
       <Typist
