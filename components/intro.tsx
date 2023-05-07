@@ -8,9 +8,11 @@ type IntroProps = {
   export function Intro() {
     
     return (
+        <div className="h-screen">
         <Image 
         src={paragraph}
         alt="Picture of the author"
       className="!relative h-full object-cover w-11/12 pt-5"/>
+      </div>
 );
   }
