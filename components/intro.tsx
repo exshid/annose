@@ -8,11 +8,8 @@ type IntroProps = {
   export function Intro() {
     
     return (
-        <div className="flex justify-center h-screen w-full">
+        <div className="bg-lightdarkish flex justify-center h-screen w-full">
         <div className="w-8/12 flex">
-  <svg className="w-1/2" fill="#25D3DD" width="300px" height="300px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-  <path fill-rule="evenodd" d="M18 5a1 1 0 100-2H2a1 1 0 000 2h16zm0 4a1 1 0 100-2h-8a1 1 0 100 2h8zm1 3a1 1 0 01-1 1H2a1 1 0 110-2h16a1 1 0 011 1zm-1 5a1 1 0 100-2h-8a1 1 0 100 2h8z"/>
- </svg>
      
  <div className="flex flex-col w-1/2 justify-center items-center">
     <h3 className="font-inter text-5xl font-black uppercase bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent">
