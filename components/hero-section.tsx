@@ -47,9 +47,9 @@ export function HeroSection() {
   );
 
   return (
-    <section
+    <div
       className={cn(
-        'flex flex-col items-center h-full w-1/2 justify-center space-y-2',
+        'flex flex-col-reverse items-start items-center h-full w-1/2 justify-center space-y-2',
         'relative px-4',
       )}
     >
@@ -60,10 +60,10 @@ export function HeroSection() {
         onTypingDone={() => dispatch({ type: 'setDone', payload: 'title' })}
       >
          <h1 className='text-9xl mb-5 font-black uppercase bg-gradient-to-r from-teal-400 via-teal-500 to-teal-600 bg-clip-text text-transparent'>
-          Rose
+          Name Here
           </h1>
       </Typist>
-      <h2 className="text-center min-h-[20vh] min-w-[30vw] text-5xl font-black uppercase bg-gradient-to-r from-rose-500 via-rose-600 to-rose-700 bg-clip-text text-transparent">
+      <h2 className="text-center min-h-[10vh] min-w-[30vw] text-5xl font-black uppercase bg-gradient-to-r from-rose-500 via-rose-600 to-rose-700 bg-clip-text text-transparent">
         {titleDone && (
           <Typist
             typingDelay={3500}
@@ -88,6 +88,6 @@ export function HeroSection() {
           </Typist>
         )}
       </h2>
-    </section>
+    </div>
   );
 }
