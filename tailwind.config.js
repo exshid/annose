@@ -8,6 +8,7 @@ module.exports = {
 
   // enable dark mode
   darkMode: 'class',
+  mode: 'dark',
 
   plugins: [
     // used for markdown prose styling; see components/mdx-content.tsx
