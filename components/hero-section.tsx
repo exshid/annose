@@ -59,7 +59,7 @@ export function HeroSection() {
         pause={isPaused}
         onTypingDone={() => dispatch({ type: 'setDone', payload: 'title' })}
       >
-         <h1 className='text-9xl mb-5 font-black uppercase bg-gradient-to-r from-teal-400 via-teal-500 to-teal-600 bg-clip-text text-transparent'>
+         <h1 className='hero-font font-black uppercase bg-gradient-to-r from-teal-400 via-teal-500 to-teal-600 bg-clip-text text-transparent'>
           Name Here
           </h1>
       </Typist>

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -19,4 +20,13 @@
 }
 .clip-custom{
   clip-path: ellipse(100% 70% at 100% 58%);
+}
+
+.hero-font{
+    font-family: "Inter", Sans-serif;
+    font-size: 8vw;
+    line-height: 1.1em;
+    text-indent: -12px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
