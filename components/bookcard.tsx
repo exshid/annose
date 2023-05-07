@@ -7,7 +7,7 @@ type BookCardProps = {
   export function BookCard() {
     
     return (
-        <div className="group relative flex bg-white custom-boxshadow dark:shadow-none dark:bg-lightdarkish rounded-lg h-[550px] w-[350px] justify-around items-center">
+        <div className="group relative flex bg-white custom-boxshadow howver:shadow-none transition dark:shadow-none dark:bg-lightdarkish rounded-lg h-[550px] w-[350px] justify-around items-center">
  <Image 
           src={cover}
           alt="Cover of the book"
