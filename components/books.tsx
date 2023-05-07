@@ -8,7 +8,7 @@ type BooksProps = {
   export function Books() {
     
     return (
-        <div className="flex justify-evenly bg-white dark:bg-moredarkish px-6 h-screen w-full justify-around items-center">
+        <div className="flex justify-evenly bg-white dark:bg-moredarkish px-6 h-screen w-full items-center">
     <BookCard/>
     <BookCard/>
     <BookCard/>
