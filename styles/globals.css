@@ -17,3 +17,7 @@
 .custom-boxshadow{
   box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
 }
+.clip-custom{
+  clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 50% 100%, 0% 80%);
+
+}
