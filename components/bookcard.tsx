@@ -8,7 +8,7 @@ type BookCardProps = {
     
     return (
       <div className="z-30 relative items-center justify-center w-full h-full overflow-auto">
-          <div className="inset-0 h-screen bg-cover bg-center" 
+          <div className="inset-0 h-screen bg-cover bg-center bg-fixed" 
               style={{
                 backgroundImage: "url('https://wallpapercave.com/wp/wp6689710.jpg')"
               }}>
