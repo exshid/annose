@@ -13,7 +13,7 @@ type BookCardProps = {
           alt="Cover of the book"
           height={550}
           width={350}
-        className="!relative h-full object-cover w-11/12 pt-5"/>
+        className="!relative h-full object-cover rounded-lg w-full"/>
     </div>
         );
   }
