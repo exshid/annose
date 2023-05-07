@@ -7,7 +7,7 @@ type BookCardProps = {
   export function BookCard() {
     
     return (
-        <div className="flex bg-slate-200 dark:bg-lightdarkish rounded-lg h-[500px] w-[200px] justify-around items-center">
+        <div className="flex bg-slate-200 dark:bg-lightdarkish rounded-lg h-[550px] w-[350px] justify-around items-center">
     </div>
         );
   }
