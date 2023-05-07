@@ -18,6 +18,5 @@
   box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
 }
 .clip-custom{
-  clip-path: ellipse(53% 47% at 99% 38%);
-
+  clip-path: ellipse(100% 70% at 100% 58%);
 }
