@@ -58,7 +58,7 @@ export function HeroSection() {
         pause={isPaused}
         onTypingDone={() => dispatch({ type: 'setDone', payload: 'title' })}
       >
-<p className="jakarta-font">A few lines of introduction here.</p>
+<p className="jakarta-font text-darkish dark:text-white">A few lines of introduction here.</p>
          <h1 className='hero-font font-black uppercase bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent'>
           A. B. CDEF
           </h1>
