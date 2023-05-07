@@ -9,6 +9,8 @@ import { HeroSection } from '@/components/hero-section';
 import { PostCard } from '@/components/post-card';
 import { Contact } from '@/components/contact';
 import {PhotoCard} from '@/components/photocard';
+import {Intro} from '@/components/intro';
+
 import {Books} from '@/components/books';
 
 const { title, description } = blogConfig.pages.home;
@@ -42,6 +44,7 @@ export default function Home() {
   return (
     <div className="flex h-full flex-col pb-12">
 <PhotoCard/>
+<Intro/>
 <Books/>
 <Contact/>
  {/* 
