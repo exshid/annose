@@ -14,33 +14,6 @@
   }
 }
 
-.books-animation {
-  background: linear-gradient(270deg, #08c39b, #049eae, #0b2325);
-  background-size: 600% 600%;
-
-  -webkit-animation: BooksSection 20s ease infinite;
-  -moz-animation: BooksSection 20s ease infinite;
-  -o-animation: BooksSection 20s ease infinite;
-  animation: BooksSection 20s ease infinite;
-}
-
-@-webkit-keyframes BooksSection {
-  0%{background-position:9% 0%}
-  50%{background-position:92% 100%}
-  100%{background-position:9% 0%}
-}
-@-moz-keyframes BooksSection {
-  0%{background-position:9% 0%}
-  50%{background-position:92% 100%}
-  100%{background-position:9% 0%}
-}
-@-o-keyframes BooksSection {
-  0%{background-position:9% 0%}
-  50%{background-position:92% 100%}
-  100%{background-position:9% 0%}
-}
-@keyframes BooksSection {
-  0%{background-position:9% 0%}
-  50%{background-position:92% 100%}
-  100%{background-position:9% 0%}
+.custom-boxshadow{
+  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
 }
