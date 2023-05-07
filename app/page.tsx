@@ -41,8 +41,8 @@ export default function Home() {
 
   return (
     <div className="flex h-full flex-col pb-12">
-      <IntroSection/>
 <PhotoCard/>
+      <IntroSection/>
 <Books/>
       <section className="flex w-full flex-col">
         {latestPosts.map((post) => (
