@@ -35,7 +35,7 @@ type ContactProps = {
                         <input className="block w-full p-4 text-lg border dark:border-white rounded-sm dark:bg-darkish" type="password" name="password" id="password" placeholder="Password" />
                     </div>
                     <div className="px-4 pb-2 pt-4">
-                        <button className="uppercase block w-full p-4 text-lg rounded-full bg-gradient-to-r from-emerald-400 to-cyan-400 focus:outline-none">sign in</button>
+                        <button className="uppercase block w-full p-4 text-lg text-white rounded-full bg-gradient-to-r from-emerald-400 to-cyan-400 focus:outline-none">sign in</button>
                     </div>
 
                     <div className="p-4 text-center inset-x-0 flex justify-center space-x-4 mt-16 lg:hidden ">
