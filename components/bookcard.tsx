@@ -8,16 +8,16 @@ type BookCardProps = {
     
     return (
       <div className="z-30 relative items-center justify-center w-full h-full overflow-auto">
-          <div className="inset-0 h-screen bg-cover bg-center bg-fixed" 
+          <div className="inset-0 h-screen bg-cover bg-center bg-fixed backdrop-blur" 
               style={{
-                backgroundImage: "url('https://wallpapercave.com/wp/wp6689710.jpg')"
+                backgroundImage: "url({cover})"
               }}>
           </div>
           <div className="absolute inset-0 z-20 flex items-center justify-center h-screen w-full bg-gray-900 bg-opacity-75"></div>
           <div className="absolute inset-0  z-30  flex flex-col items-center justify-center">
               <div className="shadow-2xl rounded-lg w-4/5 h-96 bg-cover bg-center"
                   style={{
-                    backgroundImage: "url('https://wallpapercave.com/wp/wp6689710.jpg')"
+                    backgroundImage: "url({cover})"
                   }}>
       
                   <div className="grid grid-cols-12 gap-1">
