@@ -23,6 +23,7 @@ module.exports = {
       colors: {
         // theme colors; edit in config/index.js
         'darkish': '#141414',
+        'moredarkish':'#161616',
         'lightdarkish': '#212226',
         accent: {
           DEFAULT: blogConfig.theme?.accentColor?.light || colors.rose[700],
