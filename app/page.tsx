@@ -7,6 +7,7 @@ import { blogConfig } from '@/config';
 import { Button } from '@/components/button';
 import { HeroSection } from '@/components/hero-section';
 import { PostCard } from '@/components/post-card';
+import { IntroSection } from '@/components/intro-section';
 import {PhotoCard} from '@/components/photocard';
 import {Books} from '@/components/books';
 
@@ -40,6 +41,7 @@ export default function Home() {
 
   return (
     <div className="flex h-full flex-col pb-12">
+      <IntroSection/>
 <PhotoCard/>
 <Books/>
       <section className="flex w-full flex-col">
