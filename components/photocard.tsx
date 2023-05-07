@@ -8,9 +8,9 @@ type PhotoCardProps = {
   export function PhotoCard() {
     
     return (
-        <div className="flex bg-darkish clip-custom h-screen justify-around items-center">
+        <div className="flex h-screen justify-around items-center">
     <HeroSection/>
-<div className='h-full w-1/2 flex justify-center bg-white dark:bg-lightdarkish pt-5'>
+<div className='h-full w-1/2 flex clip-custom justify-center bg-white dark:bg-lightdarkish pt-5'>
     <Image 
           src={placeholder}
           alt="Picture of the author"
