@@ -39,10 +39,10 @@ export default function Home() {
     .slice(0, 3);
 
   return (
-    <div className="flex h-full flex-col space-y-4 pb-12">
+    <div className="flex h-full flex-col pb-12">
 <PhotoCard/>
 <Books/>
-      <section className="flex w-full flex-col space-y-4">
+      <section className="flex w-full flex-col">
         {latestPosts.map((post) => (
           <PostCard key={post._id} post={post} />
         ))}

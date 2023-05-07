@@ -8,7 +8,7 @@ type BooksProps = {
   export function Books() {
     
     return (
-        <div className="flex bg-gradient-to-r from-emerald-400 to-cyan-400 h-screen w-full justify-around items-center">
+        <div className="flex bg-white dark:bg-darkish h-screen w-full justify-around items-center">
     <BookCard/>
     </div>
         );
