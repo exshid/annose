@@ -17,6 +17,7 @@ type IntroProps = {
       <stop offset="95%" stop-color="red" />
     </linearGradient>
   </defs>
+  <circle cx="5" cy="5" r="4" fill="url('#myGradient')" />
 
  </svg>
      
