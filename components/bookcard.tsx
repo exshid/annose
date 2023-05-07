@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import placeholder from '../public/images/placeholder.svg'
+import cover from '../public/images/cover.jpg'
 type BookCardProps = {
     photo: string;
   };
@@ -8,6 +8,12 @@ type BookCardProps = {
     
     return (
         <div className="flex bg-white custom-boxshadow dark:shadow-none dark:bg-lightdarkish rounded-lg h-[550px] w-[350px] justify-around items-center">
+ <Image 
+          src={cover}
+          alt="Cover of the book"
+          height={550}
+          width={350}
+        className="!relative h-full object-cover w-11/12 pt-5"/>
     </div>
         );
   }
