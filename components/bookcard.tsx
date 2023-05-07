@@ -32,7 +32,7 @@ type BookCardProps = {
                           <div className="absolute border-gray-400 border-t-4 bottom-0 py-1 px-4 w-4/5"></div>
                       </div>
                       <div className="col-span-12 sm:col-span-12 md:col-span-5 lg:col-span-5 xxl:col-span-5">
-                          <div className="relative bg-pink-900 h-full md:h-96 w-full bg-opacity-50 rounded-tr-lg rounded-br-lg">
+                          <div className="relative bg-pink-900 h-full md:h-96 w-full bg-opacity-50 rounded-r-lg">
                               <div className="p-8">
                                   <p className="text-white text-xs md:text-sm lg:text-xl mb-4">
                                       Forests are truly amazing places. 
