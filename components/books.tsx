@@ -10,6 +10,7 @@ type BooksProps = {
     return (
         <div className="flex bg-white dark:bg-darkish h-screen w-full justify-around items-center">
     <BookCard/>
+    <BookCard/>
     </div>
         );
   }
