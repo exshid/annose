@@ -9,7 +9,7 @@ type IntroProps = {
     
     return (
       <div className="w-full bg-darkerlight dark:bg-lightdarkish">
-<div className="flex flex-col justify-center max-w-xs s-boxshadow dark:shadow-none bg-white dark:bg-lightdarkish p-6 shadow-md rounded-xl sm:px-12 dark:bg-gray-900 dark:text-gray-100">
+<div className="flex flex-col justify-center max-w-xs s-boxshadow dark:shadow-none bg-white dark:bg-lightdarkish p-6 shadow-md rounded-xl sm:px-12 dark:text-gray-100">
 <Image
   src={placeholder}
   alt="picture of the author"
