@@ -24,7 +24,7 @@ type IntroProps = {
 </div>
 <div className="flex flex-col w-2/4 justify-center s-boxshadow dark:shadow-none bg-white dark:bg-lightdarkish p-6 sm:px-12 dark:text-gray-100">
 <p className="jakarta-font text-darkish dark:text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, ad asperiores ipsam voluptatem rem a id maxime odio ullam accusantium dolor magnam quam expedita! A tenetur ipsam enim magnam cupiditate.
-Quos iure in voluptas! Libero aspernatur error temporibus id aperiam culpa similique pariatur ex, optio sunt. Pariatur velit fugiat consequuntur quaerat eius.</p>
+Quos iure in voluptas! Libero aspernatur error temporibus id aperiam culp similique pariatur ex, optio sunt. Pariatur velit fugiat consequuntur quaerat eius.</p>
 </div>
 </div>
 </div>
