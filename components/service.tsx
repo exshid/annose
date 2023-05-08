@@ -10,16 +10,16 @@ type ServiceProps = {
      
     <h3 className="font-inter text-5xl p-5 font-black uppercase bg-gradient-to-r from-cyan-400 to-cyan-500 bg-clip-text text-transparent">
         Service for Authors</h3>
-<ul className="pt-5 pb-10 grid grid-cols-3 grid-rows-3 gap-8">
-    <li className="s-boxshadow h-80 w-80 bg-white dark:bg-lightdarkish">1</li>
-    <li className="s-boxshadow h-80 w-80 bg-white dark:bg-lightdarkish col-start-3 row-start-3">2</li>
-    <li className="s-boxshadow h-80 w-80 bg-white dark:bg-lightdarkish col-start-3 row-start-2">3</li>
-    <li className="s-boxshadow h-80 w-80 bg-white dark:bg-lightdarkish col-start-3 row-start-1">4</li>
-    <li className="s-boxshadow h-80 w-80 bg-white dark:bg-lightdarkish col-start-2 row-start-1">5</li>
-    <li className="s-boxshadow h-80 w-80 bg-white dark:bg-lightdarkish col-start-2 row-start-2">6</li>
-    <li className="s-boxshadow h-80 w-80 bg-white dark:bg-lightdarkish col-start-2 row-start-3">7</li>
-    <li className="s-boxshadow h-80 w-80 bg-white dark:bg-lightdarkish col-start-1 row-start-3">8</li>
-    <li className="s-boxshadow h-80 w-80 bg-white dark:bg-lightdarkish col-start-1 row-start-2">9</li>
+<ul className="jakarta-title pt-5 pb-10 grid grid-cols-3 grid-rows-3 gap-8">
+    <li className="s-boxshadow h-80 w-80 bg-white dark:bg-lightdarkish"><h4>Novel editing</h4><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p></li>
+    <li className="s-boxshadow h-80 w-80 bg-white dark:bg-lightdarkish col-start-3 row-start-3"><h4>Novel editing</h4><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p></li>
+    <li className="s-boxshadow h-80 w-80 bg-white dark:bg-lightdarkish col-start-3 row-start-2"><h4>Novel editing</h4><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p></li>
+    <li className="s-boxshadow h-80 w-80 bg-white dark:bg-lightdarkish col-start-3 row-start-1"><h4>Novel editing</h4><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p></li>
+    <li className="s-boxshadow h-80 w-80 bg-white dark:bg-lightdarkish col-start-2 row-start-1"><h4>Novel editing</h4><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p></li>
+    <li className="s-boxshadow h-80 w-80 bg-white dark:bg-lightdarkish col-start-2 row-start-2"><h4>Novel editing</h4><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p></li>
+    <li className="s-boxshadow h-80 w-80 bg-white dark:bg-lightdarkish col-start-2 row-start-3"><h4>Novel editing</h4><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p></li>
+    <li className="s-boxshadow h-80 w-80 bg-white dark:bg-lightdarkish col-start-1 row-start-3"><h4>Novel editing</h4><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p></li>
+    <li className="s-boxshadow h-80 w-80 bg-white dark:bg-lightdarkish col-start-1 row-start-2"><h4>Novel editing</h4><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p></li>
 </ul>
     
  </div>
