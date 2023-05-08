@@ -8,7 +8,11 @@ type IntroProps = {
   export function Intro() {
     
     return (
-      <div className="w-full flex justify-around p-10 bg-darkerlight dark:bg-lightdarkish">
+      <div className="flex flex-col h-screen bg-darkerlight dark:bg-lightdarkish">
+          <h3 className="font-inter text-5xl pt-10 font-black uppercase bg-gradient-to-r from-rose-600 to-rose-900 bg-clip-text text-transparent">
+        About A. B. CDEF</h3>
+
+      <div className="w-full flex justify-around p-10">
 <div className="flex flex-col w-1/4 justify-center s-boxshadow dark:shadow-none bg-white dark:bg-lightdarkish p-6 sm:px-12 dark:text-gray-100">
 <Image
   src={placeholder}
@@ -21,7 +25,7 @@ type IntroProps = {
 <div className="flex flex-col w-2/4 justify-center s-boxshadow dark:shadow-none bg-white dark:bg-lightdarkish p-6 sm:px-12 dark:text-gray-100">
 <p className="jakarta-font text-darkish dark:text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, ad asperiores ipsam voluptatem rem a id maxime odio ullam accusantium dolor magnam quam expedita! A tenetur ipsam enim magnam cupiditate.</p>
 </div>
-
+</div>
 </div>
       );
   }
