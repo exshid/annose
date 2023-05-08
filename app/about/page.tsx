@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import placeholder from '../public/images/placeholder.svg'
+import placeholder from '../../public/images/placeholder.svg'
 
 import { type Metadata } from 'next/types';
 import { allPosts } from 'contentlayer/generated';
