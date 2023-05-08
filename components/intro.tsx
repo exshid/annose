@@ -14,7 +14,8 @@ type IntroProps = {
         <Image 
           src={placeholder}
           alt="Picture of the author"
-        className="!relative h-full object-cover w-11/12 pt-5"/>
+          height={400}
+        className="object-cover"/>
 </div>     
  <div className="flex flex-col w-1/2 justify-center items-center">
     <h3 className="font-inter text-5xl font-black uppercase bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent">
