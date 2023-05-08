@@ -32,7 +32,7 @@ type ContactProps = {
                         <input type="email" name="email" id="email" placeholder="Email" className="dark:bg-darkish block w-full p-4 border dark:border-white text-lg rounded-sm"/>
                     </div>
                     <div className="pb-2 pt-4">
-                        <input className="block w-full p-4 text-lg border dark:border-white rounded-sm dark:bg-darkish" type="password" name="password" id="password" placeholder="Password" />
+                        <input className="block w-full p-4 text-lg border dark:border-white rounded-sm dark:bg-darkish" type="text" name="name" id="name" placeholder="Name" />
                     </div>
                     <div className="px-4 pb-2 pt-4">
                         <button className="uppercase block w-full p-4 text-lg text-white rounded-full bg-gradient-to-r from-rose-600 to-rose-900 focus:outline-none">sign in</button>

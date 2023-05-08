@@ -24,6 +24,10 @@ type IntroProps = {
 <div className="flex flex-col w-2/4 justify-center p-6 sm:px-12 dark:text-gray-100">
 <p className="jakarta-font text-darkish dark:text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, ad asperiores ipsam voluptatem rem a id maxime odio ullam accusantium dolor magnam quam expedita! A tenetur ipsam enim magnam cupiditate.
 Quos iure in voluptas! Libero aspernatur error temporibus id aperiam culp similique pariatur ex, optio sunt. Pariatur velit fugiat consequuntur quaerat eius.</p>
+<div className="px-4 pb-2 pt-4">
+                        <button className="uppercase block w-full p-4 text-lg text-white rounded-full bg-gradient-to-r from-rose-600 to-rose-900 focus:outline-none">Read More</button>
+                    </div>
+
 </div>
 </div>
 </div>
