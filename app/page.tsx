@@ -65,8 +65,7 @@ export default function Home() {
         {latestPosts.map((post) => (
           <PostCard key={post._id} post={post} />
         ))}
-        <Button
-          href="/posts"
+        <Button          href="/posts"
           label="All Posts"
           className="place-self-end"
           icon={<FileText className="h-4 w-4" />}
