@@ -1,6 +1,5 @@
 import '@/styles/globals.css';
 import 'react-tooltip/dist/react-tooltip.css';
-import { Newsreader, Red_Hat_Display } from 'next/font/google';
 import { type Metadata } from 'next/types';
 import { allPosts } from 'contentlayer/generated';
 
@@ -12,12 +11,12 @@ import { Header } from '@/components/header';
 import { Search } from '@/components/search';
 import { cn } from '@/lib/utils';
 
-const fontSans = Red_Hat_Display({
+const fontSans = Plus Jakarta Sans({
   subsets: ['latin'],
   variable: '--font-red-hat',
 });
 
-const fontSerif = Newsreader({
+const fontSerif = Inter({
   subsets: ['latin'],
   variable: '--font-newsreader',
 });
