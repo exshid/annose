@@ -1,3 +1,5 @@
+import React from 'react';
+
 import { type Metadata } from 'next/types';
 import { allPosts } from 'contentlayer/generated';
 import { compareDesc } from 'date-fns';
