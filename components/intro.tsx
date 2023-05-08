@@ -8,8 +8,8 @@ type IntroProps = {
   export function Intro() {
     
     return (
-        <div className="bg-darkerlight dark:bg-lightdarkish text-darkish dark:text-white flex justify-center h-screen w-full">
-        <div className="w-8/12 flex">
+        <div className="bg-darkerlight dark:bg-lightdarkish text-darkish dark:text-white flex justify-center h-auto py-10 w-full">
+        <div className="w-10/12 flex items-center">
         <div className="w-1/2 justify-center items-center">
         <Image 
           src={placeholder}
