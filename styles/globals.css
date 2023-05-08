@@ -46,3 +46,14 @@
   font-weight: 400;
   line-height: 32px;
 }
+
+
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background: linear-gradient(to right, #34D399, #22D3EE);
+  transform-origin: 0%;
+}
