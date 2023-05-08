@@ -5,10 +5,10 @@ type ServiceProps = {
   export function Service() {
     
     return (
-        <div className="bg-darkerlight dark:bg-darkish text-darkish dark:text-white flex justify-center h-auto w-full">
+        <div className="bg-darkerlight py-5 dark:bg-darkish text-darkish dark:text-white flex justify-center h-auto w-full">
         <div className="w-8/12 flex flex-col items-center">
      
-    <h3 className="font-inter text-5xl font-black uppercase bg-gradient-to-r from-cyan-400 to-cyan-500 bg-clip-text text-transparent">
+    <h3 className="font-inter text-5xl p-5 font-black uppercase bg-gradient-to-r from-cyan-400 to-cyan-500 bg-clip-text text-transparent">
         Service for Authors</h3>
 <ul className="grid grid-cols-3 grid-rows-3 gap-5">
     <li className="h-80 w-80 bg-white dark:bg-lightdarkish">1</li>
