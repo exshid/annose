@@ -63,9 +63,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
     <html
       lang="en"
       className={cn(
-        'scroll-pt-16 overflow-auto overscroll-none',
-        fontSans.variable,
-        fontSerif.variable,
+        'scroll-pt-16 overflow-auto overscroll-none jakarta-title'
       )}
     >
       <head />
