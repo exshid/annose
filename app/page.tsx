@@ -10,7 +10,7 @@ import { PostCard } from '@/components/post-card';
 import { Contact } from '@/components/contact';
 import {PhotoCard} from '@/components/photocard';
 import {Intro} from '@/components/intro';
-import {Service} from '@/components/Service';
+import {Service} from '@/components/service';
 
 import {Books} from '@/components/books';
 
