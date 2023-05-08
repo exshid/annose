@@ -44,7 +44,7 @@ export default function About() {
   className="bg-gradient-to-r from-emerald-400 to-cyan-400"
   />
 </div>
-<div className="w-4/6 text-darkish px-10 jakarta-font dark:text-white">
+<div className="w-3/6 text-darkish px-10 jakarta-font dark:text-white">
 <h3 className="font-inter text-5xl font-black uppercase">
         A. B. CDEF</h3>
   <p className="py-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate voluptatum vel in! Ipsa laborum, ipsam excepturi maxime corrupti aperiam nam. Similique cum animi enim reiciendis.</p><p className="py-2">Quas eius aliquid tempora aspernatur. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non temporibus laboriosam, ratione earum nisi debitis dignissimos quia consequuntur obcaecati! Expedita neque laboriosam eius dolore. Aliquid reprehenderit aut soluta nemo atque!
