@@ -9,12 +9,12 @@ type IntroProps = {
     
     return (
       <div className="w-full bg-darkerlight dark:bg-lightdarkish">
-<div className="flex flex-col justify-center max-w-xs p-6 shadow-md rounded-xl sm:px-12 dark:bg-gray-900 dark:text-gray-100">
+<div className="flex flex-col justify-center max-w-xs s-boxshadow dark:shadow-none bg-white dark:bg-lightdarkish p-6 shadow-md rounded-xl sm:px-12 dark:bg-gray-900 dark:text-gray-100">
 <Image
-  src="https://source.unsplash.com/150x150/?portrait?3"
+  src={placeholder}
   alt="picture of the author"
-  width={150}
-  height={150}
+  width={250}
+  height={250}
   className="w-32 h-32 mx-auto rounded-full dark:bg-gray-500 aspect-square"
 />
 	<div className="space-y-4 text-center divide-y divide-gray-700">
