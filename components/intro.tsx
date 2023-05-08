@@ -19,7 +19,7 @@ type IntroProps = {
           height={400}
         className="object-cover"/>
 </div>     
- <div className="flex flex-col w-1/2 justify-center items-center">
+ <div className="flex flex-col w-1/2 justify-center items-center jakarta-font">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos molestias tempora dolore sit quis sed, praesentium vitae eos iste odit modi. Aliquid distinctio nesciunt illo enim natus laboriosam ea. Reprehenderit.
         Ut totam harum minus, iusto corrupti sequi tenetur voluptas nobis maiores provident exercitationem eum nisi consectetur autem reprehenderit. Fugiat aliquid itaque odio!
         </p>
