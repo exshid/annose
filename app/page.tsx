@@ -13,8 +13,6 @@ import { Contact } from '@/components/contact';
 import {PhotoCard} from '@/components/photocard';
 import {Intro} from '@/components/intro';
 import {Service} from '@/components/service';
-import { motion, useScroll, useSpring } from "framer-motion";
-
 import {Books} from '@/components/books';
 
 const { title, description } = blogConfig.pages.home;
@@ -52,8 +50,6 @@ export default function Home() {
     });
   
   return (
-    <>
-    <motion.div className="progress-bar" style={{ scaleX }} />
 
 <div className="flex h-full flex-col pb-12">
 <PhotoCard/>
@@ -76,7 +72,6 @@ export default function Home() {
       */} 
 
     </div>
-    </>
 
   );
 }
