@@ -19,7 +19,7 @@ type IntroProps = {
   alt="picture of the author"
   width={450}
   height={450}
-  className="rounded-full dark:bg-gray-500 aspect-square"
+  className="rounded-full dark:bg-gray-500 bg-gradient-to-r from-rose-600 to-rose-900 aspect-square"
 />
 </div>
 <div className="flex flex-col w-2/4 justify-center p-6 sm:px-12 dark:text-gray-100">
