@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion, useScroll, useSpring } from "framer-motion";
 
 import { type Metadata } from 'next/types';
 import { allPosts } from 'contentlayer/generated';
@@ -42,8 +43,16 @@ export default function Home() {
   const latestPosts = allPosts
     .sort((a, b) => compareDesc(new Date(a.date), new Date(b.date)))
     .slice(0, 3);
-  
+    const { scrollYProgress } = useScroll();
+    const scaleX = useSpring(scrollYProgress, {
+      stiffness: 100,
+      damping: 30,
+      restDelta: 0.001
+    });
+    
   return (
+    <>
+      <motion.div className="progress-bar" style={{ scaleX }} />
 
 <div className="flex h-full flex-col pb-12">
 <PhotoCard/>
@@ -66,6 +75,7 @@ export default function Home() {
       */} 
 
     </div>
+    </>
 
   );
 }
