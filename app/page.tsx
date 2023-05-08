@@ -42,12 +42,6 @@ export default function Home() {
   const latestPosts = allPosts
     .sort((a, b) => compareDesc(new Date(a.date), new Date(b.date)))
     .slice(0, 3);
-    const { scrollYProgress } = useScroll();
-    const scaleX = useSpring(scrollYProgress, {
-      stiffness: 100,
-      damping: 30,
-      restDelta: 0.001
-    });
   
   return (
 
