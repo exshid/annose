@@ -1760,13 +1760,7 @@ packages:
       '@opentelemetry/exporter-trace-otlp-grpc': 0.31.0_@opentelemetry+api@1.1.0
       '@opentelemetry/sdk-trace-base': 1.5.0_@opentelemetry+api@1.1.0
     dev: false
-framer-motion@^10.12.8:
-  version "10.12.8"
-  resolved "https://registry.yarnpkg.com/framer-motion/-/framer-motion-10.12.8.tgz#0f9c0c2db4f1d9c2453e9f8128b5d43dfc0c6c9b"
-  integrity sha512-5fzu5KkY0p0LqJX5rVvP1hV8PdJ++mQGK7PjV7l7bA4XzVt5Wv5c9Gd2Cjv3R+kNv+L2STQJWzrVQJG2I+5PpQ==
-  dependencies:
-    hey-listen "^1.0.8"
-    
+
   /@effect-ts/otel-sdk-trace-node/0.14.1_hv2rnn6sth5zqevnyab6kulypq:
     resolution: {integrity: sha512-j5ynRvd0H+Fp9aH/5NOtBd1ogNMpNB3r7uiXOKRPlfKUOtdx4KsCt2cPBjChMvyLstj8dkjtWE4loLSTYkWPuA==}
     peerDependencies:
