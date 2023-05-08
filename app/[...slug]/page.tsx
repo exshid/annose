@@ -57,7 +57,7 @@ export default async function Page({ params }: PageProps) {
   }
 
   return (
-    <div className="h-full px-8">
+    <div className="h-full px-8 dark:bg-lightdarkish">
       <MDXContent code={page.body.code} />
     </div>
   );
