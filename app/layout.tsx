@@ -11,15 +11,6 @@ import { Header } from '@/components/header';
 import { Search } from '@/components/search';
 import { cn } from '@/lib/utils';
 
-const fontSans = Red_Hat_Display({
-  subsets: ['latin'],
-  variable: '--font-red-hat',
-});
-
-const fontSerif = Newsreader({
-  subsets: ['latin'],
-  variable: '--font-newsreader',
-});
 
 type RootLayoutProps = {
   children: React.ReactNode;

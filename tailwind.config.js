@@ -35,7 +35,7 @@ module.exports = {
       fontFamily: {
         // uses @next/font; see app/layout.tsx
         sans: ['Plus Jakarta Sans'],
-        serif: ['var(--font-newsreader)'],
+        serif: ['EB Garamond'],
       },
       gridTemplateRows: {
         // main layout grid rows (header, main, footer)
