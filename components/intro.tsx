@@ -13,14 +13,14 @@ type IntroProps = {
         About A. B. CDEF</h3>
         <div className="w-10/12 flex items-center">
 
-        <div className="w-1/2 justify-center items-center">
+        <div className="w-1/3 justify-center items-center">
         <Image 
           src={placeholder}
           alt="Picture of the author"
           height={400}
         className="object-cover"/>
 </div>     
- <div className="flex flex-col w-1/2 justify-center items-center jakarta-font">
+ <div className="flex flex-col w-2/3 justify-center items-center jakarta-font">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos molestias tempora dolore sit quis sed, praesentium vitae eos iste odit modi. Aliquid distinctio nesciunt illo enim natus laboriosam ea. Reprehenderit.
         Ut totam harum minus, iusto corrupti sequi tenetur voluptas nobis maiores provident exercitationem eum nisi consectetur autem reprehenderit. Fugiat aliquid itaque odio!
         </p>
