@@ -8,6 +8,7 @@ type IntroProps = {
   export function Intro() {
     
     return (
+      <div className="w-full bg-darkerlight dark:bg-lightdarkish">
 <div className="flex flex-col justify-center max-w-xs p-6 shadow-md rounded-xl sm:px-12 dark:bg-gray-900 dark:text-gray-100">
 <Image
   src="https://source.unsplash.com/150x150/?portrait?3"
@@ -44,6 +45,7 @@ type IntroProps = {
 			</a>
 		</div>
 	</div>
+</div>
 </div>
       );
   }
