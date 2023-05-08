@@ -8,7 +8,7 @@ type IntroProps = {
   export function Intro() {
     
     return (
-        <div className="bg-darkerlight dark:bg-lightdarkish text-darkish dark:text-white flex flex-col justify-center h-auto py-20 w-full">
+        <div className="bg-darkerlight dark:bg-lightdarkish text-darkish dark:text-white flex flex-col items-center justify-center h-auto py-20 w-full">
         <h3 className="font-inter text-5xl font-black uppercase bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent">
         About A. B. CDEF</h3>
         <div className="w-10/12 flex items-center">
