@@ -11,12 +11,12 @@ import { Header } from '@/components/header';
 import { Search } from '@/components/search';
 import { cn } from '@/lib/utils';
 
-const fontSans = Plus Jakarta Sans({
+const fontSans = Red_Hat_Display({
   subsets: ['latin'],
   variable: '--font-red-hat',
 });
 
-const fontSerif = Inter({
+const fontSerif = Newsreader({
   subsets: ['latin'],
   variable: '--font-newsreader',
 });

@@ -34,7 +34,7 @@ module.exports = {
       },
       fontFamily: {
         // uses @next/font; see app/layout.tsx
-        sans: ['var(--font-red-hat)'],
+        sans: ['Plus Jakarta Sans'],
         serif: ['var(--font-newsreader)'],
       },
       gridTemplateRows: {
