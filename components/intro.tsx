@@ -8,7 +8,7 @@ type IntroProps = {
   export function Intro() {
     
     return (
-      <div className="w-full p-10 bg-darkerlight dark:bg-lightdarkish">
+      <div className="max-w-screen-lg p-10 bg-darkerlight dark:bg-lightdarkish">
 <div className="flex flex-col w-1/3 justify-center max-w-xs s-boxshadow dark:shadow-none bg-white dark:bg-lightdarkish p-6 shadow-md rounded-xl sm:px-12 dark:text-gray-100">
 <Image
   src={placeholder}
