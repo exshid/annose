@@ -11,6 +11,7 @@ import { Contact } from '@/components/contact';
 import {PhotoCard} from '@/components/photocard';
 import {Intro} from '@/components/intro';
 import {Service} from '@/components/service';
+import { motion, useScroll, useSpring } from "framer-motion";
 
 import {Books} from '@/components/books';
 
@@ -41,9 +42,18 @@ export default function Home() {
   const latestPosts = allPosts
     .sort((a, b) => compareDesc(new Date(a.date), new Date(b.date)))
     .slice(0, 3);
-
+    const { scrollYProgress } = useScroll();
+    const scaleX = useSpring(scrollYProgress, {
+      stiffness: 100,
+      damping: 30,
+      restDelta: 0.001
+    });
+  
   return (
-    <div className="flex h-full flex-col pb-12">
+    <>
+    <motion.div className="progress-bar" style={{ scaleX }} />
+
+<div className="flex h-full flex-col pb-12">
 <PhotoCard/>
 <Intro/>
 <Books/>
@@ -62,6 +72,9 @@ export default function Home() {
         />
       </section>
       */} 
+
     </div>
+    </>
+
   );
 }

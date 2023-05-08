@@ -1,4 +1,4 @@
-{/*import { notFound } from 'next/navigation';
+import { notFound } from 'next/navigation';
 import { type Metadata } from 'next/types';
 import { allPages } from 'contentlayer/generated';
 
@@ -62,4 +62,3 @@ export default async function Page({ params }: PageProps) {
     </div>
   );
 }
-*/}
