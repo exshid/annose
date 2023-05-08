@@ -8,7 +8,7 @@ type IntroProps = {
   export function Intro() {
     
     return (
-        <div className="bg-lightdarkish flex justify-center h-screen w-full">
+        <div className="bg-darkerlight dark:bg-lightdarkish text-darkish dark:text-white flex justify-center h-screen w-full">
         <div className="w-8/12 flex">
      
  <div className="flex flex-col w-1/2 justify-center items-center">

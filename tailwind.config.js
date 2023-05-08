@@ -26,6 +26,7 @@ module.exports = {
         'darkish': '#141414',
         'moredarkish':'#161616',
         'lightdarkish': '#212226',
+        'darkerlight': '#F9F9F9',
         accent: {
           DEFAULT: blogConfig.theme?.accentColor?.light || colors.rose[700],
           dark: blogConfig.theme?.accentColor?.dark || colors.rose[300],
