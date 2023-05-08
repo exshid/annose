@@ -5,7 +5,6 @@ import { allPosts } from 'contentlayer/generated';
 import { motion, useScroll, useSpring } from "framer-motion";
 import { blogConfig } from '@/config';
 import { Analytics } from '@/components/analytics';
-import { FontStyleProvider } from '@/components/font-style-provider';
 import { Footer } from '@/components/footer';
 import { Header } from '@/components/header';
 import { Search } from '@/components/search';
@@ -76,7 +75,6 @@ export default function RootLayout({ children }: RootLayoutProps) {
     >
       <head />
       <body className="min-h-screen w-full bg-white dark:bg-darkish">
-        <FontStyleProvider>
         <>
       <motion.div className="progress-bar" style={{ scaleX }} />
 
@@ -92,7 +90,6 @@ export default function RootLayout({ children }: RootLayoutProps) {
            <Search posts={allPosts} />
           <Analytics />
         </>
-        </FontStyleProvider>
       </body>
     </html>
   );
