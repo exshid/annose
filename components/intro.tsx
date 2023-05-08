@@ -13,7 +13,7 @@ type IntroProps = {
         Abou A. B. CDEF</h3>
 
       <div className="w-full flex justify-around p-10">
-<div className="flex flex-col w-1/4 justify-center s-boxshadow dark:shadow-none bg-white dark:bg-lightdarkish p-6 sm:px-12 dark:text-gray-100">
+<div className="flex flex-col w-2/6 justify-center s-boxshadow dark:shadow-none bg-white dark:bg-lightdarkish p-6 sm:px-12 dark:text-gray-100">
 <Image
   src={placeholder}
   alt="picture of the author"
