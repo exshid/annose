@@ -38,16 +38,16 @@ export default function About() {
     .slice(0, 3);
 
   return (
-    <div className="flex h-full flex-col pb-12">
-<div className="w-1/3 bg-lightdarkish"><Image
+    <div className="flex h-full py-12">
+<div className="w-1/3 text-darkish dark:text-white"><Image
   src={placeholder}
   alt="picture of the author"
-  width={450}
-  height={450}
-  className="rounded-full dark:bg-gray-500 bg-gradient-to-r from-rose-600 to-rose-900 aspect-square"
-/>
+  width={550}
+  height={650}
+  />
 </div>
-<div className="w-2/3 bg-lightdarkish">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto iure facilis velit modi corrupti ratione et non libero enim dolore, quia excepturi vel ad delectus sit maxime tenetur esse eos.<br/>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis provident accusantium aut doloremque, quam corporis exercitationem quae atque quas cupiditate id? Earum autem fugiat modi. Dignissimos ipsa alias enim. Nemo?</div>
+<div className="w-2/3 text-darkish dark:text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non repudiandae sequi ullam delectus fugit? Pariatur corrupti praesentium nesciunt? Reiciendis voluptatibus delectus a laudantium beatae illo, ab quaerat animi facilis neque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto iure facilis velit modi corrupti ratione et non libero enim dolore, quia excepturi vel ad delectus sit maxime tenetur esse eos.<br/>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis provident accusantium aut doloremque, quam corporis exercitationem quae atque quas cupiditate id? Earum autem fugiat modi. Dignissimos ipsa alias enim. Nemo?</div>
     </div>
+  
   );
 }
