@@ -35,7 +35,7 @@ export const metadata: Metadata = {
 export default function About() {
 
   return (
-    <div className="flex h-full justify-beteen py-24">
+    <div className="flex h-full justify-between py-24">
 <div className="w-2/6 text-darkish dark:text-white"><Image
   src={placeholder}
   alt="picture of the author"
