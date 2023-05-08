@@ -78,6 +78,7 @@ dependencies:
   contentlayer-mock: 0.0.11
   date-fns: 2.29.3
   eslint: 8.34.0
+  framer-motion: 10.12.8
   eslint-config-next: 13.2.3_7kw3g6rralp5ps6mg3uyzz6azm
   grapheme-splitter: 1.0.4
   hastscript: 7.2.0
