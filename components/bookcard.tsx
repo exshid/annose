@@ -19,8 +19,7 @@ type BookCardProps = {
       <Image src={cover} height={555} alt="cover of the book" width={355}/>
 <div className="h-full flex-col justify-evenly w-max p-5 flex text-white dark:text-darkish bg-gradient-to-r from-emerald-400 to-cyan-400"><h3 className="font-inter font-black text-5xl">Book Title</h3><p className="jakarta-font">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos nihil fugit distinctio ut nemo corrupti. Aperiam, distinctio a obcaecati dolore ipsum, harum minus facere deleniti ullam cumque officiis ea minima!</p>
 <div>
-    <button className="uppercase block w-full p-4 text-lg dark:bg-darkish bg-white rounded-full focus:outline-none"><p className="uppercase font-bold text-lg bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent">Read More</p></button>
-    <button className="uppercase block w-full p-4 text-lg dark:bg-darkish bg-white rounded-full mt-4 focus:outline-none"><p className="uppercase font-bold text-lg bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent">More books</p></button>
+    <button className="transition hover:-translate-y-[2px] uppercase block w-full p-4 text-lg dark:bg-darkish bg-white rounded-full focus:outline-none"><p className="uppercase font-bold text-lg bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent">Read More</p></button>
 
                 </div>
 </div>
