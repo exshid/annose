@@ -58,21 +58,14 @@ export function HeroSection() {
         'flex flex-col-reverse items-start h-full w-3/5 justify-center px-28 relative',
       )}
     >
-<p className="jakarta-font text-darkish dark:text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <Typist
-        typingDelay={0}
-        splitter={splitter}
-        pause={isPaused}
-        onTypingDone={() => dispatch({ type: 'setDone', payload: 'title' })}
-      >
+<p data-aos="fade-left" data-aos-once="true" className="jakarta-font text-darkish dark:text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
          <h1 data-aos="fade-right"
      data-aos-once="true"
 className='hero-font font-black uppercase bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent'>
           A. B. CDEF
           </h1>
-      </Typist>
       <h2 className="font-inter text-center flex justify-start min-h-[10vh] min-w-[30vw] text-5xl font-black uppercase bg-gradient-to-r from-rose-600 to-rose-900 bg-clip-text text-transparent">
-        {titleDone && (
+        
           <Typist
             typingDelay={1500}
             startDelay={100}
@@ -83,8 +76,7 @@ className='hero-font font-black uppercase bg-gradient-to-r from-emerald-400 to-c
           >
             {' '}
           </Typist>
-        )}
-        {subtitleDone && (
+         {subtitleDone && (
           <Typist typingDelay={100} backspaceDelay={75} pause={isPaused} loop>
             {blogConfig.topics.map((topic) => (
               <span key={topic}>
