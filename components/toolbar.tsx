@@ -16,7 +16,7 @@ type ToolbarProps = {
 export function Toolbar({ fontControls, className }: ToolbarProps) {
   const toggleSearch = useSearchStore((state) => state.toggleSearch);
   const isSearching = useSearchStore((state) => state.isSearching);
-
+const completedProject = false;
   const {
     isDark,
     isSerif,
@@ -52,6 +52,8 @@ export function Toolbar({ fontControls, className }: ToolbarProps) {
         className,
       )}
     >
+  {/* 
+{completedProject && (
       <button onClick={toggleSearch}>
         <Search
           id="search"
@@ -64,7 +66,7 @@ export function Toolbar({ fontControls, className }: ToolbarProps) {
         />
         <Tooltip anchorId="search" />
       </button>
-
+)}
       {fontControls && (
         <>
           <button
@@ -114,7 +116,9 @@ export function Toolbar({ fontControls, className }: ToolbarProps) {
         />
         <Tooltip anchorId="serif" place="bottom" />
       </button>
-      <button onClick={toggleDarkAndApply} id="theme-toggle">
+  */}
+
+      <button onClick={toggleDarkAndApply} id="theme-toggle" className="transition hover:-translate-y-px">
         {isDark ? (
           <Moon
             className="icon-base h-5 w-5 xs:h-6 xs:w-6"

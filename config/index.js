@@ -8,20 +8,20 @@
 /** @type {import('./types').BlogConfig} */
 const blogConfig = {
   url: 'https://blog.kfirfitousi.com',
-  title: '‹kfir/blog›',
-  titleParts: ['kfir', 'blog'],
-  author: 'Kfir Fitousi',
+  title: 'portfolio',
+  titleParts: ['portfolio', 'blog'],
+  author: 'Alan Parniyan',
   pages: {
     home: {
-      title: 'Web Development Blog by Kfir Fitousi',
+      title: 'portfolio',
       description:
-        "My name is Kfir and I'm a Full Stack Developer. Welcome to my dev blog! I write about Web Development and other topics I'm interested in.",
+        "portfolio.",
     },
     posts: {
       url: '/posts',
       title: 'Posts',
       description:
-        "All my blog posts. I write about Web Development and other topics I'm interested in.",
+        "All my blog posts.",
     },
   },
   theme: {
@@ -46,12 +46,11 @@ const blogConfig = {
     },
   },
   footerLinks: {
-    twitter: 'https://twitter.com/kp2c',
-    github: 'https://github.com/kfirfitousi',
-    linkedin: 'https://www.linkedin.com/in/kfirp',
-    email: 'kfirfitousi@gmail.com',
-    storybook: 'https://story.blog.kfirfitousi.com',
-    buyMeAPizza: 'https://buymeacoffee.com/kfirfitousi',
+    twitter: 'https://twitter.com/',
+    facebook: 'https://facebook.com/',
+    email: 'email@example.com',
+    snapchat:'https://snapchat.com/',
+    pinterest:'https://pinterest.com/'
   },
   topics: [
     'Author',

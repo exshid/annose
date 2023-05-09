@@ -16,15 +16,36 @@ export function NavigationBar({ className }: NavigationBarProps) {
         className,
       )}
     >
-      <Link href="/">
-        <BlogTitle />
+      <Link href="/"
+      className="transition hover:-translate-y-px font-bold bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent hover:text-accent dark:hover:text-accent-dark">
+        Home
       </Link>
       <Link
-        href="/posts"
-        className="font-semibold hover:text-accent dark:hover:text-accent-dark"
+        href="/"
+        className="transition hover:-translate-y-px font-semibold hover:text-accent dark:hover:text-accent-dark"
       >
-        Posts
+        Books
       </Link>
+      <Link
+        href="/"
+        className="transition hover:-translate-y-px font-semibold hover:text-accent dark:hover:text-accent-dark"
+      >
+        About
+      </Link>
+      <Link
+        href="/"
+        className="transition hover:-translate-y-px font-semibold hover:text-accent dark:hover:text-accent-dark"
+      >
+        Contact
+      </Link>
+
+      <Link
+        href="/"
+        className="transition hover:-translate-y-px font-semibold hover:text-accent dark:hover:text-accent-dark"
+      >
+        Service for Authors
+      </Link>
+
       {allPages.map((page) => (
         <Link
           href={page.url}
