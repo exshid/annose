@@ -27,7 +27,7 @@ return (
     />
     
       <div className="flex flex-col h-screen bg-darkerlight dark:bg-lightdarkish justify-center items-center">
-          <h3 className="animate__animated animate__bounce font-inter text-5xl font-black uppercase bg-gradient-to-r from-rose-600 to-rose-900 bg-clip-text text-transparent">
+          <h3 className="font-inter text-5xl font-black uppercase bg-gradient-to-r from-rose-600 to-rose-900 bg-clip-text text-transparent">
         About A. B. CDEF</h3>
 
       <div className="w-full flex justify-evenly p-10">
