@@ -25,7 +25,7 @@ type ContactProps = {
                 <p  data-aos="fade-up" data-aos-once="true" className="text-3xl my-4 text-darkish dark:text-white">
               SIGN UP FOR MY NEWSLETTER
                 </p>
-                <form action="" className="sm:w-2/3 w-full px-4 lg:px-0 mx-auto">
+                <form data-aos="fade-up" data-aos-once="true" action="" className="sm:w-2/3 w-full px-4 lg:px-0 mx-auto">
                     <div className="pb-2 pt-4">
                         <input type="email" name="email" id="email" placeholder="Email" className="dark:bg-darkish block w-full p-4 border dark:border-white text-lg rounded-sm"/>
                     </div>
@@ -33,8 +33,7 @@ type ContactProps = {
                         <input className="block w-full p-4 text-lg border dark:border-white rounded-sm dark:bg-darkish" type="text" name="name" id="name" placeholder="Name" />
                     </div>
                     <div className="px-4 pb-2 pt-4">
-                        <button data-aos="fade-up" data-aos-once="true"
-     data-aos-anchor-placement="bottom-bottom" className="uppercase block w-full p-4 text-lg text-white rounded-full bg-gradient-to-r from-emerald-400 to-cyan-400 focus:outline-none">Send</button>
+                        <button className="uppercase block w-full p-4 text-lg text-white rounded-full bg-gradient-to-r from-emerald-400 to-cyan-400 focus:outline-none">Send</button>
                     </div>
 
                     <div className="p-4 text-center inset-x-0 flex justify-center space-x-4 mt-16 lg:hidden ">
