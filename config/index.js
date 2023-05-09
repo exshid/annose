@@ -49,8 +49,6 @@ const blogConfig = {
     twitter: 'https://twitter.com/',
     facebook: 'https://facebook.com/',
     email: 'email@example.com',
-    snapchat:'https://snapchat.com/',
-    pinterest:'https://pinterest.com/'
   },
   topics: [
     'Author',

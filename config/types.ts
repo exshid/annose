@@ -123,11 +123,7 @@ export type BlogConfig = {
   footerLinks?: {
     twitter?: string;
     facebook?: string;
-    github?: string;
-    linkedin?: string;
     email?: string;
-    storybook?: string;
-    buyMeAPizza?: string;
   };
   /**
    * Topics to show in the hero section typing animation.
