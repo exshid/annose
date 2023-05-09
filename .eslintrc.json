@@ -3,7 +3,7 @@
   "plugins": ["eslint-plugin-tailwindcss"],
   "rules": {
     "tailwindcss/classnames-order": 0,
-    "tailwindcss/no-custom-classname": ["error", { "callees": ["cn"] }],
+    "tailwindcss/no-custom-classname": "off",
     "tailwindcss/no-contradicting-classname": ["error", { "callees": ["cn"] }],
     "tailwindcss/enforces-shorthand": ["error", { "callees": ["cn"] }]
   }
