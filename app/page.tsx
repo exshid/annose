@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { motion, useScroll, useSpring } from "framer-motion";
 import { type Metadata } from 'next/types';
 import { allPosts } from 'contentlayer/generated';
 import { compareDesc } from 'date-fns';
