@@ -68,10 +68,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
     >
       <head />
       <body className="min-h-screen w-full bg-white dark:bg-darkish">
-
-        <section className="fixed top-0 z-30 w-11/12 sm:w-full">
             <Header />
-          </section>
           <main className="w-11/12 sm:w-full">
             {children}
           </main>
