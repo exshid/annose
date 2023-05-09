@@ -38,6 +38,7 @@
     "react-typist-component": "^1.0.5",
     "react-wrap-balancer": "^0.4.0",
     "rehype-autolink-headings": "^6.1.1",
+    "daisyui":"latest",
     "rehype-pretty-code": "^0.9.4",
     "rehype-slug": "^5.1.0",
     "remark-gfm": "^3.0.1",
