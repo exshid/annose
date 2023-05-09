@@ -30,18 +30,18 @@ export function Header() {
   }, []);
 
   return (
-    <header
+    <nav
       ref={headerRef}
       className={cn(
         headerRef.current && scrollTop > headerRef.current.clientHeight
-          ? 'z-50 fixed top-0 w-11/12 sm:w-full	border-b border-b-slate-300 text-darkish dark:text-white bg-white dark:bg-darkish py-2 dark:border-b-slate-600'
+          ? 'border-b border-b-slate-300 text-darkish dark:text-white bg-white dark:bg-darkish py-2 dark:border-b-slate-600'
           : 'py-8 bg-transparent ',
-        'flex flex-row items-center fixed top-0 w-11/12 sm:w-full	justify-between px-4 xs:px-8 text-darkish dark:text-white',
+        'flex flex-row items-center justify-between px-4 xs:px-8 text-darkish dark:text-white',
         'transition-[padding,background-color] duration-300 ease-in-out'
       )}
     >
       <NavigationBar className="flex-grow max-xs:mr-2" />
       <Toolbar fontControls={isPostPage} className="ml-auto" />
-    </header>
+    </nav>
   );
 }

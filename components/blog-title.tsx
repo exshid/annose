@@ -15,9 +15,6 @@ export function BlogTitle({ className }: BlogTitleProps) {
         className,
       )}
     >
-      {blogConfig.titleParts && (
-        <></>
-      )}
       <h1
         className={cn(
           'mx-0.5 whitespace-nowrap text-center font-semibold drop-shadow-sm',
@@ -36,9 +33,6 @@ export function BlogTitle({ className }: BlogTitleProps) {
           blogConfig.title
         )}
       </h1>
-      {blogConfig.titleParts && (
-        <div >›</div>
-      )}
     </div>
   );
 }

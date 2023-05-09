@@ -10,7 +10,7 @@ type NavigationBarProps = {
 
 export function NavigationBar({ className }: NavigationBarProps) {
   return (
-    <nav
+    <div
       className={cn(
                 'flex h-8 flex-row items-center space-x-2 max-xs:text-sm sm:space-x-4 text-darkish dark:text-white',
         className,
@@ -34,6 +34,6 @@ export function NavigationBar({ className }: NavigationBarProps) {
           {page.title}
         </Link>
       ))}
-    </nav>
+    </div>
   );
 }
