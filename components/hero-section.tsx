@@ -75,7 +75,7 @@ className='hero-font font-black uppercase bg-gradient-to-r from-emerald-400 to-c
       <h2 className="font-inter text-center flex justify-start min-h-[10vh] min-w-[30vw] text-5xl font-black uppercase bg-gradient-to-r from-rose-600 to-rose-900 bg-clip-text text-transparent">
         {titleDone && (
           <Typist
-            typingDelay={3500}
+            typingDelay={1500}
             startDelay={100}
             pause={isPaused}
             onTypingDone={() => {
