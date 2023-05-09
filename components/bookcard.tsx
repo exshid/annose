@@ -23,7 +23,7 @@ type BookCardProps = {
 
 
               <div className="shadow-2xl rounded-lg overflow-hidden	flex w-[900px] h-[555px] bg-cover bg-center">
-      <Image alt="" src={cover} height={555} alt="cover of the book" width={355}/>
+      <Image src={cover} height={555} alt="cover of the book" width={355}/>
 <div className="h-full flex-col justify-evenly w-max p-5 flex text-white bg-gradient-to-r from-emerald-400 to-cyan-400"><h3 className="font-inter font-black text-5xl">Book Title</h3><p className="jakarta-font">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos nihil fugit distinctio ut nemo corrupti. Aperiam, distinctio a obcaecati dolore ipsum, harum minus facere deleniti ullam cumque officiis ea minima!</p>
 <div>
     <button className="uppercase block w-full p-4 text-lg bg-white rounded-full focus:outline-none"><p className="uppercase 
@@ -61,7 +61,7 @@ type BookCardProps = {
 
 
               <div className="shadow-2xl rounded-lg overflow-hidden	flex w-[900px] h-[555px] bg-cover bg-center">
-      <Image alt="" src={cover} height={555} alt="cover of the book" width={355}/>
+      <Image src={cover} height={555} alt="cover of the book" width={355}/>
 <div className="h-full flex-col justify-evenly w-max p-5 flex text-white bg-gradient-to-r from-emerald-400 to-cyan-400"><h3 className="font-inter font-black text-5xl">Book Title</h3><p className="jakarta-font">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos nihil fugit distinctio ut nemo corrupti. Aperiam, distinctio a obcaecati dolore ipsum, harum minus facere deleniti ullam cumque officiis ea minima!</p>
 <div>
     <button className="uppercase block w-full p-4 text-lg bg-white rounded-full focus:outline-none"><p className="uppercase 
