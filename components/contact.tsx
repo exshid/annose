@@ -22,7 +22,7 @@ type ContactProps = {
 
             <div className="w-full py-6 z-20">
                 
-                <p  data-aos="fade-left" data-aos-once="true" className="text-3xl my-4 text-darkish dark:text-white">
+                <p  data-aos="fade-up" data-aos-once="true" className="text-3xl my-4 text-darkish dark:text-white">
               SIGN UP FOR MY NEWSLETTER
                 </p>
                 <form action="" className="sm:w-2/3 w-full px-4 lg:px-0 mx-auto">
