@@ -14,12 +14,9 @@ type BookCardProps = {
             }}>
           </div>
           <div className="absolute inset-0 z-20 flex items-center justify-center h-screen w-full bg-gray-900 bg-opacity-75"></div>
-          <div className="absolute inset-0  z-30  flex flex-col items-center justify-center backdrop-blur">
-              <div className="shadow-2xl rounded-lg w-4/5 h-96 bg-cover bg-center"
-                  style={{
-                    backgroundImage: "url('https://wallpapercave.com/wp/wp6689710.jpg')"
-                  }}>
-      
+          <div className="absolute inset-0 z-30  flex flex-col items-center justify-center backdrop-blur">
+              <div className="shadow-2xl rounded-lg w-4/5 h-[555px] bg-cover bg-center">
+      <Image src={cover} height={555} alt="cover of the book" width={355}/>
                   <div className="grid grid-cols-12 gap-1">
                       <div className="relative my-6 px-8 col-span-12 sm:col-span-12 md:col-span-7 lg:col-span-7 xxl:col-span-7">
                           <div className="border-l-4 border-gray-400 py-20 px-5 mx-2 absolute left-0">
