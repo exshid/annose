@@ -36,7 +36,7 @@ export function Header() {
         headerRef.current && scrollTop > headerRef.current.clientHeight
           ? 'border-b border-b-slate-300 text-darkish dark:text-white bg-white dark:bg-darkish py-2 dark:border-b-slate-600'
           : 'py-8 bg-transparent ',
-        'flex flex-row items-center justify-between px-4 xs:px-8',
+        'flex flex-row items-center justify-between px-4 xs:px-8 text-darkish dark:text-white',
         'transition-[padding,background-color] duration-300 ease-in-out'
       )}
     >

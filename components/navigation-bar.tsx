@@ -12,7 +12,7 @@ export function NavigationBar({ className }: NavigationBarProps) {
   return (
     <nav
       className={cn(
-        'flex h-8 flex-row items-center space-x-2 max-xs:text-sm sm:space-x-4',
+                'flex h-8 flex-row items-center space-x-2 max-xs:text-sm sm:space-x-4 text-darkish dark:text-white',
         className,
       )}
     >
