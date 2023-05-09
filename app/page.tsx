@@ -1,7 +1,4 @@
 import React from 'react';
-const { motion, useScroll, useSpring } = require("framer-motion");
-
-
 import { type Metadata } from 'next/types';
 import { allPosts } from 'contentlayer/generated';
 import { compareDesc } from 'date-fns';
@@ -42,28 +39,15 @@ export const metadata: Metadata = {
 
 export default function Home() {
 
-  const { scrollYProgress } = useScroll();
-  const scaleX = useSpring(scrollYProgress, {
-    stiffness: 100,
-    damping: 30,
-    restDelta: 0.001
-  });
-
-
   const latestPosts = allPosts
     .sort((a, b) => compareDesc(new Date(a.date), new Date(b.date)))
     .slice(0, 3);
     
   return (
-    <>
-      <motion.div className="progress-bar" style={{ scaleX }} />
-      <h1>
-        <code>useScroll</code> with spring smoothing
-      </h1>
 
 <div className="flex h-full flex-col pb-12">
 <PhotoCard/>
-<Intro/>
+<Intro />
 <Books/>
 <Service/>
 <Contact/>
@@ -81,7 +65,6 @@ export default function Home() {
       */} 
 
     </div>
-      </>
 
   );
 }
