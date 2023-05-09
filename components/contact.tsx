@@ -13,18 +13,16 @@ type ContactProps = {
         <div className="lg:flex w-1/2 hidden bg-gradient-to-r from-emerald-400 to-cyan-400 relative items-center">
             <div className="absolute bg-darkish opacity-60 inset-0 z-0"></div>
             <div className="w-full px-24 z-10">
-                <h1 className="text-5xl font-bold text-left tracking-wide">Get In Touch</h1>
-                <p className="text-3xl my-4">Email me at<br/> email@example.com</p>
+                <h1 data-aos="fade-right" data-aos-once="true" className="text-5xl font-bold text-left tracking-wide">Get In Touch</h1>
+                <p data-aos="fade-right" data-aos-once="true" className="text-3xl my-4">Email me at<br/> email@example.com</p>
             </div>
 
         </div>
         <div className="lg:w-1/2 w-full flex items-center justify-center text-center md:px-16 px-0 z-0 bg-white dark:bg-darkish text-darkish dark:text-white">
 
             <div className="w-full py-6 z-20">
-                <h1 className="my-6">
-                </h1>
-
-                <p className="text-3xl my-4 text-darkish dark:text-white">
+                
+                <p  data-aos="fade-left" data-aos-once="true" className="text-3xl my-4 text-darkish dark:text-white">
               SIGN UP FOR MY NEWSLETTER
                 </p>
                 <form action="" className="sm:w-2/3 w-full px-4 lg:px-0 mx-auto">
