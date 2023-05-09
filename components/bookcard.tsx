@@ -15,9 +15,9 @@ type BookCardProps = {
           </div>
           <div className="absolute inset-0 z-20 flex items-center justify-center h-screen w-full bg-gray-900 bg-opacity-75"></div>
           <div className="absolute inset-0 z-30  flex flex-col items-center justify-center backdrop-blur">
-              <div className="shadow-2xl rounded-lg w-[710px] h-[555px] bg-cover bg-center">
+              <div className="shadow-2xl rounded-lg flex w-[840px] h-[555px] bg-cover bg-center">
       <Image src={cover} height={555} alt="cover of the book" className="absolute" width={355}/>
-<div className="h-full w-2/4 bg-gradient-to-r from-emerald-400 to-cyan-400">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos nihil fugit distinctio ut nemo corrupti. Aperiam, distinctio a obcaecati dolore ipsum, harum minus facere deleniti ullam cumque officiis ea minima!</div>
+<div className="h-full w-max text-white bg-gradient-to-r from-emerald-400 to-cyan-400">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos nihil fugit distinctio ut nemo corrupti. Aperiam, distinctio a obcaecati dolore ipsum, harum minus facere deleniti ullam cumque officiis ea minima!</div>
               </div>
           </div>
 
