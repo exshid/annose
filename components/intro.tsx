@@ -1,3 +1,4 @@
+'use client';
 // @ts-nocheck
 import AOS from 'aos';
 import 'aos/dist/aos.css';
