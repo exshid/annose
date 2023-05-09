@@ -1,7 +1,6 @@
 'use client';
 
 import Image from 'next/image'
-import { useSpring, animated } from '@react-spring/web'
 import placeholder from '../public/images/placeholder.svg'
 import { HeroSection } from '@/components/hero-section';
 type IntroProps = {
@@ -9,25 +8,12 @@ type IntroProps = {
   };
   
   export function Intro() {
-    const springs = useSpring({
-      from: { x: 0 },
-      to: { x: 100 },
-    })
-  
+    
 return (
 <>
-<animated.div
-      style={{
-        width: 80,
-        height: 80,
-        background: '#ff6d6d',
-        borderRadius: 8,
-        ...springs,
-      }}
-    />
     
       <div className="flex flex-col h-screen bg-darkerlight dark:bg-lightdarkish justify-center items-center">
-          <h3 className="font-inter text-5xl font-black uppercase bg-gradient-to-r from-rose-600 to-rose-900 bg-clip-text text-transparent">
+          <h3 data-aos="fade-right" className="font-inter text-5xl font-black uppercase bg-gradient-to-r from-rose-600 to-rose-900 bg-clip-text text-transparent">
         About A. B. CDEF</h3>
 
       <div className="w-full flex justify-evenly p-10">
