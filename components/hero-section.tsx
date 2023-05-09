@@ -1,4 +1,8 @@
 'use client';
+// @ts-nocheck
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import React,{useEffect} from "react";
 
 import { useReducer } from 'react';
 import GraphemeSplitter from 'grapheme-splitter';
@@ -45,6 +49,9 @@ export function HeroSection() {
       isPaused: false,
     },
   );
+  useEffect(() => {
+    AOS.init();
+  }, [])
 
   return (
     <div
@@ -52,14 +59,17 @@ export function HeroSection() {
         'flex flex-col-reverse items-start h-full w-3/5 justify-center px-28 relative',
       )}
     >
+<p className="jakarta-font text-darkish dark:text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       <Typist
         typingDelay={0}
         splitter={splitter}
         pause={isPaused}
         onTypingDone={() => dispatch({ type: 'setDone', payload: 'title' })}
       >
-<p className="jakarta-font text-darkish dark:text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-         <h1 className='hero-font font-black uppercase bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent'>
+         <h1 data-aos="fade-right"
+     data-aos-anchor-placement="bottom-center"
+     data-aos-once="true"
+className='hero-font font-black uppercase bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent'>
           A. B. CDEF
           </h1>
       </Typist>
