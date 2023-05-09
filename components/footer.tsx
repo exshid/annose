@@ -3,8 +3,6 @@
 import {
   AtSign,
   Copyright,
-  Pinterest,
-  Snapchat,
   Facebook,
   Twitter,
 } from 'lucide-react';
@@ -46,36 +44,6 @@ export function Footer() {
               aria-label="My Twitter profile"
             />
             <Tooltip anchorId="twitter" />
-          </a>
-        )}
-        {footerLinks?.pinterest && (
-          <a
-            href={footerLinks.pinterest}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Pinterest
-              id="pinterest"
-              className="icon-base"
-              data-tooltip-content="My pinterest profile"
-              aria-label="My pinterest profile"
-            />
-            <Tooltip anchorId="pinterest" />
-          </a>
-        )}
-        {footerLinks?.snapchat && (
-          <a
-            href={footerLinks.snapchat}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Snapchat
-              id="snapchat"
-              className="icon-base"
-              data-tooltip-content="My snapchat profile"
-              aria-label="My snapchat profile"
-            />
-            <Tooltip anchorId="snapchat" />
           </a>
         )}
         
