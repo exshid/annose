@@ -16,19 +16,18 @@ export function BlogTitle({ className }: BlogTitleProps) {
       )}
     >
       {blogConfig.titleParts && (
-        <div className="text-accent dark:text-accent-dark">‹</div>
+        <></>
       )}
       <h1
         className={cn(
           'mx-0.5 whitespace-nowrap text-center font-semibold drop-shadow-sm',
-          'text-slate-800 hover:text-accent',
-          'dark:text-rose-50 dark:hover:text-accent-dark',
+          'text-darkish dark:text-white',
         )}
       >
         {blogConfig.titleParts ? (
           <>
             {blogConfig.titleParts[0]}
-            <span className="px-px font-light text-accent dark:text-accent-dark">
+            <span className="px-px font-light">
               /
             </span>
             {blogConfig.titleParts[1]}
@@ -38,7 +37,7 @@ export function BlogTitle({ className }: BlogTitleProps) {
         )}
       </h1>
       {blogConfig.titleParts && (
-        <div className="text-accent dark:text-accent-dark">›</div>
+        <div >›</div>
       )}
     </div>
   );
