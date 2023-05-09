@@ -1,3 +1,5 @@
+'use client';
+
 import Image from 'next/image'
 import { useSpring, animated } from '@react-spring/web'
 import placeholder from '../public/images/placeholder.svg'
