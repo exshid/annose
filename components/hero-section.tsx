@@ -66,9 +66,7 @@ export function HeroSection() {
         pause={isPaused}
         onTypingDone={() => dispatch({ type: 'setDone', payload: 'title' })}
       >
-         <h1 data-aos="fade-right"
-     data-aos-once="true"
-className='hero-font font-black uppercase bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent'>
+         <h1 className='hero-font font-black uppercase bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent'>
           A. B. CDEF
           </h1>
       </Typist>
