@@ -14,7 +14,7 @@ type BookCardProps = {
             }}>
           </div>
           
-<div className="grid grid-cols-2 w-full w-3/5 grid-rows-1 gap-0">
+<div className="grid grid-cols-2 h-3/5 w-3/5 grid-rows-1 gap-0">
     <div className="bg-white">1</div>
     <div className="bg-darkish">2</div>
 </div>
