@@ -39,11 +39,25 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
+
+  const { scrollYProgress } = useScroll();
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001
+  });
+
+
   const latestPosts = allPosts
     .sort((a, b) => compareDesc(new Date(a.date), new Date(b.date)))
     .slice(0, 3);
     
   return (
+    <>
+      <motion.div className="progress-bar" style={{ scaleX }} />
+      <h1>
+        <code>useScroll</code> with spring smoothing
+      </h1>
 
 <div className="flex h-full flex-col pb-12">
 <PhotoCard/>
@@ -53,18 +67,19 @@ export default function Home() {
 <Contact/>
  {/* 
       <section className="flex w-full flex-col">
-        {latestPosts.map((post) => (
-          <PostCard key={post._id} post={post} />
+      {latestPosts.map((post) => (
+        <PostCard key={post._id} post={post} />
         ))}
         <Button          href="/posts"
-          label="All Posts"
-          className="place-self-end"
-          icon={<FileText className="h-4 w-4" />}
+        label="All Posts"
+        className="place-self-end"
+        icon={<FileText className="h-4 w-4" />}
         />
-      </section>
+        </section>
       */} 
 
     </div>
+      </>
 
   );
 }
