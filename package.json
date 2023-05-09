@@ -24,7 +24,7 @@
     "contentlayer-mock": "^0.0.11",
     "date-fns": "^2.29.3",
     "eslint": "8.34.0",
-    "animate.css":"latest",
+    "@react-spring/web":"latest",
     "eslint-config-next": "13.2.3",
     "grapheme-splitter": "^1.0.4",
     "hastscript": "^7.2.0",
