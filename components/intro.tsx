@@ -1,7 +1,7 @@
 'use client';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-
+import React,{useEffect} from "react";
 import Image from 'next/image'
 import placeholder from '../public/images/placeholder.svg'
 import { HeroSection } from '@/components/hero-section';
