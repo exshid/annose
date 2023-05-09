@@ -56,7 +56,7 @@ export function Toolbar({ fontControls, className }: ToolbarProps) {
         <Search
           id="search"
           className={cn(
-            'icon-base h-5 w-5 mix-blend-color-dodge xs:h-6 xs:w-6',
+            'icon-base h-5 w-5 xs:h-6 xs:w-6',
             isSearching && 'text-accent/60 dark:text-accent-dark/80',
           )}
           data-tooltip-content="Search Posts"
@@ -75,7 +75,7 @@ export function Toolbar({ fontControls, className }: ToolbarProps) {
             <MinusSquare
               id="decrease-font-size"
               className={cn(
-                'icon-base h-5 w-5 mix-blend-color-dodge xs:h-6 xs:w-6',
+                'icon-base h-5 w-5 xs:h-6 xs:w-6',
                 'group-disabled:text-accent/60 dark:group-disabled:text-accent-dark/80',
               )}
               data-tooltip-content="Decrease font size"
@@ -91,7 +91,7 @@ export function Toolbar({ fontControls, className }: ToolbarProps) {
             <PlusSquare
               id="increase-font-size"
               className={cn(
-                'icon-base h-5 w-5 mix-blend-color-dodge xs:h-6 xs:w-6',
+                'icon-base h-5 w-5 xs:h-6 xs:w-6',
                 'group-disabled:text-accent/60 dark:group-disabled:text-accent-dark/80',
               )}
               aria-label="Increase font size"
@@ -106,7 +106,7 @@ export function Toolbar({ fontControls, className }: ToolbarProps) {
         <Type
           id="serif"
           className={cn(
-            'icon-base ml-auto h-5 w-5 mix-blend-color-dodge xs:h-6 xs:w-6',
+            'icon-base ml-auto h-5 w-5 xs:h-6 xs:w-6',
             isSerif && 'text-accent/60 dark:text-accent-dark/80',
           )}
           data-tooltip-content="Toggle serif font"
@@ -117,12 +117,12 @@ export function Toolbar({ fontControls, className }: ToolbarProps) {
       <button onClick={toggleDarkAndApply} id="theme-toggle">
         {isDark ? (
           <Moon
-            className="icon-base h-5 w-5 mix-blend-color-dodge xs:h-6 xs:w-6"
+            className="icon-base h-5 w-5 xs:h-6 xs:w-6"
             aria-label="Switch to light mode"
           />
         ) : (
           <Sun
-            className="icon-base h-5 w-5 mix-blend-color-dodge xs:h-6 xs:w-6"
+            className="icon-base h-5 w-5 xs:h-6 xs:w-6"
             aria-label="Switch to dark mode"
           />
         )}
