@@ -23,7 +23,7 @@ return (
         About A. B. CDEF</h3>
 
       <div className="w-full flex-col md:flex-row flex justify-evenly md:p-10">
-<div data-aos="zoom-out" data-aos-once="true" className="flex flex-col w-full md:w-2/6 hidden md:block justify-center p-6 sm:px-12 dark:text-gray-100">
+<div data-aos="zoom-out" data-aos-once="true" className="flex-col w-full md:w-2/6 hidden md:flex justify-center p-6 sm:px-12 dark:text-gray-100">
 <Image
   src={placeholder}
   alt="picture of the author"
