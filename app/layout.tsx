@@ -62,8 +62,6 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: RootLayoutProps) {
   
 
-
-
   return (
     <DarkModeProvider>
 
