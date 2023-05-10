@@ -1,7 +1,7 @@
 'use client';
 // @ts-nocheck
 import { useEffect, useState } from "react";
-import { ThemeContextProvider, ThemeContext,  useThemeContext } from '@/store/darkmode-context';
+import { ThemeContext,  useThemeContext } from '@/store/darkmode-context';
 import { MinusSquare, Moon, PlusSquare, Search, Sun, Type } from 'lucide-react';
 import { shallow } from 'zustand/shallow';
 
