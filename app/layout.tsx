@@ -60,12 +60,13 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: RootLayoutProps) {
+  const { darkContext } = useContext(DarkMode);
   return (
     <DarkModeProvider>
 
     <html
       lang="en"
-      className={classes}
+      className={darkContext.classes}
     >
       <head />
       <body className="min-h-screen w-full bg-white dark:bg-darkish">
