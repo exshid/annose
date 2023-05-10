@@ -1,7 +1,7 @@
+//@ts-nocheck 
 'use client'
 import React, { useState, useEffect } from 'react';
 import DarkMode from "./darkmode-context";
-
 
 
 const DarkModeProvider = (props) => {
@@ -10,9 +10,11 @@ const DarkModeProvider = (props) => {
     const [classes, setClasses] = useState('dark scroll-pt-16 overflow-auto overscroll-none jakarta-title');
 
           const darkMode = localStorage.getItem("theme");
-              setIsDark(darkMode);
+    
+          setIsDark(darkMode);
         console.log(darkMode);
     
+
     useEffect(() => {
         if (isDark === 'dark') {
         setClasses('dark scroll-pt-16 overflow-auto overscroll-none jakarta-title')
