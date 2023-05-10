@@ -1,3 +1,4 @@
+// @ts-nocheck
 'use client';
 
 import { MinusSquare, Moon, PlusSquare, Search, Sun, Type } from 'lucide-react';

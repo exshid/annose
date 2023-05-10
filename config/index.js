@@ -8,9 +8,9 @@
 /** @type {import('./types').BlogConfig} */
 const blogConfig = {
   url: 'https://blog.kfirfitousi.com',
-  title: 'portfolio',
+  title: 'Portfolio',
   titleParts: ['portfolio', 'blog'],
-  author: 'Alan Parniyan',
+  author: 'A. B. CDEF',
   pages: {
     home: {
       title: 'portfolio',
