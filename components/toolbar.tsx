@@ -7,6 +7,8 @@ import { useSearchStore } from '@/stores/search-store';
 import { useThemeStore } from '@/stores/theme-store';
 import { Tooltip } from '@/components/tooltip';
 import { cn } from '@/lib/utils';
+import React, { useState } from "react";
+
 
 type ToolbarProps = {
   fontControls: boolean;
@@ -14,12 +16,14 @@ type ToolbarProps = {
 };
 
 export function Toolbar({ fontControls, className }: ToolbarProps) {
+  const [isDark, setIsDark] = useState(true);
+  
+  
   const toggleSearch = useSearchStore((state) => state.toggleSearch);
   const isSearching = useSearchStore((state) => state.isSearching);
 const completedProject = false;
   const {
-    isDark,
-    isSerif,
+        isSerif,
     isFontSizeMin,
     isFontSizeMax,
     toggleDark,
@@ -28,7 +32,6 @@ const completedProject = false;
     decreaseFontSize,
   } = useThemeStore(
     (state) => ({
-      isDark: state.isDark,
       isSerif: state.isSerif,
       isFontSizeMin: state.isFontSizeMin,
       isFontSizeMax: state.isFontSizeMax,
@@ -38,10 +41,21 @@ const completedProject = false;
       decreaseFontSize: state.decreaseFontSize,
     }),
     shallow,
-  );
+    );
+    const darkMode = localStorage.getItem("isDark");
 
-  const toggleDarkAndApply = () => {
-    toggleDark();
+    const toggleDarkAndApply = () => {
+      if (darkMode === "true") {
+        localStorage.setItem("darkMode", true);
+        setIsDark(true);
+        toggleDark(true)
+      }else{
+        setIsDark(false);
+        localStorage.removeItem("darkMode");
+        toggleDark(false)
+      }
+  
+    
     document.querySelector('html')?.classList.toggle('dark');
   };
 
