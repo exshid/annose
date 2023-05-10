@@ -1,7 +1,4 @@
-import Image from 'next/image'
-import placeholder from '../public/images/placeholder.svg'
-import { HeroSection } from '@/components/hero-section';
-  
+
   export function Contact() {
     
     return (
