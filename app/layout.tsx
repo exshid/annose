@@ -1,3 +1,4 @@
+'use client';
 //@ts-nocheck 
 import '@/styles/globals.css';
 import 'react-tooltip/dist/react-tooltip.css';
