@@ -21,7 +21,6 @@ const DarkModeProvider = (props) => {
 
     }, [isDark])
 
-
     return <DarkMode.Provider value={classes}>
         {props.children}
     </DarkMode.Provider>
