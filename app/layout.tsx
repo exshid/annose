@@ -9,9 +9,6 @@ import { Footer } from '@/components/footer';
 import { Header } from '@/components/header';
 import { Search } from '@/components/search';
 import { cn } from '@/lib/utils';
-import { useContext } from "react";
-import { ThemeContextProvider, ThemeContext,  useThemeContext } from '@/store/darkmode-context';
-
 type RootLayoutProps = {
   children: React.ReactNode;
 };
@@ -63,7 +60,6 @@ export default function RootLayout({ children }: RootLayoutProps) {
 
   return (
 
-    <ThemeContextProvider>
     <html
       lang="en"
       className={"scroll-pt-16 overflow-auto overscroll-none jakarta-title"
@@ -84,6 +80,5 @@ export default function RootLayout({ children }: RootLayoutProps) {
           <Analytics />
       </body>
     </html>
-    </ThemeContextProvider>
   );
 }
