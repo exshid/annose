@@ -64,7 +64,6 @@ export default function RootLayout({ children }: RootLayoutProps) {
   const { isDark, setIsDark} = useThemeContext();
 
   console.log('fst', isDark);
-
   return (
     <ThemeContextProvider>
     <html
