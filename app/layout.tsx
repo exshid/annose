@@ -8,7 +8,7 @@ import { Footer } from '@/components/footer';
 import { Header } from '@/components/header';
 import { Search } from '@/components/search';
 import { cn } from '@/lib/utils';
-import { useEffect } from "react";
+import { useContext } from "react";
 import DarkModeProvider from '@/store/DarkModeProvider';
 
 type RootLayoutProps = {
@@ -60,6 +60,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: RootLayoutProps) {
   
   
+  const { classes } = useContext(DarkModeProvider);
 
 
   return (
