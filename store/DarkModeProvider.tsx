@@ -11,14 +11,6 @@ const DarkModeProvider = ({ children }: DarkModeProviderProps) => {
   const [isDark, setIsDark] = useState(false);
   const [classes, setClasses] = useState('');
 
-  useEffect(() => {
-    if (typeof window !== "undefined" && window.localStorage) {
-      const darkMode = localStorage.getItem("theme");
-      if (darkMode === 'dark') {
-        setIsDark(true)
-      }
-    }
-  }, [isDark]);
 const values ={ isDark:isDark}
   return (
     <DarkMode.Provider value={values}>

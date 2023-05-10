@@ -10,8 +10,7 @@ import { Header } from '@/components/header';
 import { Search } from '@/components/search';
 import { cn } from '@/lib/utils';
 import { useContext } from "react";
-import DarkModeProvider from '@/store/DarkModeProvider';
-import DarkMode from "@/store/darkmode-context";
+import { ThemeContextProvider, ThemeContext,  useThemeContext } from '@/store/darkmode-context';
 
 type RootLayoutProps = {
   children: React.ReactNode;
@@ -61,17 +60,16 @@ export const metadata: Metadata = {
 
 
 export default function RootLayout({ children }: RootLayoutProps) {
-  const { isDark } = useContext(DarkMode);
+  const { isDark, setIsDark} = useThemeContext();
 
-  console.log('fst', DarkMode, values);
-  console.log('vobe', DarkMode.isDark);
+  console.log('fst', isDark);
 
   return (
     <DarkModeProvider>
     <html
       lang="en"
       className={
-        DarkMode.isDark 
+        isDark 
     ? "dark scroll-pt-16 overflow-auto overscroll-none jakarta-title" 
     : "scroll-pt-16 overflow-auto overscroll-none jakarta-title"
       }>
