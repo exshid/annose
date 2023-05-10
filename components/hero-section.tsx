@@ -1,11 +1,18 @@
 'use client';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import {
+  AtSign,
+  Copyright,
+  Facebook,
+  Twitter,
+} from 'lucide-react';
+
+import { Tooltip } from '@/components/tooltip';
 import React,{useEffect} from "react";
 
 import { useReducer } from 'react';
 import GraphemeSplitter from 'grapheme-splitter';
-import { Pause, Play } from 'lucide-react';
 import Typist from 'react-typist-component';
 import Balancer from 'react-wrap-balancer';
 
@@ -52,12 +59,62 @@ export function HeroSection() {
     AOS.init();
   }, [])
 
+  const { footerLinks } = blogConfig;
   return (
     <div
       className={cn(
         'flex flex-col-reverse items-start h-full w-3/5 justify-center px-28 relative',
       )}
     >
+
+
+      <div className="flex flex-row flex-wrap justify-center gap-4 max-xs:px-16">
+        {footerLinks?.facebook && (
+          <a
+            href={footerLinks.facebook}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Facebook
+              id="facebook"
+              className="icon-base"
+              data-tooltip-content="My facebook profile"
+              aria-label="My facebook profile"
+            />
+            <Tooltip anchorId="facebook" />
+          </a>
+        )}
+        {footerLinks?.twitter && (
+          <a
+            href={footerLinks.twitter}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Twitter
+              id="twitter"
+              className="icon-base"
+              data-tooltip-content="My Twitter profile"
+              aria-label="My Twitter profile"
+            />
+            <Tooltip anchorId="twitter" />
+          </a>
+        )}
+        
+        {footerLinks?.email && (
+          <a href={`mailto:${footerLinks.email}`}>
+            <AtSign
+              id="email"
+              className="icon-base"
+              data-tooltip-content="My Email"
+              aria-label="My Email"
+            />
+            <Tooltip anchorId="email" />
+          </a>
+        )}
+        
+      </div>
+
+
 <p data-aos="fade-left" data-aos-once="true" className="jakarta-font text-darkish dark:text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
          <h1 data-aos="fade-right"
      data-aos-once="true"
