@@ -31,22 +31,17 @@ if(isDark){
   
 }
   const darkModeHandler = () => {
-    // set data in localStorage
       document.documentElement.classList.add('dark');
       localStorage.setItem('theme', 'dark');
       setDarkMode(true)
     }
-    // update state with new data
   
     const lightModeHandler = () => {
-      // set data in localStorage
         document.documentElement.classList.remove('dark');
         localStorage.setItem('theme', 'light');
         setDarkMode(false)
       }
-    
 
-  
   const toggleSearch = useSearchStore((state) => state.toggleSearch);
   const isSearching = useSearchStore((state) => state.isSearching);
 const completedProject = false;
