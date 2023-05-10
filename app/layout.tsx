@@ -54,18 +54,14 @@ export const metadata: Metadata = {
   ],
 };
 
-
 export default function RootLayout({ children }: RootLayoutProps) {
-
   return (
-
     <html
       lang="en"
       className={"scroll-pt-16 overflow-auto overscroll-none jakarta-title"
       }>
       <head />
       <body className="min-h-screen w-full bg-white dark:bg-darkish">
-
         <header className="fixed top-0 z-50 w-full">
             <Header />
           </header>
