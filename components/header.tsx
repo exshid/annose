@@ -51,7 +51,7 @@ export function Header() {
     </div>
   </div>
   <div className="navbar-center">
-    <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+    <a className="btn btn-ghost normal-case text-xl">UI</a>
   </div>
   <div className="navbar-end">
   <Toolbar fontControls={isPostPage} className="ml-auto" />
