@@ -62,7 +62,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
       }>
       <head />
       <body className="min-h-screen w-full bg-white dark:bg-darkish">
-        <header className="fixed top-0 z-50 w-full">
+        <header className="sticky md:fixed top-0 z-50 w-full">
             <Header />
           </header>
           <main className="w-full">
