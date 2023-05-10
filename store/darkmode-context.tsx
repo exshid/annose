@@ -17,7 +17,6 @@ const ThemeContext = createContext<ThemeContextValue>({
 
 const ThemeContextProvider = ({ children, value }: ThemeContextProviderProps) => {
   const [isDark, setIsDark] = useState(false);
-
   
   useEffect(() => {
     if (typeof window !== "undefined" && window.localStorage) {
