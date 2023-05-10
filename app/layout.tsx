@@ -9,7 +9,7 @@ import { Header } from '@/components/header';
 import { Search } from '@/components/search';
 import { cn } from '@/lib/utils';
 import { useEffect } from "react";
-import DarkModeProvider from './store/DarkModeProvider';
+import DarkModeProvider from '@/store/DarkModeProvider';
 
 type RootLayoutProps = {
   children: React.ReactNode;
