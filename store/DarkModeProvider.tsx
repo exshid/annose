@@ -13,7 +13,6 @@ const DarkModeProvider = (props:MyComponentProps) => {
           setIsDark(darkMode);
         console.log(darkMode);
     
-
     useEffect(() => {
         if (isDark === 'dark') {
         setClasses('dark scroll-pt-16 overflow-auto overscroll-none jakarta-title')
