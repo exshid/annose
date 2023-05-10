@@ -18,6 +18,7 @@ export function Toolbar({ fontControls, className }: ToolbarProps) {
 const [darkMode, setDarkMode] = useState<boolean>(false);
 const [isDark, setIsDark] = useState(false);
   
+
 useEffect(() => {
   if (typeof window !== "undefined" && window.localStorage) {
     const darkMode = localStorage.getItem("theme");
