@@ -12,12 +12,8 @@ const DarkModeProvider = ({ children }: DarkModeProviderProps) => {
   const [classes, setClasses] = useState('');
 
   useEffect(() => {
-    // check if localStorage is available
     if (typeof window !== "undefined" && window.localStorage) {
-      // get data from localStorage
       const darkMode = localStorage.getItem("theme");
-
-      // set state with data from localStorage
       if (darkMode === 'dark') {
         setIsDark(true)
       }
