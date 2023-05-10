@@ -6,14 +6,14 @@ type ServiceProps = {
     
     return (
         <div className="bg-darkerlight py-5 dark:bg-darkish text-darkish dark:text-white flex justify-center h-auto w-full">
-        <div className="w-8/12 flex flex-col items-center">
+        <div className="w-full md:w-8/12 flex flex-col items-center">
      
     <h3 data-aos="fade-up"
      data-aos-anchor-placement="top-bottom"
      data-aos-once="true"
-     className="font-inter text-5xl p-5 font-black uppercase bg-gradient-to-r from-rose-600 to-rose-900 bg-clip-text text-transparent">
+     className="font-inter text-2xl	md:text-5xl p-5 font-black uppercase bg-gradient-to-r from-rose-600 to-rose-900 bg-clip-text text-transparent">
         Service for Authors</h3>
-<ul data-aos="fade-left" data-aos-duration="500" data-aos-once="true" className="jakarta-title pt-5 pb-10 grid grid-cols-3 grid-rows-3 gap-8">
+<ul data-aos="fade-left" data-aos-duration="500" data-aos-once="true" className="jakarta-title pt-5 pb-10 grid grid-cols-1 grid-rows-9 md:grid-cols-3 md:grid-rows-3 gap-8">
     <li className="s-boxshadow dark:shadow-none p-5 h-80 w-80 bg-white dark:bg-lightdarkish"><h4 className="p-5 font-bold text-xl">Novel editing</h4><p className="p-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptas saepe vitae enim culpa ut assumenda accusamus distinctio laudantium debitis!</p></li>
     <li className="s-boxshadow dark:shadow-none p-5 h-80 w-80 bg-white dark:bg-lightdarkish col-start-3 row-start-3"><h4 className="p-5 font-bold text-xl">Novel editing</h4><p className="p-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptas saepe vitae enim culpa ut assumenda accusamus distinctio laudantium debitis!</p></li>
     <li className="s-boxshadow dark:shadow-none p-5 h-80 w-80 bg-white dark:bg-lightdarkish col-start-3 row-start-2"><h4 className="p-5 font-bold text-xl">Novel editing</h4><p className="p-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptas saepe vitae enim culpa ut assumenda accusamus distinctio laudantium debitis!</p></li>
