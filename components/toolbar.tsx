@@ -58,21 +58,6 @@ const completedProject = false;
     }),
     shallow,
     );
-    const darkMode = localStorage.getItem("isDark");
-
-    const toggleDarkAndApply = () => {
-      if (darkMode === "true") {
-        localStorage.setItem("darkMode", 'true');
-        setIsDark(true);
-      }else{
-        setIsDark(false);
-        localStorage.removeItem("darkMode");
-      }
-      toggleDark()
-  
-    
-    document.querySelector('html')?.classList.toggle('dark');
-  };
 
   return (
     <div
