@@ -8,7 +8,6 @@ const DarkModeProvider = (props) => {
     const [classes, setClasses] = useState('dark scroll-pt-16 overflow-auto overscroll-none jakarta-title');
 
     useEffect(() => {
-        // check if localStorage is available
         if (typeof window !== "undefined" && window.localStorage) {
           const darkMode = localStorage.getItem("theme");
     
