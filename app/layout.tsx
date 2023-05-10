@@ -61,7 +61,9 @@ export const metadata: Metadata = {
 
 
 export default function RootLayout({ children }: RootLayoutProps) {
-  console.log('first', DarkMode);
+  const { values } = useContext(DarkMode);
+
+  console.log('first', DarkMode, values);
   console.log('obje', DarkMode.isDark);
 
   return (
