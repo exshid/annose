@@ -16,7 +16,6 @@ type ToolbarProps = {
   fontControls: boolean;
   className?: string;
 };
-
 export function Toolbar({ fontControls, className }: ToolbarProps) {
   
 const [darkMode, setDarkMode] = useState<boolean>(false);
