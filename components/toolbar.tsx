@@ -41,13 +41,13 @@ useEffect(() => {
 }, [darkMode, isDark]);
 
   const darkModeHandler = () => {
-      document.documentElement.classList.add('dark');
+    //  document.documentElement.classList.add('dark');
       localStorage.setItem('theme', 'dark');
       setDarkMode(true)
     }
   
     const lightModeHandler = () => {
-        document.documentElement.classList.remove('dark');
+      //  document.documentElement.classList.remove('dark');
         localStorage.setItem('theme', 'light');
         setDarkMode(false)
       }
