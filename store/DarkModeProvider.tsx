@@ -24,7 +24,6 @@ const DarkModeProvider = ({ children }: DarkModeProviderProps) => {
     }
   }, [isDark]);
 const values ={ isDark:isDark}
-console.log(values, isDark);
   return (
     <DarkMode.Provider value={values}>
       {children}
