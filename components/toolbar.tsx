@@ -21,17 +21,6 @@ export function Toolbar({ fontControls, className }: ToolbarProps) {
 
   const [data, setData] = useState(null);
 
-  useEffect(() => {
-    // check if localStorage is available
-    if (typeof window !== "undefined" && window.localStorage) {
-      // get data from localStorage
-      const storedData = localStorage.getItem("myData");
-
-      // set state with data from localStorage
-      setData(storedData);
-    }
-  }, []);
-
   const darkModeHandler = () => {
     // set data in localStorage
       document.documentElement.classList.remove('light');
@@ -165,7 +154,7 @@ const completedProject = false;
         type="button"
         aria-label="Use Dark Mode"
         onClick={lightModeHandler}
-        id="theme-toggle" className="transition hover:-translate-y-px"      >
+        id="theme-toggle" className="transition hover:-translate-y-px">
           <Moon
             className="icon-base h-5 w-5 xs:h-6 xs:w-6"
             aria-label="Switch to light mode"
