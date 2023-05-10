@@ -23,8 +23,8 @@ const [darkMode, setDarkMode] = useState<boolean>(false);
 if(isDark){
   document.documentElement.classList.add('dark');
   setDarkMode(true)
-  
-  
+
+
 }else{
   document.documentElement.classList.remove('dark');
 

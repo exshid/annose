@@ -9,23 +9,23 @@ type ContactProps = {
     
     return (
 <div>
-    <section className="min-h-screen flex items-stretch text-white ">
-        <div className="lg:flex w-1/2 hidden bg-gradient-to-r from-emerald-400 to-cyan-400 relative items-center">
+    <section className="min-h-screen flex flex-col md:flex-row items-stretch text-white ">
+        <div className="md:flex w-full md:w-1/2 bg-gradient-to-r from-emerald-400 to-cyan-400 relative items-center">
             <div className="absolute bg-darkish opacity-60 inset-0 z-0"></div>
-            <div className="w-full px-24 z-10">
+            <div className="w-full px-2 md:px-24 z-10">
                 <h1 data-aos="fade-right" data-aos-once="true" className="text-5xl font-bold text-left tracking-wide">Get In Touch</h1>
                 <p data-aos="fade-right" data-aos-once="true" className="text-3xl my-4">Email me at<br/> email@example.com</p>
             </div>
 
         </div>
-        <div className="lg:w-1/2 w-full flex items-center justify-center text-center md:px-16 px-0 z-0 bg-white dark:bg-darkish text-darkish dark:text-white">
+        <div className="md:w-1/2 w-full flex items-center justify-center text-center md:px-16 px-0 z-0 bg-white dark:bg-darkish text-darkish dark:text-white">
 
             <div className="w-full py-6 z-20">
                 
                 <p  data-aos="fade-up" data-aos-once="true" className="text-3xl my-4 text-darkish dark:text-white">
               SIGN UP FOR MY NEWSLETTER
                 </p>
-                <form data-aos="fade-up" data-aos-once="true" action="" className="sm:w-2/3 w-full px-4 lg:px-0 mx-auto">
+                <form data-aos="fade-up" data-aos-once="true" action="" className="sm:w-2/3 w-full px-4 md:px-0 mx-auto">
                     <div className="pb-2 pt-4">
                         <input type="email" name="email" id="email" placeholder="Email" className="dark:bg-darkish block w-full p-4 border dark:border-white text-lg rounded-sm"/>
                     </div>
@@ -36,7 +36,7 @@ type ContactProps = {
                         <button className="uppercase block w-full p-4 text-lg text-white rounded-full bg-gradient-to-r from-emerald-400 to-cyan-400 focus:outline-none transition hover:-translate-y-[4px]">Send</button>
                     </div>
 
-                    <div className="p-4 text-center inset-x-0 flex justify-center space-x-4 mt-16 lg:hidden ">
+                    <div className="p-4 text-center inset-x-0 flex justify-center space-x-4 mt-16 md:hidden ">
                         <a href="#">
                             <svg fill="#fff" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg>
                         </a>
