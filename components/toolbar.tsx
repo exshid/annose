@@ -1,5 +1,6 @@
 'use client';
 // @ts-nocheck
+import { useEffect, useState } from "react";
 
 import { MinusSquare, Moon, PlusSquare, Search, Sun, Type } from 'lucide-react';
 import { shallow } from 'zustand/shallow';
@@ -8,7 +9,6 @@ import { useSearchStore } from '@/stores/search-store';
 import { useThemeStore } from '@/stores/theme-store';
 import { Tooltip } from '@/components/tooltip';
 import { cn } from '@/lib/utils';
-import React, { useState } from "react";
 
 
 type ToolbarProps = {
@@ -17,8 +17,37 @@ type ToolbarProps = {
 };
 
 export function Toolbar({ fontControls, className }: ToolbarProps) {
-  const [isDark, setIsDark] = useState(true);
   
+
+  const [data, setData] = useState(null);
+
+  useEffect(() => {
+    // check if localStorage is available
+    if (typeof window !== "undefined" && window.localStorage) {
+      // get data from localStorage
+      const storedData = localStorage.getItem("myData");
+
+      // set state with data from localStorage
+      setData(storedData);
+    }
+  }, []);
+
+  const darkModeHandler = () => {
+    // set data in localStorage
+      document.documentElement.classList.remove('light');
+      localStorage.setItem('theme', 'dark');
+      setData("dark");
+    }
+    // update state with new data
+  
+    const lightModeHandler = () => {
+      // set data in localStorage
+        document.documentElement.classList.remove('dark');
+        localStorage.setItem('theme', 'light');
+        setData("light");
+      }
+    
+
   
   const toggleSearch = useSearchStore((state) => state.toggleSearch);
   const isSearching = useSearchStore((state) => state.isSearching);
@@ -135,10 +164,7 @@ const completedProject = false;
 <button
         type="button"
         aria-label="Use Dark Mode"
-        onClick={() => {
-          document.documentElement.classList.add('dark');
-          localStorage.setItem('theme', 'dark');
-        }}
+        onClick={lightModeHandler}
         id="theme-toggle" className="transition hover:-translate-y-px"      >
           <Moon
             className="icon-base h-5 w-5 xs:h-6 xs:w-6"
@@ -149,10 +175,7 @@ const completedProject = false;
       <button
         type="button"
         aria-label="Use Light Mode"
-        onClick={() => {
-          document.documentElement.classList.remove('dark');
-          localStorage.setItem('theme', 'light');
-        }}
+        onClick={darkModeHandler}
         id="theme-toggle" className="transition hover:-translate-y-px">
           <Sun
             className="icon-base h-5 w-5 xs:h-6 xs:w-6"
