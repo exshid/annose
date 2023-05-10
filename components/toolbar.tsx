@@ -1,5 +1,5 @@
-// @ts-nocheck
 'use client';
+// @ts-nocheck
 
 import { MinusSquare, Moon, PlusSquare, Search, Sun, Type } from 'lucide-react';
 import { shallow } from 'zustand/shallow';

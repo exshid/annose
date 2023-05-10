@@ -37,7 +37,7 @@ return (
 Quos iure in voluptas! Libero aspernatur error temporibus id aperiam culp similique pariatur ex, optio sunt. Pariatur velit fugiat consequuntur quaerat eius.</p>
 <div className="px-4 pb-2 pt-4">
                         <button data-aos="fade-up" data-aos-once="true"
-     data-aos-anchor-placement="bottom-bottom" className="uppercase block transition w-full p-4 text-lg text-white rounded-full bg-gradient-to-r from-rose-600 to-rose-900 focus:outline-none transition hover:-translate-y-[4px]">Read More</button>
+     data-aos-anchor-placement="bottom-bottom" className="transition hover:-translate-y-[4px] uppercase block transition w-full p-4 text-lg text-white rounded-full bg-gradient-to-r from-rose-600 to-rose-900 focus:outline-none">Read More</button>
                     </div>
 
 </div>
