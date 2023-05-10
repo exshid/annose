@@ -77,13 +77,13 @@ export default function RootLayout({ children }: RootLayoutProps) {
       <head />
       <body className="min-h-screen w-full bg-white dark:bg-darkish">
 
-        <header className="fixed top-0 z-50 w-11/12 sm:w-full">
+        <header className="fixed top-0 z-50 w-full">
             <Header />
           </header>
-          <main className="w-11/12 sm:w-full">
+          <main className="w-full">
             {children}
           </main>
-          <section className="w-11/12 sm:w-full">
+          <section className="w-full">
             <Footer />
           </section>
            <Search posts={allPosts} />

@@ -22,8 +22,8 @@ return (
           <h3 data-aos-once="true" data-aos="fade-right" className="font-inter text-5xl font-black uppercase bg-gradient-to-r from-rose-600 to-rose-900 bg-clip-text text-transparent">
         About A. B. CDEF</h3>
 
-      <div className="w-full flex justify-evenly p-10">
-<div data-aos="zoom-out" data-aos-once="true" className="flex flex-col w-2/6 justify-center p-6 sm:px-12 dark:text-gray-100">
+      <div className="w-full flex-col md:flex-row flex justify-evenly md:p-10">
+<div data-aos="zoom-out" data-aos-once="true" className="flex flex-col w-full md:w-2/6 justify-center p-6 sm:px-12 dark:text-gray-100">
 <Image
   src={placeholder}
   alt="picture of the author"
@@ -32,7 +32,7 @@ return (
   className="rounded-full dark:bg-gray-500 bg-gradient-to-r from-rose-600 to-rose-900 aspect-square"
 />
 </div>
-<div className="flex flex-col w-2/4 justify-center p-6 sm:px-12 dark:text-gray-100">
+<div className="flex flex-col w-full md:w-2/4 justify-center p-6 sm:px-12 dark:text-gray-100">
 <p className="jakarta-font text-darkish dark:text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, ad asperiores ipsam voluptatem rem a id maxime odio ullam accusantium dolor magnam quam expedita! A tenetur ipsam enim magnam cupiditate.
 Quos iure in voluptas! Libero aspernatur error temporibus id aperiam culp similique pariatur ex, optio sunt. Pariatur velit fugiat consequuntur quaerat eius.</p>
 <div className="px-4 pb-2 pt-4">
