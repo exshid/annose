@@ -8,6 +8,7 @@ import { Footer } from '@/components/footer';
 import { Header } from '@/components/header';
 import { Search } from '@/components/search';
 import { cn } from '@/lib/utils';
+import { ThemeProvider } from "next-themes";
 
 
 type RootLayoutProps = {
@@ -60,6 +61,12 @@ export default function RootLayout({ children }: RootLayoutProps) {
 
 
   return (
+    <ThemeProvider
+      disableTransitionOnChange
+      defaultTheme="system"
+      attribute="class"
+    >
+
     <html
       lang="en"
       className={cn(
@@ -82,5 +89,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
           <Analytics />
       </body>
     </html>
+    </ThemeProvider>
+
   );
 }

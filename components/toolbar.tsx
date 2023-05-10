@@ -133,11 +133,11 @@ const completedProject = false;
         <Tooltip anchorId="serif" place="bottom" />
       </button>
   */}
-{darkMode && (
+{darkMode === false && (
 <button
         type="button"
         aria-label="Use Dark Mode"
-        onClick={lightModeHandler}
+        onClick={darkModeHandler}
         id="theme-toggle" className="transition hover:-translate-y-px">
           <Moon
             className="icon-base h-5 w-5 xs:h-6 xs:w-6"
@@ -145,12 +145,12 @@ const completedProject = false;
           />
       </button>
     )}
-{darkMode === false && (
+{darkMode && (
           
       <button
         type="button"
         aria-label="Use Light Mode"
-        onClick={darkModeHandler}
+        onClick={lightModeHandler}
         id="theme-toggle" className="transition hover:-translate-y-px">
           <Sun
             className="icon-base h-5 w-5 xs:h-6 xs:w-6"
