@@ -18,7 +18,7 @@ type ToolbarProps = {
 
 export function Toolbar({ fontControls, className }: ToolbarProps) {
   
-const [darkMode, setDarkMode] = useState(null);
+const [darkMode, setDarkMode] = useState<boolean>(false);
 
   const darkModeHandler = () => {
     // set data in localStorage
