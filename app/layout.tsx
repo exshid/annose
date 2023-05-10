@@ -1,4 +1,3 @@
-'use client'
 import '@/styles/globals.css';
 import 'react-tooltip/dist/react-tooltip.css';
 import { type Metadata } from 'next/types';
@@ -9,7 +8,7 @@ import { Footer } from '@/components/footer';
 import { Header } from '@/components/header';
 import { Search } from '@/components/search';
 import { cn } from '@/lib/utils';
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 
 type RootLayoutProps = {
   children: React.ReactNode;
@@ -58,7 +57,7 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: RootLayoutProps) {
-  const [isDark, setIsDark] = useState(null);
+  let isDark =null;
 
   useEffect(() => {
     // check if localStorage is available
@@ -67,7 +66,8 @@ export default function RootLayout({ children }: RootLayoutProps) {
       const darkMode = localStorage.getItem("theme");
 
       // set state with data from localStorage
-      setIsDark(darkMode);
+      isDark =darkMode;
+      console.log(isDark)
     }
   }, []);
 
