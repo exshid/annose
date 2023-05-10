@@ -18,9 +18,6 @@
 .custom-boxshadow{
   box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
 }
-.clip-custom{
-  clip-path: ellipse(100% 70% at 100% 58%);
-}
 .font-inter{
   font-family: 'Inter', sans-serif;  
 }
@@ -40,9 +37,10 @@
     margin-bottom: 15px;
 }
 
-.full-circle{
-  clip-path: circle();
 
+}
+.clip-custom{
+  clip-path: circle();
 }
 .jakarta-font{
   font-family: 'Plus Jakarta Sans', sans-serif;
@@ -61,3 +59,9 @@
   background: linear-gradient(to right, #34D399, #22D3EE);
   transform-origin: 0%;
 }
+
+@media (min-width: 768px) {
+  .clip-custom{
+    clip-path: ellipse(100% 70% at 100% 58%);
+  }
+  }

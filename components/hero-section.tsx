@@ -66,8 +66,6 @@ export function HeroSection() {
         'flex flex-col-reverse items-center md:items-start h-full w-full md:w-3/5 justify-center px-2 md:px-28 relative',
       )}
     >
-
-
       <div className="flex flex-row flex-wrap justify-center gap-4 max-xs:px-16">
         {footerLinks?.facebook && (
           <a
