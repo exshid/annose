@@ -22,7 +22,7 @@ const DarkModeProvider = ({ children }: DarkModeProviderProps) => {
         setIsDark(true)
       }
     }
-  }, [isDark, darkMode]);
+  }, [isDark]);
 const values ={ isDark:isDark}
 console.log(values, isDark);
   return (
