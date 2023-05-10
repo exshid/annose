@@ -52,29 +52,6 @@ export default function Home() {
 <PhotoCard/>
 <Intro />
 <Books/>
-<div className="w-64 carousel rounded-box">
-  <div className="carousel-item w-full">
-    <Image src={cover} className="w-full" alt="Tailwind CSS Carousel component" />
-  </div> 
-  <div className="carousel-item w-full">
-    <Image src={placeholder} className="w-full" alt="Tailwind CSS Carousel component" />
-  </div> 
-  <div className="carousel-item w-full">
-    <Image src={cover} className="w-full" alt="Tailwind CSS Carousel component" />
-  </div> 
-  <div className="carousel-item w-full">
-    <Image src={placeholder} className="w-full" alt="Tailwind CSS Carousel component" />
-  </div> 
-  <div className="carousel-item w-full">
-    <Image src={cover} className="w-full" alt="Tailwind CSS Carousel component" />
-  </div> 
-  <div className="carousel-item w-full">
-    <Image src={placeholder} className="w-full" alt="Tailwind CSS Carousel component" />
-  </div> 
-  <div className="carousel-item w-full">
-    <Image src={cover} className="w-full" alt="Tailwind CSS Carousel component" />
-  </div>
-</div>
 <Service/>
 <Contact/>
  {/* 
