@@ -9,14 +9,10 @@ const DarkModeProvider = (props:MyComponentProps) => {
     const [isDark, setIsDark] = useState(null);
     const [classes, setClasses] = useState('dark scroll-pt-16 overflow-auto overscroll-none jakarta-title');
 
-    useEffect(() => {
-        if (typeof window !== "undefined" && window.localStorage) {
           const darkMode = localStorage.getItem("theme");
     
           setIsDark(darkMode);
         console.log(darkMode);
-        }
-      }, []);
     
 
     useEffect(() => {
@@ -24,13 +20,8 @@ const DarkModeProvider = (props:MyComponentProps) => {
         setClasses('dark scroll-pt-16 overflow-auto overscroll-none jakarta-title')
         }
 
-    }, [isDark])
+    }, [,isDark])
 
-
-    const darkContext = {
-        isDark: setIsDark,
-classes: setClasses
-    }
 
     return <DarkMode.Provider value={classes}>
         {props.children}
