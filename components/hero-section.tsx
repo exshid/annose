@@ -63,7 +63,7 @@ export function HeroSection() {
   return (
     <div
       className={cn(
-        'flex flex-col-reverse items-center md:items-start h-auto md:h-full w-full md:w-3/5 justify-center px-2 md:px-28 relative',
+        'flex flex-col-reverse items-center lg:items-start h-auto lg:h-full w-full lg:w-3/5 justify-center px-2 lg:px-28 relative',
       )}
     >
       <div className="flex flex-row flex-wrap justify-center gap-4 max-xs:px-16">
@@ -120,7 +120,7 @@ export function HeroSection() {
 className='hero-font font-black uppercase bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent'>
           A. B. CDEF
           </h1>
-      <h2 className="font-inter text-center flex justify-start min-h-[5vh] md:min-h-[10vh] min-w-[30vw] text-2xl md:text-5xl font-black uppercase bg-gradient-to-r from-rose-600 to-rose-900 bg-clip-text text-transparent">
+      <h2 className="font-inter text-center flex justify-start min-h-[5vh] lg:min-h-[10vh] min-w-[30vw] text-2xl lg:text-5xl font-black uppercase bg-gradient-to-r from-rose-600 to-rose-900 bg-clip-text text-transparent">
         
           <Typist
             typingDelay={1000}
