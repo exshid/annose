@@ -1,5 +1,4 @@
 'use client';
-
 import { createContext, useContext, useState } from "react";
 
 const ThemeContext = createContext({})
@@ -8,10 +7,7 @@ interface ThemeContextProviderProps {
 }
 
 const ThemeContextProvider = ({ children }: ThemeContextProviderProps) => {
-
     const [isDark, setIsDark] = useState(false);
-
-
     useEffect(() => {
       if (typeof window !== "undefined" && window.localStorage) {
         const darkMode = localStorage.getItem("theme");
@@ -20,7 +16,6 @@ const ThemeContextProvider = ({ children }: ThemeContextProviderProps) => {
         }
       }
     }, [isDark]);
-
     return (
         <ThemeContext.Provider value={{ isDark, setIsDark }}>
             {children}
