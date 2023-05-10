@@ -13,7 +13,6 @@ import { useContext } from "react";
 import DarkModeProvider from '@/store/DarkModeProvider';
 import DarkMode from "@/store/darkmode-context";
 
-
 type RootLayoutProps = {
   children: React.ReactNode;
 };
