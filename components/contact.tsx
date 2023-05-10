@@ -8,7 +8,7 @@
             <div className="absolute bg-darkish opacity-60 inset-0 z-0"></div>
             <div className="w-full px-2 md:px-24 z-10">
                 <h1 data-aos="fade-right" data-aos-once="true" className="text-5xl font-bold text-left tracking-wide">Get In Touch</h1>
-                <p data-aos="fade-right" data-aos-once="true" className="text-3xl my-4">Email me at<br/> email@example.com</p>
+                <p data-aos="fade-right" data-aos-once="true" className="text-3xl my-4">Email me at<br/>email@example.com</p>
             </div>
 
         </div>
