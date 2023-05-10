@@ -13,7 +13,7 @@ module.exports = {
   plugins: [
     // used for markdown prose styling; see components/mdx-content.tsx
     require('@tailwindcss/typography'),
- [require("daisyui")],
+   require("daisyui"),
 
   ],
 
