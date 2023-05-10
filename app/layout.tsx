@@ -64,7 +64,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
   const { values } = useContext(DarkModeProvider);
 
   console.log('first', DarkMode, values);
-  console.log('obje', DarkMode.isDark);
+  console.log('obe', DarkMode.isDark);
 
   return (
     <DarkModeProvider>
