@@ -7,7 +7,7 @@ interface ThemeContextValue {
 
 interface ThemeContextProviderProps {
   children: React.ReactNode;
-  value: ThemeContextValue;
+  value: Omit<ThemeContextValue, "isDark">;
 }
 
 const ThemeContext = createContext<ThemeContextValue>({
@@ -27,8 +27,14 @@ const ThemeContextProvider = ({ children, value }: ThemeContextProviderProps) =>
     }
   }, []);
 
+  const contextValue: ThemeContextValue = {
+    isDark,
+    setIsDark,
+    ...value,
+  };
+
   return (
-    <ThemeContext.Provider value={{ isDark, setIsDark, ...value }}>
+    <ThemeContext.Provider value={contextValue}>
       {children}
     </ThemeContext.Provider>
   );
