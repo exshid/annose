@@ -1,4 +1,3 @@
-'use client';
 //@ts-nocheck 
 import '@/styles/globals.css';
 import 'react-tooltip/dist/react-tooltip.css';
@@ -10,8 +9,6 @@ import { Footer } from '@/components/footer';
 import { Header } from '@/components/header';
 import { Search } from '@/components/search';
 import { cn } from '@/lib/utils';
-import { useContext } from "react";
-import { ThemeContextProvider, ThemeContext,  useThemeContext } from '@/store/darkmode-context';
 
 type RootLayoutProps = {
   children: React.ReactNode;
@@ -61,18 +58,10 @@ export const metadata: Metadata = {
 
 
 export default function RootLayout({ children }: RootLayoutProps) {
-  const { isDark, setIsDark} = useThemeContext();
-
-  console.log('t', isDark);
   return (
-
-    <ThemeContextProvider>
     <html
       lang="en"
-      className={
-        isDark 
-    ? "dark scroll-pt-16 overflow-auto overscroll-none jakarta-title" 
-    : "scroll-pt-16 overflow-auto overscroll-none jakarta-title"
+      className={"dark scroll-pt-16 overflow-auto overscroll-none jakarta-title"
       }>
       <head />
       <body className="min-h-screen w-full bg-white dark:bg-darkish">
@@ -90,6 +79,5 @@ export default function RootLayout({ children }: RootLayoutProps) {
           <Analytics />
       </body>
     </html>
-    </ThemeContextProvider>
   );
 }
