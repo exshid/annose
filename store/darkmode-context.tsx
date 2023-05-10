@@ -1,4 +1,6 @@
-'use client';
+      {/* 
+
+//'use client';
 import { createContext, useContext, useEffect, useState } from "react";
 interface ThemeContextValue {
   isDark: boolean;
@@ -16,16 +18,6 @@ const ThemeContext = createContext<ThemeContextValue>({
 });
 
 const ThemeContextProvider = ({ children, value }: ThemeContextProviderProps) => {
-  const [isDark, setIsDark] = useState(false);
-  
-  useEffect(() => {
-    if (typeof window !== "undefined" && window.localStorage) {
-      const darkMode = localStorage.getItem("theme");
-      if (darkMode === "dark") {
-        setIsDark(true);
-      }
-    }
-  }, []);
 
 
   return (
@@ -36,3 +28,4 @@ const ThemeContextProvider = ({ children, value }: ThemeContextProviderProps) =>
 };
 
 export const useThemeContext = () => useContext(ThemeContext);
+*/}

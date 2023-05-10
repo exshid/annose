@@ -1,11 +1,8 @@
 'use client';
 // @ts-nocheck
 import { useEffect, useState } from "react";
-import {  useThemeContext } from '@/store/darkmode-context';
 import { MinusSquare, Moon, PlusSquare, Search, Sun, Type } from 'lucide-react';
 import { shallow } from 'zustand/shallow';
-
-
 import { useSearchStore } from '@/stores/search-store';
 import { useThemeStore } from '@/stores/theme-store';
 import { Tooltip } from '@/components/tooltip';
@@ -19,7 +16,18 @@ type ToolbarProps = {
 export function Toolbar({ fontControls, className }: ToolbarProps) {
   
 const [darkMode, setDarkMode] = useState<boolean>(false);
-  const { isDark} = useThemeContext();
+const [isDark, setIsDark] = useState(false);
+  
+useEffect(() => {
+  if (typeof window !== "undefined" && window.localStorage) {
+    const darkMode = localStorage.getItem("theme");
+    if (darkMode === "dark") {
+      setIsDark(true);
+    }
+  }
+}, []);
+
+
 if(isDark){
   document.documentElement.classList.add('dark');
   setDarkMode(true)
