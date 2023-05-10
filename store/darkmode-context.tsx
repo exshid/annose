@@ -3,8 +3,12 @@
 import { createContext, useContext, useState } from "react";
 
 const ThemeContext = createContext({})
+interface ThemeContextProviderProps {
+  children: React.ReactNode;
+}
 
-export const ThemeContextProvider = ({ children }) => {
+const ThemeContextProvider = ({ children }: ThemeContextProviderProps) => {
+
     const [isDark, setIsDark] = useState(false);
 
 
