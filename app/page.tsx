@@ -15,6 +15,7 @@ import {Service} from '@/components/service';
 import {Books} from '@/components/books';
 import cover from '@/public/images/cover.jpg'
 import placeholder from '@/public/images/placeholder.svg'
+import Image from 'next/image'
 
 const { title, description } = blogConfig.pages.home;
 
