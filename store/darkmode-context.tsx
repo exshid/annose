@@ -6,6 +6,7 @@ interface ThemeContextProviderProps {
   children: React.ReactNode;
 }
 
+
 const ThemeContextProvider = ({ children }: ThemeContextProviderProps) => {
     const [isDark, setIsDark] = useState(false);
     useEffect(() => {
