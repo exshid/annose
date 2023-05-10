@@ -9,6 +9,7 @@ import { Header } from '@/components/header';
 import { Search } from '@/components/search';
 import { cn } from '@/lib/utils';
 import { useEffect } from "react";
+import DarkModeProvider from './store/DarkModeProvider';
 
 type RootLayoutProps = {
   children: React.ReactNode;
@@ -57,29 +58,16 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: RootLayoutProps) {
-  let isDark =null;
-
-  useEffect(() => {
-    // check if localStorage is available
-    if (typeof window !== "undefined" && window.localStorage) {
-      // get data from localStorage
-      const darkMode = localStorage.getItem("theme");
-
-      // set state with data from localStorage
-      isDark =darkMode;
-      console.log(isDark)
-    }
-  }, []);
-
+  
+  
 
 
   return (
+    <DarkModeProvider>
+
     <html
       lang="en"
-      className={cn(
-        isDark ? 'dark scroll-pt-16 overflow-auto overscroll-none jakarta-title'
-        : 'scroll-pt-16 overflow-auto overscroll-none jakarta-title'
-        )}
+      className={classes}
     >
       <head />
       <body className="min-h-screen w-full bg-white dark:bg-darkish">
@@ -97,6 +85,6 @@ export default function RootLayout({ children }: RootLayoutProps) {
           <Analytics />
       </body>
     </html>
-
+    </DarkModeProvider>
   );
 }
