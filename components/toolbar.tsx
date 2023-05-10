@@ -49,12 +49,11 @@ const completedProject = false;
       if (darkMode === "true") {
         localStorage.setItem("darkMode", 'true');
         setIsDark(true);
-        toggleDark(true)
       }else{
         setIsDark(false);
         localStorage.removeItem("darkMode");
-        toggleDark(false)
       }
+      toggleDark()
   
     
     document.querySelector('html')?.classList.toggle('dark');
