@@ -8,8 +8,7 @@ import { Footer } from '@/components/footer';
 import { Header } from '@/components/header';
 import { Search } from '@/components/search';
 import { cn } from '@/lib/utils';
-import { ThemeProvider } from "next-themes";
-
+import { useEffect, useState } from "react";
 
 type RootLayoutProps = {
   children: React.ReactNode;
@@ -58,20 +57,28 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: RootLayoutProps) {
+  const [isDark, setIsDark] = useState(null);
+
+  useEffect(() => {
+    // check if localStorage is available
+    if (typeof window !== "undefined" && window.localStorage) {
+      // get data from localStorage
+      const darkMode = localStorage.getItem("theme");
+
+      // set state with data from localStorage
+      setIsDark(darkMode);
+    }
+  }, []);
+
 
 
   return (
-    <ThemeProvider
-      disableTransitionOnChange
-      defaultTheme="system"
-      attribute="class"
-    >
-
     <html
       lang="en"
       className={cn(
-        'scroll-pt-16 overflow-auto overscroll-none jakarta-title'
-      )}
+        isDark ? 'dark scroll-pt-16 overflow-auto overscroll-none jakarta-title'
+        : 'scroll-pt-16 overflow-auto overscroll-none jakarta-title'
+        )}
     >
       <head />
       <body className="min-h-screen w-full bg-white dark:bg-darkish">
@@ -89,7 +96,6 @@ export default function RootLayout({ children }: RootLayoutProps) {
           <Analytics />
       </body>
     </html>
-    </ThemeProvider>
 
   );
 }
