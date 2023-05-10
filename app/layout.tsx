@@ -60,13 +60,13 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: RootLayoutProps) {
-  const { darkContext } = useContext(DarkMode);
+  const { isDark } = useContext(DarkMode);
   return (
     <DarkModeProvider>
 
     <html
       lang="en"
-      className={darkContext.classes}
+      className={isDark ? `dark scroll-pt-16 overflow-auto overscroll-none jakarta-title` : `scroll-pt-16 overflow-auto overscroll-none jakarta-title`}
     >
       <head />
       <body className="min-h-screen w-full bg-white dark:bg-darkish">

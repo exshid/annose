@@ -8,8 +8,8 @@ interface DarkModeProviderProps {
 }
 
 const DarkModeProvider = ({ children }: DarkModeProviderProps) => {
-  const [isDark, setIsDark] = useState(null);
-  const [classes, setClasses] = useState('dark scroll-pt-16 overflow-auto overscroll-none jakarta-title');
+  const [isDark, setIsDark] = useState(false);
+  const [classes, setClasses] = useState('');
 
   useEffect(() => {
     // check if localStorage is available
@@ -18,23 +18,14 @@ const DarkModeProvider = ({ children }: DarkModeProviderProps) => {
       const darkMode = localStorage.getItem("theme");
 
       // set state with data from localStorage
-      setIsDark(darkMode);
-      console.log(darkMode);
+      if (darkMode === 'dark') {
+        setIsDark(true)
+      }
     }
-  }, []);
-
-  useEffect(() => {
-    if (isDark === 'dark') {
-      setClasses('dark scroll-pt-16 overflow-auto overscroll-none jakarta-title')
-    }
-  }, [isDark])
-
-  const darkContext = {
-    classes: classes,
-  }
+  }, [isDark, darkMode]);
 
   return (
-    <DarkMode.Provider value={darkContext}>
+    <DarkMode.Provider value={isDark}>
       {children}
     </DarkMode.Provider>
   );
