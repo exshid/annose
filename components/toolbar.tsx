@@ -24,21 +24,21 @@ useEffect(() => {
     if (darkMode === "dark") {
       setIsDark(true);
     }
-  }
-}, []);
-
-
-if(isDark){
-  document.documentElement.classList.add('dark');
-  setDarkMode(true)
-
-
-}else{
-  document.documentElement.classList.remove('dark');
-
-  setDarkMode(false)
   
-}
+  
+  if(isDark){
+    document.documentElement.classList.add('dark');
+    setDarkMode(true)
+  
+  
+  }else{
+    document.documentElement.classList.remove('dark');
+  
+    setDarkMode(false)
+    
+  }}
+}, [darkMode, isDark]);
+
   const darkModeHandler = () => {
       document.documentElement.classList.add('dark');
       localStorage.setItem('theme', 'dark');
