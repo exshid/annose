@@ -16,6 +16,7 @@ type RootLayoutProps = {
   children: React.ReactNode;
 };
 
+
 export const metadata: Metadata = {
   title: {
     default: blogConfig.title,
