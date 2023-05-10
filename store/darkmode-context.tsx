@@ -2,7 +2,6 @@
 import React from "react";
 
 interface DarkModeContextValue {
-  classes: string;
   isDark: boolean
 }
 
