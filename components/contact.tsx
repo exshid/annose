@@ -19,10 +19,8 @@ type ContactProps = {
 
         </div>
         <div className="md:w-1/2 w-full flex items-center justify-center text-center md:px-16 px-0 z-0 bg-white dark:bg-darkish text-darkish dark:text-white">
-
             <div className="w-full py-6 z-20">
-                
-                <p  data-aos="fade-up" data-aos-once="true" className="text-3xl my-4 text-darkish dark:text-white">
+         <p  data-aos="fade-up" data-aos-once="true" className="text-3xl my-4 text-darkish dark:text-white">
               SIGN UP FOR MY NEWSLETTER
                 </p>
                 <form data-aos="fade-up" data-aos-once="true" action="" className="sm:w-2/3 w-full px-4 md:px-0 mx-auto">
