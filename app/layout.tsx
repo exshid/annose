@@ -11,6 +11,7 @@ import { Search } from '@/components/search';
 import { cn } from '@/lib/utils';
 import { useContext } from "react";
 import DarkModeProvider from '@/store/DarkModeProvider';
+import DarkMode from "@/store/darkmode-context";
 
 
 type RootLayoutProps = {
@@ -61,7 +62,7 @@ export const metadata: Metadata = {
 
 
 export default function RootLayout({ children }: RootLayoutProps) {
-  const { classes } = useContext(DarkModeProvider);
+  const { classes } = useContext(DarkMode);
 
 
   return (
