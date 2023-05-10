@@ -5,7 +5,7 @@ import { HeroSection } from '@/components/hero-section';
   export function Contact() {
     
     return (
-<div>
+    <div>
     <section className="min-h-screen flex flex-col md:flex-row items-stretch text-white ">
         <div className="md:flex w-full md:w-1/2 bg-gradient-to-r from-emerald-400 to-cyan-400 relative items-center">
             <div className="absolute bg-darkish opacity-60 inset-0 z-0"></div>
