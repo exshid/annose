@@ -1,10 +1,16 @@
 'use client';
 import { createContext, useContext, useEffect, useState } from "react";
-
-const ThemeContext = createContext({})
-interface ThemeContextProviderProps {
+interface ThemeContextValue {
+  isDark: boolean;
+  setIsDark: React.Dispatch<React.SetStateAction<boolean>>;
   children: React.ReactNode;
 }
+
+const ThemeContext = createContext<ThemeContextProviderProps>({
+  isDark: false,
+  setIsDark: () => {},
+});
+
 
 
 const ThemeContextProvider = ({ children }: ThemeContextProviderProps) => {
