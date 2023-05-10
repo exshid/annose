@@ -18,12 +18,13 @@ type ToolbarProps = {
 
 export function Toolbar({ fontControls, className }: ToolbarProps) {
   
-
+const [darkMode, setDarkMode] = useState(null);
 
   const darkModeHandler = () => {
     // set data in localStorage
-      document.documentElement.classList.remove('light');
+      document.documentElement.classList.add('dark');
       localStorage.setItem('theme', 'dark');
+      setDarkMode(true)
     }
     // update state with new data
   
@@ -31,6 +32,7 @@ export function Toolbar({ fontControls, className }: ToolbarProps) {
       // set data in localStorage
         document.documentElement.classList.remove('dark');
         localStorage.setItem('theme', 'light');
+        setDarkMode(false)
       }
     
 
@@ -131,7 +133,7 @@ const completedProject = false;
         <Tooltip anchorId="serif" place="bottom" />
       </button>
   */}
-
+{darkMode && (
 <button
         type="button"
         aria-label="Use Dark Mode"
@@ -142,7 +144,9 @@ const completedProject = false;
             aria-label="Switch to light mode"
           />
       </button>
-
+    )}
+{darkMode === false && (
+          
       <button
         type="button"
         aria-label="Use Light Mode"
@@ -153,7 +157,7 @@ const completedProject = false;
             aria-label="Switch to dark mode"
           />
       </button>
-
+    )}
     </div>
   );
 }
