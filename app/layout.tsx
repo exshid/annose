@@ -63,8 +63,9 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: RootLayoutProps) {
   const { isDark, setIsDark} = useThemeContext();
 
-  console.log('fst', isDark);
+  console.log('t', isDark);
   return (
+
     <ThemeContextProvider>
     <html
       lang="en"
