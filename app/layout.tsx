@@ -65,11 +65,9 @@ export default function RootLayout({ children }: RootLayoutProps) {
 
   return (
     <DarkModeProvider>
-
-
     <html
       lang="en"
-      className={isDark ? `dark scroll-pt-16 overflow-auto overscroll-none jakarta-title` : `scroll-pt-16 overflow-auto overscroll-none jakarta-title`}
+      className={isDark ? `dark scroll-pt-16 overflow-auto overscroll-none jakarta-title` : `dark scroll-pt-16 overflow-auto overscroll-none jakarta-title`}
     >
       <head />
       <body className="min-h-screen w-full bg-white dark:bg-darkish">
