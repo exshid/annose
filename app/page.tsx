@@ -13,6 +13,8 @@ import {PhotoCard} from '@/components/photocard';
 import {Intro} from '@/components/intro';
 import {Service} from '@/components/service';
 import {Books} from '@/components/books';
+import cover from '@/public/images/cover.jpg'
+import placeholder from '@/public/images/placeholder.jpg'
 
 const { title, description } = blogConfig.pages.home;
 
@@ -51,25 +53,25 @@ export default function Home() {
 <Books/>
 <div className="w-64 carousel rounded-box">
   <div className="carousel-item w-full">
-    <img src="/images/stock/photo-1559703248-dcaaec9fab78.jpg" className="w-full" alt="Tailwind CSS Carousel component" />
+    <Image src={cover} className="w-full" alt="Tailwind CSS Carousel component" />
   </div> 
   <div className="carousel-item w-full">
-    <img src="/images/stock/photo-1565098772267-60af42b81ef2.jpg" className="w-full" alt="Tailwind CSS Carousel component" />
+    <Image src={placeholder} className="w-full" alt="Tailwind CSS Carousel component" />
   </div> 
   <div className="carousel-item w-full">
-    <img src="/images/stock/photo-1572635148818-ef6fd45eb394.jpg" className="w-full" alt="Tailwind CSS Carousel component" />
+    <Image src={cover} className="w-full" alt="Tailwind CSS Carousel component" />
   </div> 
   <div className="carousel-item w-full">
-    <img src="/images/stock/photo-1494253109108-2e30c049369b.jpg" className="w-full" alt="Tailwind CSS Carousel component" />
+    <Image src={placeholder} className="w-full" alt="Tailwind CSS Carousel component" />
   </div> 
   <div className="carousel-item w-full">
-    <img src="/images/stock/photo-1550258987-190a2d41a8ba.jpg" className="w-full" alt="Tailwind CSS Carousel component" />
+    <Image src={cover} className="w-full" alt="Tailwind CSS Carousel component" />
   </div> 
   <div className="carousel-item w-full">
-    <img src="/images/stock/photo-1559181567-c3190ca9959b.jpg" className="w-full" alt="Tailwind CSS Carousel component" />
+    <Image src={placeholder} className="w-full" alt="Tailwind CSS Carousel component" />
   </div> 
   <div className="carousel-item w-full">
-    <img src="/images/stock/photo-1601004890684-d8cbf643f5f2.jpg" className="w-full" alt="Tailwind CSS Carousel component" />
+    <Image src={cover} className="w-full" alt="Tailwind CSS Carousel component" />
   </div>
 </div>
 <Service/>
