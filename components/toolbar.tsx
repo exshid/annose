@@ -19,13 +19,11 @@ type ToolbarProps = {
 export function Toolbar({ fontControls, className }: ToolbarProps) {
   
 
-  const [data, setData] = useState(null);
 
   const darkModeHandler = () => {
     // set data in localStorage
       document.documentElement.classList.remove('light');
       localStorage.setItem('theme', 'dark');
-      setData("dark");
     }
     // update state with new data
   
@@ -33,7 +31,6 @@ export function Toolbar({ fontControls, className }: ToolbarProps) {
       // set data in localStorage
         document.documentElement.classList.remove('dark');
         localStorage.setItem('theme', 'light');
-        setData("light");
       }
     
 
