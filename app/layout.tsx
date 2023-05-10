@@ -65,7 +65,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
   console.log('fst', isDark);
 
   return (
-    <DarkModeProvider>
+    <ThemeContextProvider>
     <html
       lang="en"
       className={
@@ -89,6 +89,6 @@ export default function RootLayout({ children }: RootLayoutProps) {
           <Analytics />
       </body>
     </html>
-    </DarkModeProvider>
+    </ThemeContextProvider>
   );
 }
