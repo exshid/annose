@@ -27,14 +27,9 @@ const ThemeContextProvider = ({ children, value }: ThemeContextProviderProps) =>
     }
   }, []);
 
-  const contextValue: ThemeContextValue = {
-    isDark,
-    setIsDark,
-    ...value,
-  };
 
   return (
-    <ThemeContext.Provider value={contextValue}>
+    <ThemeContext.Provider value={isDark}>
       {children}
     </ThemeContext.Provider>
   );

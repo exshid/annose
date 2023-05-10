@@ -19,7 +19,7 @@ type ToolbarProps = {
 export function Toolbar({ fontControls, className }: ToolbarProps) {
   
 const [darkMode, setDarkMode] = useState<boolean>(false);
-  const { isDark, setIsDark} = useThemeContext();
+  const { isDark} = useThemeContext();
 if(isDark){
   document.documentElement.classList.add('dark');
   setDarkMode(true)
