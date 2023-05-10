@@ -27,7 +27,7 @@ useEffect(() => {
     }
   
   
-  if(isDark){
+  if(darkMode){
     document.documentElement.classList.add('dark');
     setDarkMode(true)
   

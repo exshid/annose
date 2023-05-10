@@ -40,7 +40,10 @@
     margin-bottom: 15px;
 }
 
+.full-circle{
+  clip-path: circle();
 
+}
 .jakarta-font{
   font-family: 'Plus Jakarta Sans', sans-serif;
   margin: 0px 0px 40px 0px;
