@@ -132,24 +132,34 @@ const completedProject = false;
       </button>
   */}
 
-      <button onClick={toggleDarkAndApply} id="theme-toggle" className="transition hover:-translate-y-px">
-        {isDark ? (
+<button
+        type="button"
+        aria-label="Use Dark Mode"
+        onClick={() => {
+          document.documentElement.classList.add('dark');
+          localStorage.setItem('theme', 'dark');
+        }}
+        id="theme-toggle" className="transition hover:-translate-y-px"      >
           <Moon
             className="icon-base h-5 w-5 xs:h-6 xs:w-6"
             aria-label="Switch to light mode"
           />
-        ) : (
+      </button>
+
+      <button
+        type="button"
+        aria-label="Use Light Mode"
+        onClick={() => {
+          document.documentElement.classList.remove('dark');
+          localStorage.setItem('theme', 'light');
+        }}
+        id="theme-toggle" className="transition hover:-translate-y-px">
           <Sun
             className="icon-base h-5 w-5 xs:h-6 xs:w-6"
             aria-label="Switch to dark mode"
           />
-        )}
-        <Tooltip
-          anchorId="theme-toggle"
-          place="bottom"
-          content={`Switch to ${isDark ? 'light' : 'dark'} mode`}
-        />
       </button>
+
     </div>
   );
 }
