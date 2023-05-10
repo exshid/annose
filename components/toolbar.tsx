@@ -47,7 +47,7 @@ const completedProject = false;
 
     const toggleDarkAndApply = () => {
       if (darkMode === "true") {
-        localStorage.setItem("darkMode", true);
+        localStorage.setItem("darkMode", 'true');
         setIsDark(true);
         toggleDark(true)
       }else{
