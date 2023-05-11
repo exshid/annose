@@ -27,7 +27,7 @@ useEffect(() => {
     }
   
   
-  if(darkMode){
+  if(darkMode === "dark"){
     document.documentElement.classList.add('dark');
     setDarkMode(true)
   
@@ -41,14 +41,14 @@ useEffect(() => {
 }, [darkMode, isDark]);
 
   const darkModeHandler = () => {
-    //  document.documentElement.classList.add('dark');
+    document.documentElement.classList.add('dark');
       localStorage.setItem('theme', 'dark');
-      setDarkMode(false)
-    }
-    
-    const lightModeHandler = () => {
-      //  document.documentElement.classList.remove('dark');
       setDarkMode(true)
+    }
+  
+    const lightModeHandler = () => {
+      setDarkMode(false)
+       document.documentElement.classList.remove('dark');
         localStorage.setItem('theme', 'light');
       }
 
