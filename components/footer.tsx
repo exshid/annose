@@ -59,7 +59,7 @@ export function Footer() {
       </div>
 
   return (
-    <footer className="relative flex h-full w-full flex-col items-center justify-center space-y-4">
+    <footer className="relative min-h-[55px] flex h-full w-full flex-col items-center justify-center space-y-4">
 
       <div className="flex h-6 flex-row items-center justify-center space-x-1 text-slate-600 dark:text-slate-300">
         <Copyright className="h-4 w-4" aria-label="Copyright" />
