@@ -13,8 +13,8 @@ type BookCardProps = {
                 backgroundImage: `url(${cover.src})`
             }}>
           </div>
-          <div data-aos="fade-right" data-aos-once="true" className="absolute inset-0 z-20 flex items-center justify-center h-auto lg:h-screen w-full bg-gray-900 bg-opacity-75"></div>
-          <div className="absolute inset-0 z-30  flex flex-col items-center justify-center backdrop-blur">
+          <div className="absolute inset-0 z-20 flex items-center justify-center h-auto lg:h-screen w-full bg-gray-900 bg-opacity-75"></div>
+          <div data-aos="fade-right" data-aos-once="true" className="absolute inset-0 z-30  flex flex-col items-center justify-center backdrop-blur">
               <div className="shadow-2xl flex-col lg:flex-row rounded-lg lg:overflow-hidden items-center justify-center	flex w-full h-full lg:w-[840px] lg:h-[555px] bg-cover bg-center">
       <Image src={cover} alt="cover of the book" className="w-[416px] h-[416px] contain lg:w-[555px] lg:h-full"/>
 <div className="h-min lg:h-full bottom-[17px] lg:bottom-[unset] flex-col justify-evenly w-[416px] absolute lg:relative lg:w-max p-5 flex text-white bg-gradient-to-r from-emerald-400 to-cyan-400"><h3 className="font-inter font-black text-5xl">Book Title</h3>
