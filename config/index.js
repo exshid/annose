@@ -7,13 +7,13 @@
 
 /** @type {import('./types').BlogConfig} */
 const blogConfig = {
-  url: 'https://blog.kfirfitousi.com',
+  url: 'https://portfoliodemo.vercel.app',
   title: 'Portfolio',
   titleParts: ['portfolio', 'blog'],
   author: 'A. B. CDEF',
   pages: {
     home: {
-      title: 'portfolio',
+      title: 'Portfolio',
       description:
         "portfolio.",
     },
