@@ -43,13 +43,13 @@ useEffect(() => {
   const darkModeHandler = () => {
     //  document.documentElement.classList.add('dark');
       localStorage.setItem('theme', 'dark');
-      setDarkMode(true)
+      setDarkMode(false)
     }
-  
+    
     const lightModeHandler = () => {
       //  document.documentElement.classList.remove('dark');
+      setDarkMode(true)
         localStorage.setItem('theme', 'light');
-        setDarkMode(false)
       }
 
   const toggleSearch = useSearchStore((state) => state.toggleSearch);

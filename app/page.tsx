@@ -48,7 +48,7 @@ export default function Home() {
     
   return (
 
-<div className="flex h-full flex-col pb-12">
+<div className="flex h-full flex-col lg:pb-12">
 <PhotoCard/>
 <Intro />
 <Books/>

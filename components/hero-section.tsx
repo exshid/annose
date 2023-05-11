@@ -114,7 +114,7 @@ export function HeroSection() {
       </div>
 
 
-<p data-aos="fade-left" data-aos-once="true" className="jakarta-font text-darkish dark:text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+<p data-aos="fade-left" data-aos-once="true" className="jakarta-font text-darkish dark:text-white p-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
          <h1 data-aos="fade-right"
      data-aos-once="true"
 className='hero-font font-black uppercase bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent'>
