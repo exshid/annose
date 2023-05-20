@@ -7,7 +7,7 @@ type BookCardProps = {
   export function BookCard() {
     
     return (
-      <div className="z-30 relative items-center justify-center w-full h-full lg:overflow-auto">
+      <div className="hidden lg:block z-30 relative items-center justify-center w-full h-full lg:overflow-auto">
           <div className="inset-0 h-screen bg-cover bg-center bg-fixed" 
               style={{
                 backgroundImage: `url(${cover.src})`
