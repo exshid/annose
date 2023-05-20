@@ -53,7 +53,6 @@ const blogConfig = {
   topics: [
     'Author',
     'Editor',
-    'Literary Agent',
   ],
 };
 

@@ -43,7 +43,7 @@ export function NavigationBar({ className }: NavigationBarProps) {
         href="/"
         className="transition hover:-translate-y-px font-semibold hover:text-accent dark:hover:text-accent-dark"
       >
-        Service for Authors
+        Editorial Services
       </Link>
 
       {allPages.map((page) => (
