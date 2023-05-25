@@ -12,7 +12,7 @@ type BookCardProps = {
     const covers = [cover, coverII];
     const [count, setCount] = useState(0);
     function handleClick() {
-      setCount(count + 1);
+      setCount((count + 1) % covers.length);
     }
   
     return (
