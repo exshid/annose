@@ -26,7 +26,7 @@ type BookCardProps = {
       setTimeout(() => {
         setTransitionClassImg("w-auto h-auto rounded-lg lg:rounded-none transition opacity-100 ease-in-out object-cover contain lg:w-[555px] lg:h-full");
 
-      }, 100);
+      }, 200);
   
     }
   
@@ -50,7 +50,7 @@ type BookCardProps = {
 </div>
               </div>
           </div>
-          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <div className="absolute flex justify-between transform -translate-y-1/2 inset-x-5 top-1/2">
       <a href="#slide4" className="btn btn-circle">❮</a> 
       <a href="#slide2" className="btn btn-circle">❯</a>
     </div>
