@@ -11,7 +11,7 @@ type BookCardProps = {
   export function BookCard() {
     const covers = [cover, coverII];
     const [transitionClass, setTransitionClass] = useState("transition ease-in-out inset-0 h-screen bg-cover transition ease-in-out opacity-100 bg-center bg-fixed");
-    const [transitionClassImg, setTransitionClassImg] = useState("w-auto h-auto rounded-lg opacity-100 lg:rounded-none transition ease-in-out object-cover contain lg:w-[555px] lg:h-full");
+    const [transitionClassImg, setTransitionClassImg] = useState("z-[55] shadow-2xl flex-col lg:flex-row rounded-lg lg:overflow-hidden items-center justify-center	flex w-full h-full lg:w-[840px] lg:h-[555px] bg-cover bg-center");
 
     const [count, setCount] = useState(0);
     function classNames() {
