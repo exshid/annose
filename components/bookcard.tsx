@@ -22,7 +22,7 @@ type BookCardProps = {
       setTimeout(() => {
 
         setTransitionClass("transition ease-in-out inset-0 h-screen bg-cover transition ease-in-out opacity-100 bg-center bg-fixed");
-      }, 200);
+      }, 500);
       setTimeout(() => {
         setTransitionClassImg("w-auto h-auto rounded-lg lg:rounded-none transition opacity-100 ease-in-out object-cover contain lg:w-[555px] lg:h-full");
 
