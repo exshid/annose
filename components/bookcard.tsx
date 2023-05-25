@@ -10,14 +10,21 @@ type BookCardProps = {
   
   export function BookCard() {
     const covers = [cover, coverII];
+    const [transitionClass, setTransitionClass] = useState("transition ease-in-out inset-0 h-screen bg-cover transition ease-in-out opacity-100 bg-center bg-fixed");
     const [count, setCount] = useState(0);
     function handleClick() {
       setCount((count + 1) % covers.length);
+      setTransitionClass("transition ease-in-out inset-0 h-screen bg-cover transition ease-in-out opacity-0 bg-center bg-fixed");
+
+      setTimeout(() => {
+        setTransitionClass("transition ease-in-out inset-0 h-screen bg-cover transition ease-in-out opacity-0 bg-center bg-fixed");
+      }, 500);
+  
     }
   
     return (
       <div className="z-30 relative items-center justify-center w-full h-full lg:overflow-auto">
-          <div className="inset-0 h-screen bg-cover transition ease-in-out duration-500 delay-500 bg-center bg-fixed" 
+          <div className={transitionClass} 
               style={{
                 backgroundImage: `url(${covers[count].src})`
             }}>
