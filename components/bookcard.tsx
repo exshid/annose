@@ -1,5 +1,5 @@
+'use client'
 import React, { useState } from 'react';
-
 import Image from 'next/image'
 import cover from '../public/images/cover.jpg'
 import coverII from '../public/images/cover-ii.jpg'
