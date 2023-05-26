@@ -54,14 +54,14 @@ type BookCardProps = {
 <div className="flex h-min lg:h-full bottom-[17px] lg:bottom-[unset] flex-col justify-evenly w-auto rounded-lg lg:rounded-none absolute lg:relative lg:w-max p-5 text-white bg-gradient-to-r from-emerald-400 to-cyan-400"><h3 className="font-inter font-black text-5xl">Book Title</h3>
 <p className="hidden lg:block jakarta-font !m-0 !lg:mb-[40px]">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos nihil fugit distinctio ut nemo corrupti. Aperiam, distinctio a obcaecati dolore ipsum, harum minus facere deleniti ullam cumque officiis ea minima!</p>
 <div className="hidden lg:block">
-    <button className="transition hover:-translate-y-[4px] uppercase block w-full p-4 text-lg bg-white rounded-full focus:outline-none"><p className="uppercase font-bold text-lg bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent">Read More</p></button>
+    <button className="transition hover:-translate-y-[4px] uppercase block w-full p-4 text-lg bg-white rounded focus:outline-none"><p className="uppercase font-bold text-lg bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent">Read More</p></button>
                 </div>
 </div>
               </div>
           </div>
-          <div className="z-50 absolute flex justify-between transform -translate-y-1/2 opacity-90 hover:opacity-100 inset-x-5 top-1/2">
-      <a onClick={handleClickPlus} className="btn btn-circle">❮</a> 
-      <a onClick={handleClickMinus} className="btn btn-circle">❯</a>
+          <div className="z-50 absolute flex justify-between transform -translate-y-1/2 inset-x-5 top-1/2">
+      <a onClick={handleClickPlus} className="btn btn-circle opacity-90 hover:opacity-100">❮</a> 
+      <a onClick={handleClickMinus} className="btn btn-circle opacity-90 hover:opacity-100">❯</a>
     </div>
 
 </div>
