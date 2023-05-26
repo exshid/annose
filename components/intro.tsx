@@ -29,7 +29,7 @@ return (
   alt="picture of the author"
   width={450}
   height={450}
-  className="rounded-full dark:bg-gray-500 bg-gradient-to-r from-rose-600 to-rose-900 aspect-square"
+  className="transition hover:-translate-y-[5px] rounded-full dark:bg-gray-500 bg-gradient-to-r from-rose-600 to-rose-900 aspect-square"
 />
 </div>
 <div className="flex flex-col w-full md:w-2/4 justify-center p-6 sm:px-12 dark:text-gray-100">
@@ -37,7 +37,7 @@ return (
 Quos iure in voluptas! Libero aspernatur error temporibus id aperiam culp similique pariatur ex, optio sunt. Pariatur velit fugiat consequuntur quaerat eius.</p>
 <div className="transition hover:-translate-y-[4px] pb-2 pt-4">
                         <button data-aos="fade-up" data-aos-once="true"
-     data-aos-anchor-placement="bottom-bottom" className="uppercase block transition w-full p-4 text-lg text-white rounded-lg bg-gradient-to-r from-rose-600 to-rose-900 focus:outline-none">Read More</button>
+     data-aos-anchor-placement="bottom-bottom" className="uppercase block transition w-full p-4 text-lg text-white rounded bg-gradient-to-r from-rose-600 to-rose-900 focus:outline-none">Read More</button>
                     </div>
 
 </div>
