@@ -18,7 +18,7 @@ type IntroProps = {
 return (
 <>
     
-      <div className="flex flex-col h-screen bg-darkerlight dark:bg-lightdarkish justify-center items-center">
+      <div className="flex flex-col h-auto min-h-screen bg-darkerlight dark:bg-lightdarkish justify-center items-center">
           <h3 data-aos-once="true" data-aos="fade-right" className="font-inter text-5xl font-black uppercase bg-gradient-to-r from-rose-600 to-rose-900 bg-clip-text text-transparent">
         About A. B. CDEF</h3>
 
@@ -29,7 +29,7 @@ return (
   alt="picture of the author"
   width={450}
   height={450}
-  className="transition hover:-translate-y-[5px] rounded-full dark:bg-gray-500 bg-gradient-to-r from-rose-600 to-rose-900 aspect-square"
+  className="transition hover:-translate-y-[7px] rounded-full dark:bg-gray-500 bg-gradient-to-r from-rose-600 to-rose-900 aspect-square"
 />
 </div>
 <div className="flex flex-col w-full md:w-2/4 justify-center p-6 sm:px-12 dark:text-gray-100">
