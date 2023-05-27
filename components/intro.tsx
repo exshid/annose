@@ -33,7 +33,7 @@ return (
 />
 </div>
 <div className="flex flex-col w-full md:w-2/4 justify-center p-6 sm:px-12 dark:text-gray-100">
-<p className="jakarta-font text-darkish dark:text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, ad asperiores ipsam voluptatem rem a id maxime odio ullam accusantium dolor magnam quam expedita! A tenetur ipsam enim magnam cupiditate.
+<p className="jakarta-font mb-10 text-darkish dark:text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, ad asperiores ipsam voluptatem rem a id maxime odio ullam accusantium dolor magnam quam expedita! A tenetur ipsam enim magnam cupiditate.
 Quos iure in voluptas! Libero aspernatur error temporibus id aperiam culp similique pariatur ex, optio sunt. Pariatur velit fugiat consequuntur quaerat eius.</p>
 <div className="transition hover:-translate-y-[4px] pb-2 pt-4">
                         <button data-aos="fade-up" data-aos-once="true"

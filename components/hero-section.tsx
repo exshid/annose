@@ -66,7 +66,7 @@ export function HeroSection() {
         'flex flex-col-reverse items-center lg:items-start h-auto lg:h-full w-full lg:w-3/5 justify-center px-2 lg:px-28 relative',
       )}
     >
-      <div className="flex flex-row flex-wrap justify-center gap-4 max-xs:px-16">
+      <div className="flex flex-row flex-wrap justify-center gap-4 max-xs:px-16 mb-5 lg:mb-0">
         {footerLinks?.facebook && (
           <a
             href={footerLinks.facebook}
@@ -114,7 +114,7 @@ export function HeroSection() {
       </div>
 
 
-<p data-aos="fade-left" data-aos-once="true" className="jakarta-font text-darkish dark:text-white p-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+<p data-aos="fade-left" data-aos-once="true" className="jakarta-font mb-5 lg:mb-10 text-darkish dark:text-white p-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
          <h1 data-aos="fade-right"
      data-aos-once="true"
 className='hero-font font-black uppercase bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent'>
