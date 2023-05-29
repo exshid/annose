@@ -6,13 +6,13 @@
     <section className="min-h-screen flex flex-col lg:flex-row items-stretch text-white ">
         <div className="lg:flex w-full p-8 lg:w-1/2 bg-gradient-to-r from-emerald-400 to-cyan-400 relative items-center">
             <div className="absolute bg-darkish opacity-60 inset-0 z-0"></div>
-            <div className="w-full px-2 lg:px-24 z-10">
+            <div className="w-full px-2 xl:px-24 z-10">
                 <h1 data-aos="fade-right" data-aos-once="true" className="text-5xl font-bold text-left tracking-wide">Get In Touch</h1>
                 <p data-aos="fade-right" data-aos-once="true" className="text-xl lg:text-3xl my-4">Email me at<br/>email@example.com</p>
             </div>
 
         </div>
-        <div className="lg:w-1/2 w-full flex items-center justify-center text-center lg:px-16 px-0 z-0 bg-white dark:bg-darkish text-darkish dark:text-white">
+        <div className="lg:w-1/2 w-full flex items-center justify-center text-center xl:px-16 px-0 z-0 bg-white dark:bg-darkish text-darkish dark:text-white">
             <div className="w-full py-6 z-20">
          <p  data-aos="fade-up" data-aos-once="true" className="text-3xl my-4 text-darkish dark:text-white">
               SIGN UP FOR MY NEWSLETTER
