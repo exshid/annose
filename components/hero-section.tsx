@@ -63,7 +63,7 @@ export function HeroSection() {
   return (
     <div
       className={cn(
-        'flex flex-col-reverse items-center lg:items-start h-auto md:h-full w-full lg:w-3/5 justify-center px-2 lg:px-28 relative',
+        'flex flex-col-reverse items-center md:items-start h-auto md:h-full w-full lg:w-3/5 justify-center px-2 lg:px-28 relative',
       )}
     >
       <div className="flex flex-row flex-wrap justify-center gap-4 max-xs:px-16 mb-5 lg:mb-0">
