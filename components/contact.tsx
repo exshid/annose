@@ -15,7 +15,7 @@
         <div className="lg:w-1/2 w-full flex items-center justify-center text-center xl:px-16 px-0 z-0 bg-white dark:bg-darkish text-darkish dark:text-white">
             <div className="w-full py-6 z-20">
          <p  data-aos="fade-up" data-aos-once="true" className="text-3xl my-4 text-darkish dark:text-white">
-              SIGN UP FOR MY NEWSLETTER
+              CONTACT FORM
                 </p>
                 <form data-aos="fade-up" data-aos-once="true" action="" className="sm:w-2/3 w-full px-4 lg:px-0 mx-auto">
                     <div className="pb-2 pt-4">
@@ -23,6 +23,9 @@
                     </div>
                     <div className="pb-2 pt-4">
                         <input className="bg-white block w-full p-4 text-lg border dark:border-white rounded-sm dark:bg-darkish" type="text" name="name" id="name" placeholder="Name" />
+                    </div>
+                    <div className="pb-2 pt-4">
+                        <input className="bg-white block w-full p-4 text-lg border min-h-[151px] dark:border-white rounded-sm dark:bg-darkish" type="text" name="message" id="message" placeholder="Your message..." />
                     </div>
                     <div className="pb-2 pt-4">
                         <button className="uppercase block w-full p-4 text-lg text-white rounded bg-gradient-to-r from-emerald-400 to-cyan-400 focus:outline-none transition hover:-translate-y-[4px]">Send</button>
