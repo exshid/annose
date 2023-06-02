@@ -23,7 +23,7 @@ return (
         About A. B. CDEF</h3>
 
       <div className="w-full flex-col md:flex-row flex justify-evenly xl:p-10">
-<div data-aos="zoom-out" data-aos-once="true" className="flex-col w-full md:w-2/6 hidden md:flex justify-center py-6 xl:px-12 dark:text-gray-100">
+<div data-aos="zoom-out" data-aos-once="true" className="flex-col w-full md:w-2/6 hidden md:flex justify-center p-6 md:px-0 xl:px-12 dark:text-gray-100">
 <Image
   src={placeholder}
   alt="picture of the author"
@@ -32,7 +32,7 @@ return (
   className="transition hover:-translate-y-[7px] rounded-full dark:bg-gray-500 bg-gradient-to-r from-rose-600 to-rose-900 aspect-square"
 />
 </div>
-<div className="flex flex-col w-full md:w-2/4 justify-center py-6 xl:px-12 dark:text-gray-100">
+<div className="flex flex-col w-full md:w-2/4 justify-center p-6 md:px-0 xl:px-12 dark:text-gray-100">
 <p className="jakarta-font mb-10 text-darkish dark:text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, ad asperiores ipsam voluptatem rem a id maxime odio ullam accusantium dolor magnam quam expedita! A tenetur ipsam enim magnam cupiditate.
 Quos iure in voluptas! Libero aspernatur error temporibus id aperiam culp similique pariatur ex, optio sunt. Pariatur velit fugiat consequuntur quaerat eius.</p>
 <div className="transition hover:-translate-y-[4px] pb-2 pt-4">
