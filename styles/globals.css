@@ -57,9 +57,14 @@
   background: linear-gradient(to right, #34D399, #22D3EE);
   transform-origin: 0%;
 }
+.contact-placeholder::placeholder{
+  position: absolute;
+  top: 0;
 
+}
 @media (min-width: 768px) {
   .clip-custom{
     clip-path: ellipse(100% 70% at 100% 58%);
   }
   }
+
