@@ -22,7 +22,7 @@ return (
           <h3 data-aos-once="true" data-aos="fade-right" className="font-inter text-5xl font-black uppercase bg-gradient-to-r from-rose-600 to-rose-900 bg-clip-text text-transparent">
         About A. B. CDEF</h3>
 
-      <div className="w-full flex-col md:flex-row flex justify-evenly md:p-10">
+      <div className="w-full flex-col md:flex-row flex justify-evenly xl:p-10">
 <div data-aos="zoom-out" data-aos-once="true" className="flex-col w-full md:w-2/6 hidden md:flex justify-center p-6 sm:px-12 dark:text-gray-100">
 <Image
   src={placeholder}
