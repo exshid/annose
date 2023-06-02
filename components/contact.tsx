@@ -24,8 +24,8 @@
                     <div className="pb-2 pt-4">
                         <input className="bg-white block w-full p-4 text-lg border dark:border-white rounded-sm dark:bg-darkish" type="text" name="name" id="name" placeholder="Name" />
                     </div>
-                    <div className="pb-2 pt-4 relative">
-                        <input className="bg-white absolute top-0 block w-full p-4 text-lg border min-h-[151px] dark:border-white rounded-sm dark:bg-darkish" type="text" name="message" id="message" placeholder="Your message..." />
+                    <div className="pb-2 pt-4">
+                        <input className="bg-white block w-full p-4 text-lg border min-h-[151px] dark:border-white rounded-sm dark:bg-darkish" type="text" name="message" id="message" placeholder="Your message..." />
                     </div>
                     <div className="pb-2 pt-4">
                         <button className="uppercase block w-full p-4 text-lg text-white rounded bg-gradient-to-r from-emerald-400 to-cyan-400 focus:outline-none transition hover:-translate-y-[4px]">Send</button>
