@@ -10,11 +10,11 @@ type PhotoCardProps = {
     return (
         <div className="flex flex-col-reverse md:flex-row p-5 md:p-0 h-auto md:h-screen justify-evenly lg:justify-around items-center">
     <HeroSection/>
-<div data-aos="zoom-in" data-aos-once="true" className='h-auto md:h-full w-3/5 lg:w-2/5 flex clip-custom justify-center bg-gradient-to-r from-emerald-400 to-cyan-400 pt-5'>
+<div data-aos="zoom-in" data-aos-once="true" className='h-auto md:h-full w-3/5 lg:w-2/4 xl:w-2/5 flex clip-custom justify-center bg-gradient-to-r from-emerald-400 to-cyan-400 pt-5'>
     <Image 
           src={placeholder}
           alt="Picture of the author"
-        className="!relative h-full object-cover w-11/12 pt-5"/> </div>
+        className="!relative h-full object-cover w-auto pt-5"/> </div>
     </div>
         );
   }
