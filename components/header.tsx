@@ -50,7 +50,7 @@ export function Header() {
     </div>
   </div>
   <div className="navbar-center hidden lg:flex">
-    <ul className="menu menu-horizontal px-1">
+    <ul className="menu-horizontal px-1">
     <NavigationBar className="flex-grow max-xs:mr-2" />
 
     </ul>
