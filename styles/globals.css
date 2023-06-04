@@ -59,7 +59,7 @@
 }
 .contact-placeholder::placeholder{
   position: absolute;
-  top: 0;
+  top: 5;
 
 }
 @media (min-width: 1024px) {
