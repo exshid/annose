@@ -8,7 +8,7 @@ type PhotoCardProps = {
   export function PhotoCard() {
     
     return (
-        <div className="flex flex-col-reverse md:flex-row p-5 md:p-0 h-auto md:h-screen justify-evenly lg:justify-around items-center">
+        <div className="flex flex-col-reverse xl:flex-row p-5 md:p-0 h-auto xl:h-screen justify-evenly lg:justify-around items-center">
     <HeroSection/>
 <div data-aos="zoom-in" data-aos-once="true" className='h-auto md:h-full w-3/5 lg:w-2/4 xl:w-2/5 flex clip-custom justify-center bg-gradient-to-r from-emerald-400 to-cyan-400 pt-5'>
     <Image 
