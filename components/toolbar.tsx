@@ -155,7 +155,7 @@ const completedProject = false;
         onClick={darkModeHandler}
         id="theme-toggle" className="transition hover:-translate-y-px">
           <Moon
-            className="icon-base w-[30px] h-[30px]"
+            className="icon-base w-[30px] h-[30px] lg:h-[25px] lg:w-[25px]"
             aria-label="Switch to light mode"
           />
       </button>
@@ -168,7 +168,7 @@ const completedProject = false;
         onClick={lightModeHandler}
         id="theme-toggle" className="transition hover:-translate-y-px">
           <Sun
-            className="icon-base w-[30px] h-[30px]"
+            className="icon-base w-[30px] h-[30px] lg:h-[25px] lg:w-[25px]"
             aria-label="Switch to dark mode"
           />
       </button>
