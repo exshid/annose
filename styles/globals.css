@@ -62,7 +62,7 @@
   top: 0;
 
 }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .clip-custom{
     clip-path: ellipse(100% 70% at 100% 58%);
   }
