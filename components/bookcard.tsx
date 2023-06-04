@@ -11,20 +11,20 @@ type BookCardProps = {
   export function BookCard() {
     const covers = [cover, coverII];
     const [transitionClass, setTransitionClass] = useState("transition ease-in-out inset-0 h-screen bg-cover transition ease-in-out opacity-100 bg-center bg-fixed");
-    const [transitionClassImg, setTransitionClassImg] = useState("w-auto h-full lg:h-auto rounded-lg opacity-100 lg:rounded-none transition ease-in-out object-cover contain lg:w-[555px] lg:h-full");
+    const [transitionClassImg, setTransitionClassImg] = useState("w-auto h-full lg:h-auto rounded-lg opacity-100 lg:rounded-none transition ease-in-out object-cover contain lg:h-full");
 
     const [count, setCount] = useState(0);
     function classNames() {
       setCount((count + 1) % covers.length);
       setTransitionClass("transition ease-in-out inset-0 h-screen bg-cover transition ease-in-out opacity-0 bg-center bg-fixed");
-      setTransitionClassImg("w-auto h-full lg:h-auto rounded-lg lg:rounded-none transition opacity-0 ease-in-out object-cover contain lg:w-[555px] lg:h-full");
+      setTransitionClassImg("w-auto h-full lg:h-auto rounded-lg lg:rounded-none transition opacity-0 ease-in-out object-cover contain lg:h-full");
 
       setTimeout(() => {
 
         setTransitionClass("transition ease-in-out inset-0 h-screen bg-cover transition ease-in-out opacity-100 bg-center bg-fixed");
       }, 500);
       setTimeout(() => {
-        setTransitionClassImg("w-auto h-full lg:h-auto rounded-lg lg:rounded-none transition opacity-100 ease-in-out object-cover contain lg:w-[555px] lg:h-full");
+        setTransitionClassImg("w-auto h-full lg:h-auto rounded-lg lg:rounded-none transition opacity-100 ease-in-out object-cover contain lg:h-full");
 
       }, 200);
   
