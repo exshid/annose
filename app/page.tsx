@@ -12,6 +12,8 @@ import { Contact } from '@/components/contact';
 import {PhotoCard} from '@/components/photocard';
 import {Intro} from '@/components/intro';
 import {Service} from '@/components/service';
+import {Testimonials} from '@/components/testimonial';
+
 import {Books} from '@/components/books';
 import cover from '@/public/images/cover.jpg'
 import placeholder from '@/public/images/placeholder.svg'
@@ -53,6 +55,7 @@ export default function Home() {
 <Intro />
 <Books/>
 <Service/>
+<Testimonials/>
 <Contact/>
  {/* 
       <section className="flex w-full flex-col">
