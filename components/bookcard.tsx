@@ -1,5 +1,5 @@
-'use client'
 //@ts-nocheck 
+'use client'
 import { useRef, useEffect,useState } from 'react';
 import { register } from 'swiper/element/bundle';
 import Image from 'next/image'
@@ -84,6 +84,8 @@ type BookCardProps = {
     </div>
 
 </div>
+
+      //@ts-ignore
        <swiper-container
        ref={swiperElRef}
        slides-per-view="3"
