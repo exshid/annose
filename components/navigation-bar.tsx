@@ -27,13 +27,12 @@ export function NavigationBar({ className }: NavigationBarProps) {
       >
         Books
       </Link>
-      <Link
-      scroll={true}
+      <a
         href="#about"
         className="transition hover:-translate-y-px font-semibold hover:text-accent dark:hover:text-accent-dark"
       >
         About
-      </Link>
+      </a>
       <Link
       scroll={true}
         href="#contact"
