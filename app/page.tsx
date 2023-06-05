@@ -10,8 +10,6 @@ import { HeroSection } from '@/components/hero-section';
 import { PostCard } from '@/components/post-card';
 import { Contact } from '@/components/contact';
 import {PhotoCard} from '@/components/photocard';
-import {Testimonial} from '@/components/testimonial';
-
 import {Intro} from '@/components/intro';
 import {Service} from '@/components/service';
 import {Books} from '@/components/books';
@@ -54,7 +52,6 @@ export default function Home() {
 <PhotoCard/>
 <Intro />
 <Books/>
-<Testimonial/>
 <Service/>
 <Contact/>
  {/* 
