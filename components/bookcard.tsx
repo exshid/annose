@@ -1,7 +1,7 @@
 //@ts-nocheck 
 'use client'
 import { useRef, useEffect,useState } from 'react';
-import { register,Swiper, SwiperSlide } from 'swiper/element/bundle';
+import { register } from 'swiper/element/bundle';
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
@@ -85,38 +85,21 @@ type BookCardProps = {
     </div>
 
 </div>
-       <swiper-container
-       ref={swiperElRef}
-       slides-per-view="3"
-       navigation="true"
-       pagination="true"
-     >
-       <swiper-slide>Slide 1</swiper-slide>
-       <swiper-slide>Slide 2</swiper-slide>
-       <swiper-slide>Slide 3</swiper-slide>
-       ...
-     </swiper-container>
-     
-     <Swiper
-        slidesPerView={"auto"}
-        centeredSlides={true}
-        spaceBetween={30}
-        pagination={{
-          clickable: true,
-        }}
-        modules={[Pagination]}
-        className="mySwiper"
-      >
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
-      </Swiper>
+
+<swiper-container class="mySwiper" pagination="true" pagination-clickable="true" slides-per-view="auto"
+    centered-slides="true" space-between="30">
+    <swiper-slide>Slide 1</swiper-slide>
+    <swiper-slide>Slide 2</swiper-slide>
+    <swiper-slide>Slide 3</swiper-slide>
+    <swiper-slide>Slide 4</swiper-slide>
+    <swiper-slide>Slide 5</swiper-slide>
+    <swiper-slide>Slide 6</swiper-slide>
+    <swiper-slide>Slide 7</swiper-slide>
+    <swiper-slide>Slide 8</swiper-slide>
+    <swiper-slide>Slide 9</swiper-slide>
+  </swiper-container>
+
+
 </> 
    );
   }
