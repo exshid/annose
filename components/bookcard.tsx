@@ -2,8 +2,6 @@
 //@ts-nocheck 
 import { useRef, useEffect,useState } from 'react';
 import { register } from 'swiper/element/bundle';
-
-
 import Image from 'next/image'
 import cover from '../public/images/cover.jpg'
 import coverII from '../public/images/cover-ii.jpg'
