@@ -6,8 +6,9 @@
 <div className="box"><i className="fas fa-quote-left fa2" />
   <div className="text"><i className="fas fa-quote-right fa1" />
     <div>
-      <h3>Quote the day</h3>
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+      <h3>Testimonials</h3>
+      <p>Lorem, ipsum dolor si amet consectetur adipisicing elit. Dignissimos nihil fugit distinctio ut nemo corrupti. Aperiam, distinctio a obcaecati dolore ipsum, harum minus facere deleniti ullam cumque officiis ea minima!
+</p>
     </div>
   </div>
 </div>
