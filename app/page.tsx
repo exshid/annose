@@ -13,7 +13,6 @@ import {PhotoCard} from '@/components/photocard';
 import {Intro} from '@/components/intro';
 import {Service} from '@/components/service';
 import {Testimonials} from '@/components/testimonial';
-import * as Scroll from 'react-scroll';
 import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 import {Books} from '@/components/books';
 import cover from '@/public/images/cover.jpg'

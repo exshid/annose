@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import * as Scroll from 'react-scroll';
 import { Link as ScrollLink, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 import { BlogTitle } from '@/components/blog-title';
 import { cn } from '@/lib/utils';
