@@ -1,4 +1,5 @@
 //@ts-nocheck
+'use client'
 import cover from '../public/images/cover.jpg'
 import coverII from '../public/images/cover-ii.jpg'
 import Image from 'next/image'
