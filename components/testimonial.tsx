@@ -269,7 +269,7 @@ return (
 		<button className="cardList__btn btn btn--left">
 			<div className="icon">
 				<svg>
-					<use xlink:href="#arrow-left"></use>
+					<use href="#arrow-left"></use>
 				</svg>
 			</div>
 		</button>
@@ -297,7 +297,7 @@ return (
 		<button className="cardList__btn btn btn--right">
 			<div className="icon">
 				<svg>
-					<use xlink:href="#arrow-right"></use>
+					<use href="#arrow-right"></use>
 				</svg>
 			</div>
 		</button>
