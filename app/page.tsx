@@ -13,14 +13,14 @@ import {PhotoCard} from '@/components/photocard';
 import {Intro} from '@/components/intro';
 import {Service} from '@/components/service';
 import {Testimonials} from '@/components/testimonial';
-import * as Scroll from 'react-scroll';
-import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+
 import {Books} from '@/components/books';
 import cover from '@/public/images/cover.jpg'
 import placeholder from '@/public/images/placeholder.svg'
 import Image from 'next/image'
 
 const { title, description } = blogConfig.pages.home;
+
 const ogImage = {
   url: `${blogConfig.url}/og`,
 };
@@ -52,15 +52,10 @@ export default function Home() {
 
 <div className="flex h-full flex-col lg:pb-12">
 <PhotoCard/>
-<Element name="about" className="element big">
-<Intro /></Element>
-<Element name="books" className="element big">
-<Books/></Element>
-<Element name="services" className="element big">
-<Service/></Element>
-<Element name="contact" className="element big">
-
-<Contact/></Element>
+<Intro />
+<Books/>
+<Service/>
+<Contact/>
  {/* 
 <Testimonials/>
       <section className="flex w-full flex-col">

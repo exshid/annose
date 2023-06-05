@@ -2,7 +2,7 @@
   export function Contact() {
     
     return (
-    <div>
+    <div id="contact">
     <section className="min-h-screen flex flex-col lg:flex-row items-stretch text-white ">
         <div className="lg:flex w-full p-8 lg:w-1/2 bg-gradient-to-r from-emerald-400 to-cyan-400 relative items-center">
             <div className="absolute bg-darkish opacity-60 inset-0 z-0"></div>
