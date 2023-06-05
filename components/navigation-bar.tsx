@@ -22,17 +22,20 @@ export function NavigationBar({ className }: NavigationBarProps) {
       </Link>
       <Link
         href="#books"
+        scroll={true}
         className="transition hover:-translate-y-px font-semibold hover:text-accent dark:hover:text-accent-dark"
       >
         Books
       </Link>
       <Link
+      scroll={true}
         href="#about"
         className="transition hover:-translate-y-px font-semibold hover:text-accent dark:hover:text-accent-dark"
       >
         About
       </Link>
       <Link
+      scroll={true}
         href="#contact"
         className="transition hover:-translate-y-px font-semibold hover:text-accent dark:hover:text-accent-dark"
       >
@@ -41,6 +44,7 @@ export function NavigationBar({ className }: NavigationBarProps) {
 
       <Link
         href="#services"
+        scroll={true}
         className="transition hover:-translate-y-px font-semibold hover:text-accent dark:hover:text-accent-dark"
       >
         Editorial Services
