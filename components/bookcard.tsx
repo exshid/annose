@@ -14,7 +14,7 @@ type BookCardProps = {
     'swiper-container'?: any;
   }
   
-  export const BookCard: React.FC<SwiperContainerProps> = () => {
+  export const BookCard: React.FC<SwiperContainerProps> = (props) => {
 
     const swiperElRef = useRef(null);
     useEffect(() => {
