@@ -10,8 +10,12 @@ register();
 type BookCardProps = {
     photo: string;
   };
+  interface SwiperContainerProps extends JSX.IntrinsicElements {
+    'swiper-container'?: any;
+  }
   
-  export function BookCard() {
+  export const BookCard: React.FC = () => {
+
     const swiperElRef = useRef(null);
     useEffect(() => {
 //@ts-ignore
