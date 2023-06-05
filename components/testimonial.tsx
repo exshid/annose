@@ -3,7 +3,7 @@
     
     return (
  <div className="h-screen bg-white dark:bg-lightdarkish">
-<div className="box">
+<div className="box before:border-lightdarkish before:dark:border-white after:border-lightdarkish after:dark:border-white">
   <div className="text bg-gradient-to-r from-rose-600 to-rose-900">
     <div>
       <h3>Testimonials</h3>

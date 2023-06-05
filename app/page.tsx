@@ -55,9 +55,9 @@ export default function Home() {
 <Intro />
 <Books/>
 <Service/>
+<Testimonials/>
 <Contact/>
  {/* 
-<Testimonials/>
       <section className="flex w-full flex-col">
       {latestPosts.map((post) => (
         <PostCard key={post._id} post={post} />
