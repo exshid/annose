@@ -1,7 +1,12 @@
 //@ts-nocheck 
 'use client'
 import { useRef, useEffect,useState } from 'react';
-import { register } from 'swiper/element/bundle';
+import { register,Swiper, SwiperSlide } from 'swiper/element/bundle';
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+import { Pagination } from "swiper";
+
 import Image from 'next/image'
 import cover from '../public/images/cover.jpg'
 import coverII from '../public/images/cover-ii.jpg'
@@ -91,6 +96,27 @@ type BookCardProps = {
        <swiper-slide>Slide 3</swiper-slide>
        ...
      </swiper-container>
+     
+     <Swiper
+        slidesPerView={"auto"}
+        centeredSlides={true}
+        spaceBetween={30}
+        pagination={{
+          clickable: true,
+        }}
+        modules={[Pagination]}
+        className="mySwiper"
+      >
+        <SwiperSlide>Slide 1</SwiperSlide>
+        <SwiperSlide>Slide 2</SwiperSlide>
+        <SwiperSlide>Slide 3</SwiperSlide>
+        <SwiperSlide>Slide 4</SwiperSlide>
+        <SwiperSlide>Slide 5</SwiperSlide>
+        <SwiperSlide>Slide 6</SwiperSlide>
+        <SwiperSlide>Slide 7</SwiperSlide>
+        <SwiperSlide>Slide 8</SwiperSlide>
+        <SwiperSlide>Slide 9</SwiperSlide>
+      </Swiper>
 </> 
    );
   }
