@@ -22,26 +22,26 @@ export function NavigationBar({ className }: NavigationBarProps) {
       </Link>
       <a
         href="#about"
-        className="transition hover:-translate-y-px font-semibold hover:text-accent dark:hover:text-accent-dark"
+        className="scroll-smooth transition hover:-translate-y-px font-semibold hover:text-accent dark:hover:text-accent-dark"
       >
         About
       </a>
       <a
         href="#books"
-        className="transition hover:-translate-y-px font-semibold hover:text-accent dark:hover:text-accent-dark"
+        className="scroll-smooth transition hover:-translate-y-px font-semibold hover:text-accent dark:hover:text-accent-dark"
       >
         Books
       </a>
          
       <a
         href="#services"
-        className="transition hover:-translate-y-px font-semibold hover:text-accent dark:hover:text-accent-dark"
+        className="scroll-smooth transition hover:-translate-y-px font-semibold hover:text-accent dark:hover:text-accent-dark"
       >
         Editorial Services
       </a>
       <a
         href="#contact"
-        className="transition hover:-translate-y-px font-semibold hover:text-accent dark:hover:text-accent-dark"
+        className="scroll-smooth transition hover:-translate-y-px font-semibold hover:text-accent dark:hover:text-accent-dark"
       >
         Contact
       </a>
