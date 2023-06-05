@@ -20,34 +20,32 @@ export function NavigationBar({ className }: NavigationBarProps) {
       className="transition hover:-translate-y-px font-bold bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent hover:text-accent dark:hover:text-accent-dark">
         Home
       </Link>
-      <Link
+      <a
         href="#books"
-        scroll={true}
         className="transition hover:-translate-y-px font-semibold hover:text-accent dark:hover:text-accent-dark"
       >
         Books
-      </Link>
+      </a>
       <a
         href="#about"
         className="transition hover:-translate-y-px font-semibold hover:text-accent dark:hover:text-accent-dark"
       >
         About
       </a>
-      <Link
+      <a
       scroll={true}
         href="#contact"
         className="transition hover:-translate-y-px font-semibold hover:text-accent dark:hover:text-accent-dark"
       >
         Contact
-      </Link>
+      </a>
 
-      <Link
+      <a
         href="#services"
-        scroll={true}
         className="transition hover:-translate-y-px font-semibold hover:text-accent dark:hover:text-accent-dark"
       >
         Editorial Services
-      </Link>
+      </a>
 
       {allPages.map((page) => (
         <Link
