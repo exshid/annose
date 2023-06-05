@@ -21,16 +21,23 @@ export function NavigationBar({ className }: NavigationBarProps) {
         Home
       </Link>
       <a
+        href="#about"
+        className="transition hover:-translate-y-px font-semibold hover:text-accent dark:hover:text-accent-dark"
+      >
+        About
+      </a>
+      <a
         href="#books"
         className="transition hover:-translate-y-px font-semibold hover:text-accent dark:hover:text-accent-dark"
       >
         Books
       </a>
+         
       <a
-        href="#about"
+        href="#services"
         className="transition hover:-translate-y-px font-semibold hover:text-accent dark:hover:text-accent-dark"
       >
-        About
+        Editorial Services
       </a>
       <a
         href="#contact"
@@ -39,12 +46,6 @@ export function NavigationBar({ className }: NavigationBarProps) {
         Contact
       </a>
 
-      <a
-        href="#services"
-        className="transition hover:-translate-y-px font-semibold hover:text-accent dark:hover:text-accent-dark"
-      >
-        Editorial Services
-      </a>
 
       {allPages.map((page) => (
         <Link
