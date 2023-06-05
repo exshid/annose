@@ -21,12 +21,12 @@ useEffect(() => {
   });
 }, []);
 return (
-<div className="w-full">
+<div className="w-full h-screen">
 
 <swiper-container ref={swiperElRef}
 class="mySwiper" pagination="true" pagination-clickable="true" slides-per-view="auto"
    centered-slides="true" space-between="30">
-   <swiper-slide>Slide 1</swiper-slide>
+   <swiper-slide className="bg-[wheat] h-screen">Slide 1</swiper-slide>
    <swiper-slide>Slide 2</swiper-slide>
    <swiper-slide>Slide 3</swiper-slide>
    <swiper-slide>Slide 4</swiper-slide>
