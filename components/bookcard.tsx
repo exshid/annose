@@ -16,14 +16,17 @@ type BookCardProps = {
     const swiperElRef = useRef(null);
     useEffect(() => {
       // listen for Swiper events using addEventListener
-      swiperElRef?.current.addEventListener('progress', (e) => {
+      if (swiperElRef !== null && swiperElRef !== undefined) {
+
+      swiperElRef.current.addEventListener('progress', (e) => {
         const [swiper, progress] = e.detail;
         console.log(progress);
       });
   
-      swiperElRef?.current.addEventListener('slidechange', (e) => {
+      swiperElRef.current.addEventListener('slidechange', (e) => {
         console.log('slide changed');
       });
+    }
     }, []);
   
     const covers = [cover, coverII];
