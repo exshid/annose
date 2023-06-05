@@ -23,6 +23,7 @@
   },
   "include": [
     "next-env.d.ts",
+    "react-scroll.d.ts",
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
