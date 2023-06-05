@@ -5,7 +5,6 @@ import { register } from 'swiper/element/bundle';
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
-import { Pagination } from "swiper";
 
 import Image from 'next/image'
 import cover from '../public/images/cover.jpg'
@@ -85,8 +84,8 @@ type BookCardProps = {
     </div>
 
 </div>
-
-<swiper-container class="mySwiper" pagination="true" pagination-clickable="true" slides-per-view="auto"
+     <swiper-container ref={swiperElRef}
+ class="mySwiper" pagination="true" pagination-clickable="true" slides-per-view="auto"
     centered-slides="true" space-between="30">
     <swiper-slide>Slide 1</swiper-slide>
     <swiper-slide>Slide 2</swiper-slide>
