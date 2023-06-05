@@ -16,10 +16,10 @@ export function NavigationBar({ className }: NavigationBarProps) {
         className,
       )}
     >
-      <Link href="/"
+      <a href="#"
       className="transition hover:-translate-y-px font-bold bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent hover:text-accent dark:hover:text-accent-dark">
         Home
-      </Link>
+      </a>
       <a
         href="#about"
         className="scroll-smooth transition hover:-translate-y-px font-semibold hover:text-accent dark:hover:text-accent-dark"
