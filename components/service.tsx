@@ -13,7 +13,7 @@ type ServiceProps = {
      data-aos-once="true"
      className="font-inter text-2xl	md:text-5xl p-5 font-black uppercase bg-gradient-to-r from-rose-600 to-rose-900 bg-clip-text text-transparent">
         Editorial Services</h3>
-<ul data-aos="fade-right" data-aos-duration="500" data-aos-once="true" className="jakarta-title pt-5 pb-10 grid grid-cols-1 grid-rows-6 lg:grid-cols-3 lg:grid-rows-2 gap-8">
+<ul data-aos="fade-right" data-aos-duration="500" data-aos-once="true" className="jakarta-title justify-items-center pt-5 pb-10 grid grid-cols-1 grid-rows-6 lg:grid-cols-3 lg:grid-rows-2 gap-8">
     <li className="s-boxshadow dark:shadow-none transition hover:-translate-y-[5px] p-5 h-80 w-4/5 md:w-3/5 lg:w-80 rounded-lg bg-white col-start-1 row-start-6 lg:col-start-1 dark:bg-lightdarkish lg:row-start-1"><h4 className="p-5 font-bold text-xl">Book edit</h4><p className="p-5">Loremipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptas saepe vitae enim culpa ut assumenda accusamus distinctio laudantium debitis!</p></li>
     <li className="s-boxshadow dark:shadow-none transition hover:-translate-y-[5px] p-5 h-80 w-4/5 md:w-3/5 lg:w-80 rounded-lg bg-white dark:bg-lightdarkish col-start-1 row-start-5 lg:col-start-2  lg:row-start-2">
       <h4 className="p-5 font-bold text-xl">Book edit</h4>
