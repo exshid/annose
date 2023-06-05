@@ -33,7 +33,6 @@ export function NavigationBar({ className }: NavigationBarProps) {
         About
       </a>
       <a
-      scroll={true}
         href="#contact"
         className="transition hover:-translate-y-px font-semibold hover:text-accent dark:hover:text-accent-dark"
       >
