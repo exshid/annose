@@ -4,7 +4,7 @@ import coverII from '../public/images/cover-ii.jpg'
 import Image from 'next/image'
 import EmblaCarousel from './EmblaCarousel'
 import { EmblaOptionsType } from 'embla-carousel-react'
-const Testimonial: React.FC = () => {
+export const Testimonial: React.FC = () => {
     const covers = [cover, coverII];
   
     const OPTIONS: EmblaOptionsType = {};
