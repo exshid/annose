@@ -1,34 +1,14 @@
-//@ts-nocheck 
 'use client'
-import { useRef, useEffect,useState } from 'react';
-import { register } from 'swiper/element/bundle';
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/pagination";
-
+import React, { useState } from 'react';
 import Image from 'next/image'
 import cover from '../public/images/cover.jpg'
 import coverII from '../public/images/cover-ii.jpg'
-register();
 
 type BookCardProps = {
     photo: string;
   };
-  export const BookCard: React.FC = () => {
-
-    const swiperElRef = useRef(null);
-    useEffect(() => {
-//@ts-ignore
-      swiperElRef.current.addEventListener('progress', (e) => {
-        const [swiper, progress] = e.detail;
-        console.log(progress);
-      });
-//@ts-ignore  
-      swiperElRef.current.addEventListener('slidechange', (e) => {
-        console.log('slide changed');
-      });
-    }, []);
   
+  export function BookCard() {
     const covers = [cover, coverII];
     const [transitionClass, setTransitionClass] = useState("transition ease-in-out inset-0 h-screen bg-cover transition ease-in-out opacity-100 bg-center bg-fixed");
     const [transitionClassImg, setTransitionClassImg] = useState("w-auto h-full lg:h-auto rounded-lg opacity-100 lg:rounded-none transition ease-in-out object-cover contain lg:h-full");
@@ -61,8 +41,7 @@ type BookCardProps = {
     }
 
     return (
-<>
-<div className="z-30 relative items-center justify-center w-full h-auto min-h-full lg:overflow-auto">
+      <div className="z-30 relative items-center justify-center w-full h-auto min-h-full lg:overflow-auto">
           <div className={transitionClass} 
               style={{
                 backgroundImage: `url(${covers[count].src})`
@@ -84,21 +63,5 @@ type BookCardProps = {
     </div>
 
 </div>
-     <swiper-container ref={swiperElRef}
- class="mySwiper" pagination="true" pagination-clickable="true" slides-per-view="auto"
-    centered-slides="true" space-between="30">
-    <swiper-slide>Slide 1</swiper-slide>
-    <swiper-slide>Slide 2</swiper-slide>
-    <swiper-slide>Slide 3</swiper-slide>
-    <swiper-slide>Slide 4</swiper-slide>
-    <swiper-slide>Slide 5</swiper-slide>
-    <swiper-slide>Slide 6</swiper-slide>
-    <swiper-slide>Slide 7</swiper-slide>
-    <swiper-slide>Slide 8</swiper-slide>
-    <swiper-slide>Slide 9</swiper-slide>
-  </swiper-container>
-
-
-</> 
-   );
+        );
   }
