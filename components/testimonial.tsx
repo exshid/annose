@@ -327,13 +327,13 @@ return (
 
 
 	<div className="app__bg absolute w-full h-full z-[-5] blur-md pointer-events-none select-none overflow-hidden">
-		<div className="app__bg__image absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 translate-x-[-50%] translate-y-[-50%] w-180 h-180 transition duration-1000 ease-in-out overflow-hidden current--image">
+		<div className="app__bg__image absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-180 h-180 transition duration-1000 ease-in-out overflow-hidden current--image">
 			<Image className="w-full h-full object-cover" src="https://source.unsplash.com/Z8dtTatMVMw" alt="" />
 		</div>
-		<div className="app__bg__image absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 translate-x-[-50%] translate-y-[-50%] w-180 h-180 transition duration-1000 ease-in-out overflow-hidden next--image">
+		<div className="app__bg__image absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-180 h-180 transition duration-1000 ease-in-out overflow-hidden next--image">
 			<Image className="w-full h-full object-cover" src="https://source.unsplash.com/9dmycbFE7mQ" alt="" />
 		</div>
-		<div className="app__bg__image absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 translate-x-[-50%] translate-y-[-50%] w-180 h-180 transition duration-1000 ease-in-out overflow-hidden previous--image">
+		<div className="app__bg__image absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-180 h-180 transition duration-1000 ease-in-out overflow-hidden previous--image">
 			<Image className="w-full h-full object-cover" src="https://source.unsplash.com/m7K4KzL5aQ8" alt="" />
 		</div>
 	</div>
