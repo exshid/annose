@@ -84,8 +84,6 @@ type BookCardProps = {
     </div>
 
 </div>
-
-      //@ts-ignore
        <swiper-container
        ref={swiperElRef}
        slides-per-view="3"
