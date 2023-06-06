@@ -36,8 +36,8 @@ export default function About() {
 
   return (
     <div className="flex h-full items-center flex-col w-full py-24 lg:pt-40">
-      <p className="font-black px-2 md:px-5 lg:px-10 mb-4 xl:px-80 text-5xl text-darkish dark:text-white">About Me</p>
-      <div className="relative rounded-lg w-9/12 flex flex-col lg:flex-row justify-between my-2 bg-gradient-to-r from-rose-600 to-rose-900 h-auto lg:h-[60vh]">
+      <p className="font-black px-2 md:px-5 lg:px-10 mb-10 xl:px-80 text-5xl text-darkish dark:text-white">About Me</p>
+      <div className="relative rounded-2xl w-9/12 flex flex-col lg:flex-row justify-between my-2 bg-gradient-to-r from-rose-600 to-rose-900 h-auto lg:h-[60vh]">
       <Image
   src={placeholder}
   alt="picture of the author"
@@ -46,7 +46,7 @@ export default function About() {
   objectFit="contain"
   objectPosition="center"
   /></div>
-      <div className="w-auto h-full"><p className="inline-block text-8xl mr-5 text-darkish dark:text-white">Hi, I am </p><h1 className="inline-block font-black text-8xl text-darkish dark:text-white">A. B. CDEF</h1></div>
+      <div className="w-auto h-full p-10 self-start px-"><p className="inline-block text-5xl mr-5 text-darkish font-black dark:text-white">Hi, I am </p><h1 className="inline-block font-black text-5xl text-darkish dark:text-white">A. B. CDEF</h1></div>
 <div className="px-2 md:px-5 lg:px-10 xl:px-80 w-full text-darkish items-center jakarta-font dark:text-white">
     <p className="py-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate voluptatum vel in! Ipsa laborum, ipsam excepturi maxime corrupti aperiam nam. Similique cum animi enim reiciendis.</p><p className="py-2">Quas eius aliquid tempora aspernatur. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non temporibus laboriosam, ratione earum nisi debitis dignissimos quia consequuntur obcaecati! Expedita neque laboriosam eius dolore. Aliquid reprehenderit aut soluta nemo atque!
 </p><p className="py-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab expedita rem dolorum tempora perspiciatis at id illo iure quaerat libero corrupti veritatis vel quibusdam minus aperiam, necessitatibus, consequuntur, nulla maxime! Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit.
