@@ -35,14 +35,16 @@ export const metadata: Metadata = {
 export default function About() {
 
   return (
-    <div className="flex h-full flex-column w-full py-24">
-      <p>About Me</p>
-      <h1>A. B. CDEF</h1>
+    <div className="flex h-full flex-col w-full py-24">
+      <p className="font-bold px-52 text-2xl text-darkish dark:text-white">About Me</p>
+      <h1 className="text-4xl font-bold px-52 text-darkish dark:text-white">A. B. CDEF</h1>
       <div className="w-full bg-gradient-to-r from-rose-600 to-rose-900 h-[50vh]">
       <Image
   src={placeholder}
   alt="picture of the author"
   className="w-full"
+  layout="fill"
+  objectFit="cover"
   />
       </div>
 <div className="w-7/12 text-darkish pr-16 jakarta-font dark:text-white">
