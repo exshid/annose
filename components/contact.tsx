@@ -61,7 +61,7 @@ import React, {useState, useEffect, FormEvent } from 'react';
                         <button className="uppercase block w-full p-4 text-lg text-white rounded bg-gradient-to-r from-emerald-400 to-cyan-400 focus:outline-none transition hover:-translate-y-[4px]">Send</button>
                     </div>
                     {messageReceived && (
-        <p className="text-green-600">Message received!</p>
+        <p className="py-5 text-green-600">Message received!</p>
       )}
 
                 </form>
