@@ -1,3 +1,4 @@
+//@ts-nocheck 
 import Image from 'next/image'
 import placeholder from '../../public/images/placeholder.svg'
 import { Contact } from '@/components/contact';

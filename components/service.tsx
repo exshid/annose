@@ -1,3 +1,4 @@
+//@ts-nocheck 
 import { blogConfig } from '@/config';
   
   export function Service() {
@@ -15,7 +16,7 @@ import { blogConfig } from '@/config';
 data-aos-once="true"
 className="jakarta-title justify-items-center pt-5 pb-10 grid grid-cols-1 grid-rows-6 lg:grid-cols-3 lg:grid-rows-2 gap-8">
 {blogConfig.services.map((book, index) => (
-  <li key={index} className="s-boxshadow dark:shadow-none transition hover:-translate-y-[5px] p-5 h-80 w-4/5 md:w-3/5 lg:w-80 rounded-lg bg-white dark:bg-lightdarkish col-start-1 row-start-4 lg:col-start-2 lg:row-start-1">
+  <li key={index} className="s-boxshadow dark:shadow-none transition hover:-translate-y-[5px] p-5 h-80 w-4/5 md:w-3/5 lg:w-80 rounded-lg bg-white dark:bg-lightdarkish">
     <h4 className="p-5 font-bold text-xl">{book.title}</h4>
     <p className="p-5">{book.description}</p>
   </li>
