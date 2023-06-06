@@ -52,9 +52,9 @@ const blogConfig = {
    * To add a new cover, you should upoload it in public/images folder first. 
    */
 
-  books: [{title: 'Book Title', author:'Author Name', cover: '../public/images/cover.jpg',
+  books: [{title: 'Book Title', author:'Author Name', cover: '/images/cover.jpg',
   description:'Lorem ipsum, dolor sit amet consectetur adipisicing elit.'},
-  {title: 'Book Title II', author:'Author Name', cover: '../public/images/cover-ii.jpg',
+  {title: 'Book Title II', author:'Author Name', cover: '/images/cover-ii.jpg',
   description:'Nam sequi, fugit ipsum placeat ad laudantium.'},
   ],
 };

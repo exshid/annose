@@ -46,7 +46,7 @@ type BookCardProps = {
       <div className="z-30 relative items-center justify-center w-full h-auto min-h-full lg:overflow-auto">
           <div className={transitionClass} 
               style={{
-                backgroundImage: `url(${blogConfig.books[count].cover})`
+                backgroundImage: `url(${blogConfig.books[count].cover})` 
             }}>
           </div>
           <div className="absolute inset-0 z-20 flex items-center justify-center h-auto lg:h-screen w-full bg-gray-900 bg-opacity-75"></div>
