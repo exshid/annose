@@ -12,7 +12,8 @@ import React, {useState, useEffect, FormEvent } from 'react';
         const form = event.target as HTMLFormElement; 
         const formData = new FormData(form); 
         const data = Object.fromEntries(formData.entries()); 
-    
+        setMessageReceived(true);
+
         console.log(data); 
     }
     
