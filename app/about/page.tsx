@@ -37,7 +37,7 @@ export default function About() {
   return (
     <div className="flex h-full items-center flex-col w-full py-24 lg:pt-40">
       <p className="font-black px-2 md:px-5 lg:px-10 mb-10 xl:px-80 text-5xl text-darkish dark:text-white">About Me</p>
-      <div className="relative rounded-2xl mb-10 w-9/12 flex flex-col lg:flex-row justify-between my-2 bg-gradient-to-r from-rose-600 to-rose-900 h-auto lg:h-[60vh]">
+      <div className="relative rounded-2xl mb-10 w-full lg:w-9/12 flex flex-col lg:flex-row justify-between my-2 bg-gradient-to-r from-rose-600 to-rose-900 h-[60vh]">
       <Image
   src={placeholder}
   alt="picture of the author"
