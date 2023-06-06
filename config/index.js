@@ -36,9 +36,7 @@ const blogConfig = {
   },
   //Biography in About me page
   //To add a line-break, instead of an enter, use \n, as in the example below.
-  about: `Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-  \n
-  Nam sequi, fugit ipsum placeat ad laudantium.`,
+  about: `Lorem ipsum, dolor sit amet consectetur adipisicing elit.\nNam sequi, fugit ipsum placeat ad laudantium.`,
   footerLinks: {
     twitter: 'https://twitter.com/',
     facebook: 'https://facebook.com/',
