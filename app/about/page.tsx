@@ -36,7 +36,7 @@ export default function About() {
 
   return (
     <div className="flex h-full items-center flex-col w-full py-24 lg:pt-40">
-      <p className="font-black font-rubik px-2 md:px-5 lg:px-10 mb-10 xl:px-80 text-3xl md:text-4xl lg:text-5xl text-darkish dark:text-white">About Me</p>
+      <p className="font-black heading-font px-2 md:px-5 lg:px-10 mb-10 xl:px-80 text-3xl md:text-4xl lg:text-5xl text-darkish dark:text-white">About Me</p>
       <div className="relative lg:rounded-2xl mb-10 w-full lg:w-9/12 flex flex-col lg:flex-row justify-between my-2 bg-gradient-to-r from-rose-600 to-rose-900 h-[60vh]">
       <Image
   src={placeholder}
@@ -54,10 +54,10 @@ export default function About() {
 </p>
 <p className="py-2">
 Non repudiandae sequi ullam delectus fugit? Pariatur corrupti praesentium nesciunt? Reiciendis voluptatibus delectus a laudantium beatae illo, ab quaerat animi facilis neque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto iure facilis velit modi corrupti ratione et non libero enim dolore, quia excepturi vel ad delectus sit maxime tenetur esse eos.<br/>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis provident accusantium aut doloremque, quam corporis exercitationem quae atque quas cupiditate id? Earum autem fugiat modi. Dignissimos ipsa alias enim. Nemo?</p>
-<div className="w-full h-full py-2 self-start"><h2 className="inline-block text-3xl md:text-4xl lg:text-5xl mr-5 text-darkish font-black dark:text-white heading-font">
+<div className="w-full h-full py-2 self-start"><h2 className="inline-block text-3xl md:text-4xl lg:text-5xl pb-5 text-slate-300 font-black dark:text-white heading-font">
   My Services</h2>
-  <div className="w-full border dark:border-white	border-darkish rounded-lg p-5">
-    <h3 className="text-darkish dark:text-white font-bold text-xl">Book Edit</h3>
+  <div className="w-full border dark:border-white	border-slate-300 rounded-lg p-5">
+    <h3 className="text-slate-300 dark:text-white font-bold text-xl">Book Edit</h3>
     <p className="text-darkish dark:text-white jakarta-font">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam sequi, fugit ipsum placeat ad laudantium.</p>
   </div>
   </div>
