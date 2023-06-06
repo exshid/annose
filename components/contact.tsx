@@ -5,6 +5,11 @@ import { blogConfig } from '@/config';
   export const Contact = () => {
     const { footerLinks } = blogConfig;
     
+    function handleSubmit(event) {
+        event.preventDefault(); 
+        console.log(event)
+      }
+      
     return (
     <div id="contact">
     <section className="min-h-screen flex flex-col lg:flex-row items-stretch text-white ">
@@ -22,7 +27,7 @@ import { blogConfig } from '@/config';
          <p  data-aos="fade-up" data-aos-once="true" className="text-3xl my-4 text-darkish dark:text-white">
               CONTACT FORM
                 </p>
-                <form data-aos="fade-up" data-aos-once="true" action="" className="sm:w-2/3 lg:w-full w-full px-4 lg:px-4 xl:px-0 mx-auto">
+                <form onSubmit={handleSubmit} data-aos="fade-up" data-aos-once="true" action="" className="sm:w-2/3 lg:w-full w-full px-4 lg:px-4 xl:px-0 mx-auto">
                     <div className="pb-2 pt-4">
                         <input type="email" name="email" id="email" placeholder="Email" className="bg-white dark:bg-darkish block w-full p-4 border dark:border-white text-lg rounded-sm"/>
                     </div>
