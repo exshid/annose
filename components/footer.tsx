@@ -59,15 +59,10 @@ export function Footer() {
       </div>
 
   return (
-    <footer className="relative border-t border-t-slate-300 min-h-[55px] flex h-full w-full flex-col items-center justify-center space-y-4">
-
-      <div className="flex h-6 flex-row items-center justify-center space-x-1 text-slate-600 dark:text-slate-300">
-        <Copyright className="h-4 w-4" aria-label="Copyright" />
-        <span className="text-xs xs:text-sm">2023 · {blogConfig.author}</span>
-      </div>
+    <footer className="border-t border-t-slate-300 min-h-[55px] flex h-full w-full flex-row justify between items-center justify-center space-y-4">
 
       <button
-        className="absolute left-8 bottom-4 h-full w-fit"
+        className="left-8 bottom-4 h-full w-fit"
         onClick={() => {
           document.body.scrollTop = 0;
           document.documentElement.scrollTop = 0;
@@ -94,6 +89,12 @@ export function Footer() {
         </svg>
         <Tooltip anchorId="scroll-to-top" place="right" />
       </button>
+      <div className="flex h-6 flex-row items-center justify-center space-x-1 text-slate-600 dark:text-slate-300">
+        <Copyright className="h-4 w-4" aria-label="Copyright" />
+        <span className="text-xs xs:text-sm">2023 · {blogConfig.author}</span>
+      </div>
+
+<div></div>
     </footer>
   );
 }

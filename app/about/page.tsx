@@ -36,8 +36,8 @@ export default function About() {
 
   return (
     <div className="flex h-full flex-col w-full py-24">
-      <p className="font-bold px-52 text-2xl text-darkish dark:text-white">About Me</p>
-      <h1 className="text-4xl font-bold px-52 text-darkish dark:text-white">A. B. CDEF</h1>
+      <p className="font-bold px-2 md:px-5 lg:px-10 xl:px-52 text-2xl text-darkish dark:text-white">About Me</p>
+      <h1 className="text-4xl font-bold px-2 md:px-5 lg:px-10 xl:px-52 text-darkish dark:text-white">A. B. CDEF</h1>
       <div className="relative w-full bg-gradient-to-r from-rose-600 to-rose-900 h-[60vh]">
       <Image
   src={placeholder}
