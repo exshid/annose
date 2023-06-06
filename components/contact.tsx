@@ -1,3 +1,4 @@
+'use client'
 import { blogConfig } from '@/config';
 import React, { useEffect, FormEvent } from 'react';
 
