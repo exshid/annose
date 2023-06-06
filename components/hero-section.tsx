@@ -118,7 +118,7 @@ export function HeroSection() {
          <h1 data-aos="fade-right"
      data-aos-once="true"
 className='hero-font font-black uppercase bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent'>
-          A. B. CDEF
+          {blogConfig.author}
           </h1>
       <h2 className="font-inter text-center flex justify-start min-h-[7vh] lg:min-h-[10vh] min-w-[20vw] text-2xl md:text-3xl lg:text-5xl font-black uppercase bg-gradient-to-r from-rose-600 to-rose-900 bg-clip-text text-transparent">
         

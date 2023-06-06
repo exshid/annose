@@ -1,5 +1,6 @@
 'use client';
 import Link from 'next/link';
+import { blogConfig } from '@/config';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -20,8 +21,8 @@ return (
 <>
     
       <div id="about" className="flex flex-col h-auto md:min-h-[75vh] lg:min-h-[83vh] xl:min-h-screen pt-5 lg:pt-0 bg-darkerlight dark:bg-lightdarkish justify-center items-center">
-          <h3 data-aos-once="true" data-aos="fade-right" className="font-inter text-2xl md:text-3xl lg:text-5xl font-black uppercase bg-gradient-to-r from-rose-600 to-rose-900 bg-clip-text text-transparent">
-        About A. B. CDEF</h3>
+          <h3 data-aos-once="true" data-aos="fade-right" className="heading-font pt-5 text-2xl md:text-3xl lg:text-5xl font-black uppercase bg-gradient-to-r from-rose-600 to-rose-900 bg-clip-text text-transparent">
+        About {blogConfig.author}</h3>
 
       <div className="w-full flex-col md:flex-row flex justify-evenly xl:p-10">
 <div data-aos="zoom-out" data-aos-once="true" className="flex-col w-full md:w-2/6 hidden md:flex justify-center p-6 md:px-0 xl:px-12 dark:text-gray-100">
