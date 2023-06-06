@@ -59,7 +59,7 @@ export function Footer() {
       </div>
 
   return (
-    <footer className="border-t border-t-slate-300 min-h-[55px] flex h-full w-full flex-row justify-between items-center px-5 space-y-4">
+    <footer className="border-t border-t-slate-300 min-h-[55px] flex h-full w-full flex-row justify-between items-center px-5 py-3">
 
       <button
         className="left-8 bottom-4 h-full w-fit"
