@@ -12,10 +12,7 @@ export function Header() {
   const [scrollTop, setScrollTop] = useState(0);
   const headerRef = useRef<HTMLDivElement>(null);
   const layoutSegment = useSelectedLayoutSegments();
-  const isPostPage =
-    layoutSegment[0] === blogConfig.pages.posts.url.substring(1) &&
-    !!layoutSegment[1];
-
+  
   useEffect(() => {
     // sync scroll position with state
     setScrollTop(document.documentElement.scrollTop);
@@ -56,7 +53,7 @@ export function Header() {
     </ul>
   </div>
   <div className="navbar-end">
-  <Toolbar fontControls={isPostPage} className="ml-auto" />
+  <Toolbar className="ml-auto" />
   </div>
 </div>
 

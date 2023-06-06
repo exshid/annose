@@ -50,7 +50,7 @@ export default function Home() {
     
   return (
 
-<div className="flex h-full flex-col lg:pb-12">
+<div className="flex h-full flex-col">
 <PhotoCard/>
 <Intro />
 <Books/>
@@ -58,16 +58,6 @@ export default function Home() {
 <Contact/>
  {/* 
 <Testimonials/>
-      <section className="flex w-full flex-col">
-      {latestPosts.map((post) => (
-        <PostCard key={post._id} post={post} />
-        ))}
-        <Button          href="/posts"
-        label="All Posts"
-        className="place-self-end"
-        icon={<FileText className="h-4 w-4" />}
-        />
-        </section>
       */} 
 
     </div>

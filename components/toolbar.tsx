@@ -10,10 +10,9 @@ import { cn } from '@/lib/utils';
 
 
 type ToolbarProps = {
-  fontControls: boolean;
   className?: string;
 };
-export function Toolbar({ fontControls, className }: ToolbarProps) {
+export function Toolbar({  className }: ToolbarProps) {
   
 const [darkMode, setDarkMode] = useState<boolean>(false);
 const [isDark, setIsDark] = useState(false);
@@ -52,29 +51,6 @@ useEffect(() => {
         localStorage.setItem('theme', 'light');
       }
 
-  const toggleSearch = useSearchStore((state) => state.toggleSearch);
-  const isSearching = useSearchStore((state) => state.isSearching);
-const completedProject = false;
-  const {
-        isSerif,
-    isFontSizeMin,
-    isFontSizeMax,
-    toggleDark,
-    toggleSerif,
-    increaseFontSize,
-    decreaseFontSize,
-  } = useThemeStore(
-    (state) => ({
-      isSerif: state.isSerif,
-      isFontSizeMin: state.isFontSizeMin,
-      isFontSizeMax: state.isFontSizeMax,
-      toggleDark: state.toggleDark,
-      toggleSerif: state.toggleSerif,
-      increaseFontSize: state.increaseFontSize,
-      decreaseFontSize: state.decreaseFontSize,
-    }),
-    shallow,
-    );
 
   return (
     <div
