@@ -36,9 +36,10 @@ export default function About() {
 
   return (
     <div className="flex h-full flex-col w-full py-24">
-      <p className="font-bold px-2 md:px-5 lg:px-10 xl:px-52 text-2xl text-darkish dark:text-white">About Me</p>
-      <div className="relative w-full flex flex-row justify-between py-2 bg-gradient-to-r from-rose-600 to-rose-900 h-[60vh]">
-      <div><p className="inline-block">Hi, I am </p><h1 className="hero-font inline-block font-black uppercase px-2 md:px-5 lg:px-10 xl:px-80 text-white">A. B. CDEF</h1></div>
+      <p className="font-bold px-2 md:px-5 lg:px-10 xl:px-80 text-2xl text-darkish dark:text-white">About Me</p>
+      <div className="relative w-full flex flex-col lg:flex-row justify-between py-2 bg-gradient-to-r from-rose-600 to-rose-900 h-[60vh]">
+      <div className="w-6/12"><p className="inline-block text-5xl text-white">Hi, I am </p><h1 className="inline-block font-black text-5xl text-white">A. B. CDEF</h1></div>
+      <div className="w-6/12">
       <Image
   src={placeholder}
   alt="picture of the author"
@@ -46,7 +47,7 @@ export default function About() {
   layout="fill"
   objectFit="contain"
   objectPosition="right"
-  />
+  /></div>
       </div>
 <div className="px-2 md:px-5 lg:px-10 xl:px-80 w-full text-darkish items-center jakarta-font dark:text-white">
     <p className="py-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate voluptatum vel in! Ipsa laborum, ipsam excepturi maxime corrupti aperiam nam. Similique cum animi enim reiciendis.</p><p className="py-2">Quas eius aliquid tempora aspernatur. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non temporibus laboriosam, ratione earum nisi debitis dignissimos quia consequuntur obcaecati! Expedita neque laboriosam eius dolore. Aliquid reprehenderit aut soluta nemo atque!
