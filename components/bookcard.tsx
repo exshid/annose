@@ -38,6 +38,8 @@ type BookCardProps = {
     function handleClickMinus() {
       setCount((count - 1 + blogConfig.books.length) % blogConfig.books.length);
       classNames()
+      console.log(blogConfig.books[count].cover);
+      
     }
 
     return (
