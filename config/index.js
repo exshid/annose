@@ -1,6 +1,4 @@
 // @ts-check
-import coverI from '../public/images/cover.jpg'
-import coverII from '../public/images/cover-ii.jpg'
 
 //The websie's configuration.
  
@@ -51,12 +49,12 @@ const blogConfig = {
     /**
    * List of books here.
    * To add a new book, copy those {}s and fill the fields. Important: Do not forget to seperae books using a comma.
-   * To add a new cover, you should upoload and then import it, like the ones at the top of the page. 
+   * To add a new cover, you should upoload it in public/images folder first. 
    */
 
-  books: [{title: 'Book Title', author:'Author Name', cover: coverI,
+  books: [{title: 'Book Title', author:'Author Name', cover: '../public/images/cover.jpg',
   description:'Lorem ipsum, dolor sit amet consectetur adipisicing elit.'},
-  {title: 'Book Title II', author:'Author Name', cover: coverII,
+  {title: 'Book Title II', author:'Author Name', cover: '../public/images/cover-ii.jpg',
   description:'Nam sequi, fugit ipsum placeat ad laudantium.'},
   ],
 };
