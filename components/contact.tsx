@@ -1,11 +1,11 @@
 import { blogConfig } from '@/config';
 
 type FooterLinksProps = {
-    email?: string;
+    footerLinks?: string;
   };
   
   
-  export const Contact: React.FC<FooterLinksProps> = ({ email }) => {
+  export const Contact: React.FC<FooterLinksProps> = ({ footerLinks }) => {
     const { footerLinks } = blogConfig;
     
     return (
