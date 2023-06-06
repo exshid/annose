@@ -10,6 +10,19 @@ import React, { FormEvent } from 'react';
         event.preventDefault(); 
         console.log(event)
       }
+    
+      useEffect(() => {
+        const form = document.querySelector('.contact-form');
+        if (form) {
+          form.addEventListener('submit', handleSubmit);
+        }
+        return () => {
+          if (form) {
+            form.removeEventListener('submit', handleSubmit);
+          }
+        };
+      }, []); 
+      
       
     return (
     <div id="contact">
@@ -28,7 +41,7 @@ import React, { FormEvent } from 'react';
          <p  data-aos="fade-up" data-aos-once="true" className="text-3xl my-4 text-darkish dark:text-white">
               CONTACT FORM
                 </p>
-                <form onSubmit={handleSubmit} data-aos="fade-up" data-aos-once="true" action="" className="sm:w-2/3 lg:w-full w-full px-4 lg:px-4 xl:px-0 mx-auto">
+                <form data-aos="fade-up" data-aos-once="true" action="" className="contact-form sm:w-2/3 lg:w-full w-full px-4 lg:px-4 xl:px-0 mx-auto">
                     <div className="pb-2 pt-4">
                         <input type="email" name="email" id="email" placeholder="Email" className="bg-white dark:bg-darkish block w-full p-4 border dark:border-white text-lg rounded-sm"/>
                     </div>
