@@ -38,13 +38,14 @@ export default function About() {
     <div className="flex h-full flex-col w-full py-24">
       <p className="font-bold px-52 text-2xl text-darkish dark:text-white">About Me</p>
       <h1 className="text-4xl font-bold px-52 text-darkish dark:text-white">A. B. CDEF</h1>
-      <div className="w-full bg-gradient-to-r from-rose-600 to-rose-900 h-[50vh]">
+      <div className="relative w-full bg-gradient-to-r from-rose-600 to-rose-900 h-[60vh]">
       <Image
   src={placeholder}
   alt="picture of the author"
   className="w-full"
   layout="fill"
-  objectFit="cover"
+  objectFit="contain"
+  objectPosition="right"
   />
       </div>
 <div className="w-7/12 text-darkish pr-16 jakarta-font dark:text-white">
