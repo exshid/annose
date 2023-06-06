@@ -15,22 +15,6 @@ const blogConfig = {
       description:
         "portfolio.",
     },
-    posts: {
-      url: '/posts',
-      title: 'Posts',
-      description:
-        "All my blog posts.",
-    },
-  },
-  theme: {
-    accentColor: {
-      light: '#be123c',
-      dark: '#fda4af',
-    },
-    codeBlockTheme: {
-      light: 'github-light',
-      dark: 'github-dark',
-    },
   },
   //Biography in About me page
   about: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam sequi, fugit ipsum placeat ad laudantium. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam sequi, fugit ipsum placeat ad laudantium.

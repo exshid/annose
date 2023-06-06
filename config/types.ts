@@ -115,5 +115,7 @@ export type BlogConfig = {
   topics: string[];
   books: any;
   services: any;
+  aboutTop: string;
+  aboutMiddle: string;
 
 };
