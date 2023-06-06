@@ -114,5 +114,6 @@ export type BlogConfig = {
    */
   topics: string[];
   books: any;
+  services: any;
 
 };

@@ -54,10 +54,16 @@ export default function About() {
 
 <div className="w-full h-full py-2 self-start"><h2 className="inline-block text-2xl md:text-3xl lg:text-4xl pb-5 text-gray-800 font-black dark:text-white heading-font">
   My Services</h2>
-  <div className="w-full border dark:border-white	border-slate-300 rounded-lg p-5">
-    <h3 className="text-gray-800 dark:text-white font-bold text-xl">Book Edit</h3>
-    <p className="text-darkish dark:text-white jakarta-font">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam sequi, fugit ipsum placeat ad laudantium.</p>
-  </div>
+  <div>
+      {blogConfig.services((book, index) => (
+        <div key={index} className="w-full border dark:border-white border-slate-300 rounded-lg p-5">
+          <h3 className="text-gray-800 dark:text-white font-bold text-xl">{book.title}</h3>
+          <p className="text-darkish dark:text-white jakarta-font">{book.description}</p>
+        </div>
+      ))}
+    </div>
+
+
   </div>
 </div>
     </div>
