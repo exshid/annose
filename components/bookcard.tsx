@@ -55,7 +55,7 @@ type BookCardProps = {
       <div className="w-full flex justify-center lg:w-2/5 h-full overflow-hidden">
       <Image src={blogConfig.books[count].cover} alt="cover of the book" className={transitionClassImg}/></div>
 <div className="flex h-min lg:h-full bottom-[17px] lg:bottom-[unset] flex-col justify-evenly w-auto rounded-lg lg:rounded-none absolute lg:relative lg:w-3/5 p-5 text-white bg-gradient-to-r lg:bg-none from-emerald-400 to-cyan-400"><div><h3 className="font-inter font-black text-3xl lg:text-5xl">{blogConfig.books[count].title}</h3><p className="jakarta-font">By {blogConfig.books[count].author}</p></div>
-<p className="hidden lg:block jakarta-font !m-0 !lg:mb-[40px]">{blogConfig.books[count].description}</p>
+<p className="hidden lg:block jakarta-font !m-0 !lg:mb-[40px] transition">{blogConfig.books[count].description}</p>
 </div>
               </div>
           </div>
