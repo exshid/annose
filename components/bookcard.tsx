@@ -9,7 +9,7 @@ type BookCardProps = {
   
   export function BookCard() {
     console.log(blogConfig.books);
-    const [transitionClassText, setTransitionClassText] = useState("translate-x-[0px]");
+    const [transitionClassText, setTransitionClassText] = useState("opacity-100");
     
     const [transitionClass, setTransitionClass] = useState("transition ease-in-out inset-0 h-screen bg-cover transition ease-in-out opacity-100 bg-center bg-fixed");
     const [transitionClassImg, setTransitionClassImg] = useState("w-auto h-full lg:h-auto rounded-lg opacity-100 lg:rounded-none transition ease-in-out object-cover contain lg:h-full");
@@ -17,12 +17,12 @@ type BookCardProps = {
     const [count, setCount] = useState(0);
     function classNames() {
       setCount((count + 1) % blogConfig.books.length);
-      setTransitionClassText("translate-x-[50px]");
+      setTransitionClassText("opacity-0");
       setTransitionClass("transition ease-in-out inset-0 h-screen bg-cover transition ease-in-out opacity-0 bg-center bg-fixed");
       setTransitionClassImg("w-auto h-full lg:h-auto rounded-lg lg:rounded-none transition opacity-0 ease-in-out object-cover contain lg:h-full");
 
       setTimeout(() => {
-        setTransitionClassText("translate-x-[0px]");
+        setTransitionClassText("opacity-100");
 
         setTransitionClass("transition ease-in-out inset-0 h-screen bg-cover transition ease-in-out opacity-100 bg-center bg-fixed");
       }, 500);
