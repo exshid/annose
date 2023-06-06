@@ -1,7 +1,7 @@
 import { blogConfig } from '@/config';
 
 type FooterLinksProps = {
-    email: string;
+    email?: string;
   };
   
   
