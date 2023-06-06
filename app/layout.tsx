@@ -7,7 +7,6 @@ import { blogConfig } from '@/config';
 import { Analytics } from '@/components/analytics';
 import { Footer } from '@/components/footer';
 import { Header } from '@/components/header';
-import { Search } from '@/components/search';
 import { cn } from '@/lib/utils';
 type RootLayoutProps = {
   children: React.ReactNode;
@@ -71,7 +70,6 @@ export default function RootLayout({ children }: RootLayoutProps) {
           <section className="w-full">
             <Footer />
           </section>
-           <Search posts={allPosts} />
           <Analytics />
       </body>
     </html>
