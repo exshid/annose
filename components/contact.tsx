@@ -5,7 +5,7 @@ type FooterLinksProps = {
   };
   
   
-  export const Contact: React.FC<FooterLinksProps> = ({ footerLinks }) => {
+  export const Contact: React.FC<FooterLinksProps> = () => {
     const { footerLinks } = blogConfig;
     
     return (
