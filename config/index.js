@@ -34,17 +34,9 @@ const blogConfig = {
       dark: 'github-dark',
     },
   },
-  giscus: {
-    repo: 'kfirfitousi/blog',
-    repoId: 'R_kgDOIcM7JA',
-    category: 'Comments',
-    categoryId: 'DIC_kwDOIcM7JM4CTdK0',
-    mapping: 'title',
-    theme: {
-      light: 'light',
-      dark: 'dark_dimmed',
-    },
-  },
+  about: `Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+  <br/>
+  Nam sequi, fugit ipsum placeat ad laudantium.`,
   footerLinks: {
     twitter: 'https://twitter.com/',
     facebook: 'https://facebook.com/',

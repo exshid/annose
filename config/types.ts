@@ -125,6 +125,7 @@ export type BlogConfig = {
     facebook?: string;
     email?: string;
   };
+  about: string;
   /**
    * Topics to show in the hero section typing animation.
    */
