@@ -46,7 +46,7 @@ export default function About() {
   objectFit="contain"
   objectPosition="center"
   /></div>
-      <div className="w-auto h-full p-10 self-start px-"><p className="inline-block text-5xl mr-5 text-darkish font-black dark:text-white">Hi, I am </p><h1 className="inline-block font-black text-5xl text-darkish dark:text-white">A. B. CDEF</h1></div>
+      <div className="w-full px-2 md:px-5 lg:px-10 xl:px-80 h-full py-10 self-start"><p className="inline-block text-5xl mr-5 text-darkish font-black dark:text-white">Hi, I am </p><h1 className="inline-block font-black text-5xl text-darkish dark:text-white">A. B. CDEF</h1></div>
 <div className="px-2 md:px-5 lg:px-10 xl:px-80 w-full text-darkish items-center jakarta-font dark:text-white">
     <p className="py-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate voluptatum vel in! Ipsa laborum, ipsam excepturi maxime corrupti aperiam nam. Similique cum animi enim reiciendis.</p><p className="py-2">Quas eius aliquid tempora aspernatur. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non temporibus laboriosam, ratione earum nisi debitis dignissimos quia consequuntur obcaecati! Expedita neque laboriosam eius dolore. Aliquid reprehenderit aut soluta nemo atque!
 </p><p className="py-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab expedita rem dolorum tempora perspiciatis at id illo iure quaerat libero corrupti veritatis vel quibusdam minus aperiam, necessitatibus, consequuntur, nulla maxime! Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit.
