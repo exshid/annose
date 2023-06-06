@@ -180,6 +180,32 @@ body{
 .box:hover .text {
   transform: rotateY(20deg) skewY(-3deg);
 }
+.about-text{
+padding-left: 2px;
+padding-right: 2px;
+}
+@media (min-width: 768px) {
+  .about-text p{
+  padding-left: 5px;
+  padding-right: 5px;
+  }
+}
+
+@media (min-width: 992px) {
+  .about-text p{
+  padding-left: 10px;
+  padding-right: 10px;
+  }
+}
+
+@media (min-width: 1200px) {
+.about-text p{
+  padding-left: 300px;
+  padding-right: 300px;
+  }
+}
+
+
 @media (min-width: 1024px) {
   .clip-custom{
     clip-path: ellipse(100% 70% at 100% 58%);
