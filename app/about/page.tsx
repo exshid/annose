@@ -35,18 +35,17 @@ export const metadata: Metadata = {
 export default function About() {
 
   return (
-    <div className="flex h-full justify-between py-24">
-<div className="w-2/6 text-darkish dark:text-white"><Image
+    <div className="flex h-full flex-column w-full py-24">
+      <p>About Me</p>
+      <h1>A. B. CDEF</h1>
+      <div className="w-full bg-gradient-to-r from-rose-600 to-rose-900 h-[50vh]">
+      <Image
   src={placeholder}
   alt="picture of the author"
-  width={550}
-  height={650}
-  className="bg-gradient-to-r from-emerald-400 to-cyan-400"
+  className="w-full"
   />
-</div>
+      </div>
 <div className="w-7/12 text-darkish pr-16 jakarta-font dark:text-white">
-<h3 className="font-inter text-5xl font-black uppercase">
-        A. B. CDEF</h3>
   <p className="py-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate voluptatum vel in! Ipsa laborum, ipsam excepturi maxime corrupti aperiam nam. Similique cum animi enim reiciendis.</p><p className="py-2">Quas eius aliquid tempora aspernatur. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non temporibus laboriosam, ratione earum nisi debitis dignissimos quia consequuntur obcaecati! Expedita neque laboriosam eius dolore. Aliquid reprehenderit aut soluta nemo atque!
 </p><p className="py-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab expedita rem dolorum tempora perspiciatis at id illo iure quaerat libero corrupti veritatis vel quibusdam minus aperiam, necessitatibus, consequuntur, nulla maxime! Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit.
 </p><p className="py-2">
