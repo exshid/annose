@@ -1,4 +1,5 @@
 'use client';
+import Link from 'next/link';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -36,8 +37,9 @@ return (
 <p data-aos="fade-up" data-aos-once="true" className="jakarta-font mb-10 text-darkish dark:text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, ad asperiores ipsam voluptatem rem a id maxime odio ullam accusantium dolor magnam quam expedita! A tenetur ipsam enim magnam cupiditate.
 Quos iure in voluptas! Libero aspernatur error temporibus id aperiam culp similique pariatur ex, optio sunt. Pariatur velit fugiat consequuntur quaerat eius.</p>
 <div className="transition hover:-translate-y-[4px] pb-2 pt-4">
-                        <button data-aos="fade-up" data-aos-once="true"
+                      <Link href="about">  <button data-aos="fade-up" data-aos-once="true"
      data-aos-anchor-placement="bottom-bottom" className="uppercase block transition w-full p-4 text-lg text-white rounded bg-gradient-to-r from-rose-600 to-rose-900 focus:outline-none">Read More</button>
+     </Link>
                     </div>
 
 </div>
