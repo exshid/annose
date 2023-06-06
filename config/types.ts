@@ -98,26 +98,6 @@ export type BlogConfig = {
     };
   };
   /**
-   * Giscus comment sections configuration.
-   * @see https://giscus.app
-   */
-  giscus: Omit<GiscusProps, 'theme'> & {
-    /**
-     * The themes to use in the Giscus comment sections.
-     * Must be a valid {@link GiscusTheme}.
-     */
-    theme?: {
-      /**
-       * @default 'light'
-       */
-      light?: GiscusTheme;
-      /**
-       * @default 'dark_dimmed'
-       */
-      dark?: GiscusTheme;
-    };
-  };
-  /**
    * Footer links.
    */
   footerLinks?: {
