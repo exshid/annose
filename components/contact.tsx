@@ -1,13 +1,18 @@
 import { blogConfig } from '@/config';
 
-type FooterLinksProps = {
-    footerLinks?: string;
-  };
+ 
   
-  
-  export const Contact: React.FC<FooterLinksProps> = () => {
+  export const Contact = () => {
     const { footerLinks } = blogConfig;
-    
+    let emailSection;
+    if (typeof footerLinks !== "undefined") {
+      emailSection = (
+        <p data-aos="fade-right" data-aos-once="true" className="text-xl lg:text-3xl my-4">
+          Email me at<br/>{footerLinks.email}
+        </p>
+      );
+    }
+  
     return (
     <div id="contact">
     <section className="min-h-screen flex flex-col lg:flex-row items-stretch text-white ">
@@ -15,8 +20,10 @@ type FooterLinksProps = {
             <div className="absolute bg-darkish opacity-60 inset-0 z-0"></div>
             <div className="w-full px-2 xl:px-24 z-10">
                 <h1 data-aos="fade-right" data-aos-once="true" className="text-5xl font-bold text-left tracking-wide">Get In Touch</h1>
-                <p data-aos="fade-right" data-aos-once="true" className="text-xl lg:text-3xl my-4">Email me at<br/>{footerLinks.email}</p>
-            </div>
+               {emailSection}
+
+
+                </div>
 
         </div>
         <div className="lg:w-1/2 w-full flex items-center justify-center text-center xl:px-16 px-0 z-0 bg-white dark:bg-darkish text-darkish dark:text-white">
