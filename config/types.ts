@@ -103,6 +103,9 @@ export type BlogConfig = {
   footerLinks?: {
     twitter?: string;
     facebook?: string;
+    instagram?: string;
+    tiktok?: string;
+
     email?: string;
   };
   about: string;
