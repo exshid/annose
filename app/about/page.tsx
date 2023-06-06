@@ -35,9 +35,9 @@ export const metadata: Metadata = {
 export default function About() {
 
   return (
-    <div className="flex h-full flex-col w-full py-24">
+    <div className="flex h-full flex-col w-full my-24 lg:my-80">
       <p className="font-black px-2 md:px-5 lg:px-10 xl:px-80 text-5xl text-darkish dark:text-white">About Me</p>
-      <div className="relative w-full flex flex-col lg:flex-row justify-between my-2 bg-gradient-to-r from-rose-600 to-rose-900 h-[60vh]">
+      <div className="relative w-full flex flex-col lg:flex-row justify-between my-2 bg-gradient-to-r from-rose-600 to-rose-900 h-auto lg:h-[60vh]">
       <div className="w-6/12 h-full"><p className="inline-block text-8xl mr-5 text-white">Hi, I am </p><h1 className="inline-block font-black text-8xl text-white">A. B. CDEF</h1></div>
       <div className="w-6/12 h-full">
       <Image
