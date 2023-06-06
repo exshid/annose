@@ -22,7 +22,7 @@ import { blogConfig } from '@/config';
          <p  data-aos="fade-up" data-aos-once="true" className="text-3xl my-4 text-darkish dark:text-white">
               CONTACT FORM
                 </p>
-                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfbt1cBCw0HBp5dgmZfD0vv8b0VX26u10sw0gQutpp9eU0aEQ/viewform?embedded=true" width="700" height="520" frameBorder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfbt1cBCw0HBp5dgmZfD0vv8b0VX26u10sw0gQutpp9eU0aEQ/viewform?embedded=true" width="700" height="520" frameBorder="0" marginHeight="0" marginWidth="0">Loading…</iframe>
                 <form data-aos="fade-up" data-aos-once="true" action="" className="sm:w-2/3 lg:w-full w-full px-4 lg:px-4 xl:px-0 mx-auto">
                     <div className="pb-2 pt-4">
                         <input type="email" name="email" id="email" placeholder="Email" className="bg-white dark:bg-darkish block w-full p-4 border dark:border-white text-lg rounded-sm"/>
