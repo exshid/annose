@@ -2,12 +2,10 @@
 import { blogConfig } from '@/config';
 import React, { useEffect, FormEvent } from 'react';
 
- 
-  
   export const Contact = () => {
     const { footerLinks } = blogConfig;
     
-    function handleSubmit(event: FormEvent<HTMLFormElement>) {
+    function handleSubmit(event: Event) {
         event.preventDefault(); 
         console.log(event)
       }
