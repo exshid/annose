@@ -1,17 +1,19 @@
 'use client'
 import { blogConfig } from '@/config';
-import React, { useEffect, FormEvent } from 'react';
+import React, {useState, useEffect, FormEvent } from 'react';
 
   export const Contact = () => {
     const { footerLinks } = blogConfig;
     
+    const [messageReceived, setMessageReceived] = useState(false); 
+
     function handleSubmit(event: Event) {
         event.preventDefault(); 
-        const form = event.target as HTMLFormElement; // get the form element
-        const formData = new FormData(form); // create a new FormData object from the form
-        const data = Object.fromEntries(formData.entries()); // convert the FormData object to a plain object
+        const form = event.target as HTMLFormElement; 
+        const formData = new FormData(form); 
+        const data = Object.fromEntries(formData.entries()); 
     
-        console.log(data); // log the form data object
+        console.log(data); 
     }
     
       useEffect(() => {
@@ -46,17 +48,21 @@ import React, { useEffect, FormEvent } from 'react';
                 </p>
                 <form data-aos="fade-up" data-aos-once="true" action="" className="contact-form sm:w-2/3 lg:w-full w-full px-4 lg:px-4 xl:px-0 mx-auto">
                     <div className="pb-2 pt-4">
-                        <input type="email" name="email" id="email" placeholder="Email" className="bg-white dark:bg-darkish block w-full p-4 border dark:border-white text-lg rounded-sm"/>
+                        <input required type="email" name="email" id="email" placeholder="Email" className="bg-white dark:bg-darkish block w-full p-4 border dark:border-white text-lg rounded-sm"/>
                     </div>
                     <div className="pb-2 pt-4">
-                        <input className="bg-white block w-full p-4 text-lg border dark:border-white rounded-sm dark:bg-darkish" type="text" name="name" id="name" placeholder="Name" />
+                        <input required className="bg-white block w-full p-4 text-lg border dark:border-white rounded-sm dark:bg-darkish" type="text" name="name" id="name" placeholder="Name" />
                     </div>
                     <div className="pb-2 pt-4">
-                        <textarea className="contact-placeholder bg-white block w-full p-4 text-lg border min-h-[151px] dark:border-white rounded-sm dark:bg-darkish" name="message" id="message" placeholder="Your message..." />
+                        <textarea required className="contact-placeholder bg-white block w-full p-4 text-lg border min-h-[151px] dark:border-white rounded-sm dark:bg-darkish" name="message" id="message" placeholder="Your message..." />
                     </div>
                     <div className="relative pb-2 pt-4">
                         <button className="uppercase block w-full p-4 text-lg text-white rounded bg-gradient-to-r from-emerald-400 to-cyan-400 focus:outline-none transition hover:-translate-y-[4px]">Send</button>
                     </div>
+                    {messageReceived && (
+        <p className="text-green-600">Message received!</p>
+      )}
+
                 </form>
             </div>
         </div>
