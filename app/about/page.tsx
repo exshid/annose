@@ -54,10 +54,10 @@ export default function About() {
 </p>
 <p className="py-2">
 Non repudiandae sequi ullam delectus fugit? Pariatur corrupti praesentium nesciunt? Reiciendis voluptatibus delectus a laudantium beatae illo, ab quaerat animi facilis neque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto iure facilis velit modi corrupti ratione et non libero enim dolore, quia excepturi vel ad delectus sit maxime tenetur esse eos.<br/>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis provident accusantium aut doloremque, quam corporis exercitationem quae atque quas cupiditate id? Earum autem fugiat modi. Dignissimos ipsa alias enim. Nemo?</p>
-<div className="w-full h-full py-2 self-start"><h2 className="inline-block text-2xl md:text-3xl lg:text-4xl pb-5 text-slate-800 font-black dark:text-white heading-font">
+<div className="w-full h-full py-2 self-start"><h2 className="inline-block text-2xl md:text-3xl lg:text-4xl pb-5 text-gray-800 font-black dark:text-white heading-font">
   My Services</h2>
-  <div className="w-full border dark:border-white	border-slate-800 rounded-lg p-5">
-    <h3 className="text-slate-300 dark:text-white font-bold text-xl">Book Edit</h3>
+  <div className="w-full border dark:border-white	border-slate-300 rounded-lg p-5">
+    <h3 className="text-gray-800 dark:text-white font-bold text-xl">Book Edit</h3>
     <p className="text-darkish dark:text-white jakarta-font">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam sequi, fugit ipsum placeat ad laudantium.</p>
   </div>
   </div>
