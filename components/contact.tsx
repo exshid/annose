@@ -7,8 +7,12 @@ import React, { useEffect, FormEvent } from 'react';
     
     function handleSubmit(event: Event) {
         event.preventDefault(); 
-        console.log(event)
-      }
+        const form = event.target as HTMLFormElement; // get the form element
+        const formData = new FormData(form); // create a new FormData object from the form
+        const data = Object.fromEntries(formData.entries()); // convert the FormData object to a plain object
+    
+        console.log(data); // log the form data object
+    }
     
       useEffect(() => {
         const form = document.querySelector('.contact-form');
