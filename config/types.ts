@@ -48,22 +48,6 @@ export type BlogConfig = {
        */
       description: string;
     };
-    posts: {
-      /**
-       * The URL of the posts page.
-       * If you want to use a different URL,
-       * make sure to rename the `app/posts` directory to match.
-       */
-      url: `/${string}`;
-      /**
-       * The title of the posts page (the part after the pipe).
-       */
-      title: string;
-      /**
-       * The description of the posts page.
-       */
-      description: string;
-    };
   };
   /**
    * Customize the blog's theme.
@@ -117,5 +101,7 @@ export type BlogConfig = {
   services: any;
   aboutTop: string;
   aboutMiddle: string;
+  firstColor: string;
+  secondColor: string;
 
 };

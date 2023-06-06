@@ -16,6 +16,12 @@ const blogConfig = {
         "portfolio.",
     },
   },
+  //First color; use tailwindcomponents.com/gradient-generator to generate your favorite color
+  firstColor: 'bg-gradient-to-r from-red-500 to-orange-500',
+  //Second color
+  secondColor: 'bg-gradient-to-r from-blue-200 to-cyan-200',
+
+
   //Biography in About me page
   about: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam sequi, fugit ipsum placeat ad laudantium. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam sequi, fugit ipsum placeat ad laudantium.
   Distinctio voluptate iste doloremque harum similique quod! Voluptatem incidunt dignissimos vero consequuntur laborum. Rem nobis odit assumenda mollitia animi et possimus est.
