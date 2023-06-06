@@ -110,4 +110,6 @@ export type BlogConfig = {
    * Topics to show in the hero section typing animation.
    */
   topics: string[];
+  books: any;
+
 };
