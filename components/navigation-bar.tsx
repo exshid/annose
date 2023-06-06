@@ -26,12 +26,12 @@ export function NavigationBar({ className }: NavigationBarProps) {
       >
         About
       </Link>
-      <a
-        href="#books"
+      <Link
+    Link href='/#books'
         className="scroll-smooth transition hover:-translate-y-px font-semibold hover:text-accent dark:hover:text-accent-dark"
       >
         Books
-      </a>
+      </Link>
          
       <a
         href="#services"
