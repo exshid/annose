@@ -23,16 +23,20 @@ export const Testimonials = () => {
   }, []);
   return (
     <ScrollWrapper>
-
+<div className="h-auto w-full">
    
-    <swiper-container ref={swiperElRef}
+<swiper-container
+      ref={swiperElRef}
       slides-per-view="3"
-      direction="vertical" pagination="true" pagination-clickable="true">
-      {blogConfig.testimonials.map((slide, index) => (
-        <swiper-slide key={Math.random()}><p>{slide.text}</p><p>{slide.writerName}</p></swiper-slide>
-        ))}
-  </swiper-container>
-
+      navigation="true"
+      pagination="true"
+    >
+      <swiper-slide>Slide 1</swiper-slide>
+      <swiper-slide>Slide 2</swiper-slide>
+      <swiper-slide>Slide 3</swiper-slide>
+      ...
+    </swiper-container>
+  </div>
 </ScrollWrapper>
   );
 };
