@@ -58,7 +58,7 @@ export default function About() {
   My Services</h2>
   <div>
       {blogConfig.services.map((book, index) => (
-        <div key={index} className="w-full border dark:border-white border-slate-300 rounded-lg p-5">
+        <div key={index} className="mb-5 transition hover:-translate-y-[4px] w-full border dark:border-white border-slate-300 rounded-lg p-5">
           <h3 className="text-gray-800 dark:text-white font-bold text-xl">{book.title}</h3>
           <p className="text-darkish dark:text-white jakarta-font">{book.description}</p>
         </div>
