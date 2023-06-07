@@ -6,7 +6,7 @@ type Props = {
 };
 
   
-  PageWrapper: React.FC<Props> = ({ children }) => {
+const PageWrapper: React.FC<Props> = ({ children }) => {
 
  return (
     <AnimatePresence>
