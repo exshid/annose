@@ -44,7 +44,7 @@ export function NavigationBar({ className }: NavigationBarProps) {
         Editorial Services
       </Link>
       <Link
-href="https://portfoliodemo.vercel.app/#contact" className="scroll-smooth transition hover:-translate-y-px font-semibold hover:text-accent dark:hover:text-accent-dark"
+href="https://portfoliodemo.vercel.app#contact" className="scroll-smooth transition hover:-translate-y-px font-semibold hover:text-accent dark:hover:text-accent-dark"
       >
         Contact
       </Link>
