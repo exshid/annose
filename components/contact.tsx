@@ -30,12 +30,13 @@ const app = initializeApp(firebaseConfig);
       const data = Object.fromEntries(formData.entries());
   
       const db = getDatabase();
-      set(ref(db, data), {
+      const newPostRef = push(ref(db, 'posts')); // Generate a new unique key
+      set(newPostRef, {
         name: data.name,
         message: data.message,
-        email : data.email
+        email: data.email,
       });
-    
+        
   
       setMessageReceived(true);
       console.log(data);
