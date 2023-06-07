@@ -1,5 +1,4 @@
 //@ts-nocheck 
-import NavLink from './nav-link';
 import Link from 'next/link';
 
 import { BlogTitle } from '@/components/blog-title';
@@ -19,18 +18,18 @@ export function NavigationBar({ className }: NavigationBarProps) {
       )}
     >
       
-      <NavLink href="/">
+      <Link href="/">
         <span className="bg-clip-text text-transparent scroll-smooth transition hover:-translate-y-px font-semibold hover:text-accent dark:hover:text-accent-dark">
         Home
         </span>
-      </NavLink>
-      <NavLink
+      </Link>
+      <Link
         href="/about"> 
         <span className="scroll-smooth transition hover:-translate-y-px font-semibold hover:text-accent dark:hover:text-accent-dark"
       >
         About
         </span>
-      </NavLink>
+      </Link>
       <Link
     href='/#books' activeClassName="bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent"
         className="scroll-smooth transition hover:-translate-y-px font-semibold hover:text-accent dark:hover:text-accent-dark"
