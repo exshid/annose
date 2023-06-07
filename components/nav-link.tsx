@@ -2,7 +2,14 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { blogConfig } from '@/config';
 
-function NavLink({ href, children }) {
+type Props = {
+    children: ReactNode;
+    href:string
+  };
+  
+    
+  const NavLink: React.FC<Props> = ({ href, children }) => {
+  
   const router = useRouter();
 activeClass= blogConfig.firstColor
   // Check if the current route matches the href prop of the Link component
