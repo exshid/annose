@@ -52,8 +52,6 @@ type BookCardProps = {
                 backgroundImage: `url(${blogConfig.books[count].cover})` 
             }}>
           </div>
-
-          
           <div className="absolute inset-0 z-20 flex items-center justify-center h-auto lg:h-screen w-full bg-gray-900 bg-opacity-75"></div>
           <div className="absolute inset-0 z-30 flex flex-col items-center justify-center backdrop-blur-md">
               <div data-aos="fade-right" data-aos-once="true"
