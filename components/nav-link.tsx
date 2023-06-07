@@ -1,15 +1,11 @@
+//@ts-nocheck 
+
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { blogConfig } from '@/config';
-import React, { ReactNode } from 'react';
 
-type Props = {
-    children: ReactNode;
-    href:string
-  };
-  
     
-  const NavLink: React.FC<Props> = ({ href, children }) => {
+  const NavLink = ({ href, children }) => {
   
   const router = useRouter();
 const activeClass= blogConfig.firstColor
