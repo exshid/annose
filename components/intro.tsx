@@ -1,9 +1,6 @@
 'use client';
 import Link from 'next/link';
 import { blogConfig } from '@/config';
-
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 import React,{useEffect} from "react";
 import Image from 'next/image'
 import placeholder from '../public/images/placeholder.svg'
@@ -13,9 +10,6 @@ type IntroProps = {
   };
   
   export function Intro() {
-    useEffect(() => {
-      AOS.init();
-    }, [])
 
 return (
 <>
