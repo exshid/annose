@@ -19,7 +19,7 @@ export function NavigationBar({ className }: NavigationBarProps) {
     >
       
       <Link href="/">
-        <span className="bg-clip-text text-transparent scroll-smooth transition hover:-translate-y-px font-semibold hover:text-accent dark:hover:text-accent-dark">
+        <span className="scroll-smooth transition hover:-translate-y-px font-semibold hover:text-accent dark:hover:text-accent-dark">
         Home
         </span>
       </Link>
@@ -31,24 +31,23 @@ export function NavigationBar({ className }: NavigationBarProps) {
         </span>
       </Link>
       <Link
-    href='/#books' activeClassName="bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent"
+    href="/" as="/#books" 
         className="scroll-smooth transition hover:-translate-y-px font-semibold hover:text-accent dark:hover:text-accent-dark"
       >
         Books
       </Link>
          
-      <a
-        href="#services"
+      <Link
+        href="/" as="/#services"
         className="scroll-smooth transition hover:-translate-y-px font-semibold hover:text-accent dark:hover:text-accent-dark"
       >
         Editorial Services
-      </a>
-      <a
-        href="#contact"
-        className="scroll-smooth transition hover:-translate-y-px font-semibold hover:text-accent dark:hover:text-accent-dark"
+      </Link>
+      <Link
+href="#contact" className="scroll-smooth transition hover:-translate-y-px font-semibold hover:text-accent dark:hover:text-accent-dark"
       >
         Contact
-      </a>
+      </Link>
 
 
       {allPages.map((page) => (
