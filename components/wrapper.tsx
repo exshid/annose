@@ -1,9 +1,11 @@
 'use client'
+
 import { blogConfig } from '@/config';
 import { motion, AnimatePresence } from "framer-motion"
-import React, { ReactNode } from 'react';
+import React, { ReactNode,useState  } from 'react';
 type Props = {
   children: ReactNode;
+  className: string;
 };
 
   
@@ -29,7 +31,7 @@ return <motion.div
   initial={{ opacity: 0, y:100 }}
   whileInView={{ opacity: 1, y:0 }}
   viewport={{ once: true }}
-transition={{delay:0, duration: 0.6}}
+transition={{delay:0, duration: 0.5}}
 >
     {children}
 </motion.div>
@@ -37,11 +39,9 @@ transition={{delay:0, duration: 0.6}}
 
 }
 
-export const BookWrapper: React.FC<Props> = ({ children }) => {
+export const BookWrapper: React.FC<Props> = ({ children, className }) => {
   return <motion.div
-className="z-[55] flex-col lg:bg-gradient-to-r from-emerald-400 to-cyan-400
-lg:flex-row rounded-lg lg:overflow-hidden items-center justify-center
-flex w-11/12 h-4/5 lg:w-[840px] lg:h-[555px] bg-cover bg-centertransition transition opacity-100"
+className={className}
 
     initial={{ opacity: 0, y:100 }}
     whileInView={{ opacity: 1, y:0 }}
