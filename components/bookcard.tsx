@@ -8,6 +8,7 @@ type BookCardProps = {
   };
   
   export function BookCard() {
+    console.log(blogConfig.books);
     const [transitionClassText, setTransitionClassText] = useState("opacity-100");
     
 
@@ -18,6 +19,7 @@ type BookCardProps = {
 
       setTimeout(() => {
         setTransitionClassText("opacity-100");
+
       }, 500);
   
     }
@@ -36,7 +38,7 @@ type BookCardProps = {
 
     return (
       <div className="z-30 relative items-center justify-center w-full h-auto min-h-full lg:overflow-auto">
-          <div className={transitionClass} 
+          <div className="transition ease-in-out inset-0 h-screen bg-cover transition ease-in-out opacity-100 bg-center bg-fixed" 
               style={{
                 backgroundImage: `url(${blogConfig.books[count].cover})` 
             }}>
@@ -48,7 +50,7 @@ type BookCardProps = {
               lg:flex-row rounded-lg lg:overflow-hidden items-center justify-center
               flex w-11/12 h-4/5 lg:w-[840px] lg:h-[555px] bg-cover bg-centertransition ${transitionClassText}`}>
       <div className="w-full flex justify-center lg:w-2/5 h-full overflow-hidden">
-      <Image src={blogConfig.books[count].cover} alt="cover of the book" className={transitionClassImg}/></div>
+      <Image src={blogConfig.books[count].cover} alt="cover of the book" className="w-auto h-full lg:h-auto rounded-lg lg:rounded-none transition opacity-100 ease-in-out object-cover contain lg:h-full"/></div>
 <div className="flex h-min lg:h-full bottom-[17px] lg:bottom-[unset] flex-col justify-evenly w-auto rounded-lg lg:rounded-none absolute lg:relative lg:w-3/5 p-5 text-white bg-gradient-to-r lg:bg-none from-emerald-400 to-cyan-400"><div><h3 className={`font-inter font-black text-3xl lg:text-5xl transition ${transitionClassText}`}>{blogConfig.books[count].title}</h3>
 <p className={`jakarta-font transition ${transitionClassText}`}>By {blogConfig.books[count].author}</p></div>
 <p className={`hidden lg:block jakarta-font !m-0 !lg:mb-[40px] transition ${transitionClassText}`} >
