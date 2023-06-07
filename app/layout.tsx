@@ -6,7 +6,6 @@ import { allPosts } from 'contentlayer/generated';
 import { blogConfig } from '@/config';
 import { Analytics } from '@/components/analytics';
 import { Footer } from '@/components/footer';
-import { CookieBanner } from '@/components/cookies';
 import { Header } from '@/components/header';
 import { cn } from '@/lib/utils';
 type RootLayoutProps = {
@@ -68,7 +67,6 @@ export default function RootLayout({ children }: RootLayoutProps) {
           <main className="w-full">
             {children}
           </main>
-         <CookieBanner/>
           <section className="w-full">
             <Footer />
           </section>
