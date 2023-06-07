@@ -47,8 +47,8 @@ export default function Home() {
 {blogConfig.books.length >= 1 &&
 <Books/>}
 <Service/>
-<Contact/>
 <Testimonials/>
+<Contact/>
     </div>
     </PageWrapper>
   );

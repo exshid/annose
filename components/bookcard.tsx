@@ -8,7 +8,6 @@ type BookCardProps = {
   };
   
   export function BookCard() {
-    console.log(blogConfig.books);
     const [transitionClassText, setTransitionClassText] = useState("transition opacity-100");
     
 
