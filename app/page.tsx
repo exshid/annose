@@ -6,7 +6,7 @@ import { FileText } from 'lucide-react';
 import { blogConfig } from '@/config';
 import { HeroSection } from '@/components/hero-section';
 import { Contact } from '@/components/contact';
-import { PageWrapper} from '@/components/wrapper';
+import PageWrapper from '@/components/wrapper';
 
 import {PhotoCard} from '@/components/photocard';
 import {Intro} from '@/components/intro';

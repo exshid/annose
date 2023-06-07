@@ -1,8 +1,12 @@
 import { blogConfig } from '@/config';
 import { motion, AnimatePresence } from "framer-motion"
+import React, { ReactNode } from 'react';
+type Props = {
+  children: ReactNode;
+};
 
   
-  export function PageWrapper ({children}) {
+  PageWrapper: React.FC<Props> = ({ children }) => {
 
  return (
     <AnimatePresence>
@@ -18,3 +22,4 @@ transition={{delay:0.5}}
  )
 
 }
+export default PageWrapper;
