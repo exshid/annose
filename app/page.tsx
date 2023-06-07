@@ -1,8 +1,5 @@
 import React from 'react';
 import { type Metadata } from 'next/types';
-import { allPosts } from 'contentlayer/generated';
-import { compareDesc } from 'date-fns';
-import { FileText } from 'lucide-react';
 import { blogConfig } from '@/config';
 import { HeroSection } from '@/components/hero-section';
 import { Contact } from '@/components/contact';
@@ -47,7 +44,8 @@ export default function Home() {
 <div className="flex h-full flex-col">
 <PhotoCard/>
 <Intro />
-<Books/>
+{blogConfig.books.length >= 1 &&
+<Books/>}
 <Service/>
 <Contact/>
  {/* 
