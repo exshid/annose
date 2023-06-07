@@ -1,5 +1,5 @@
 //@ts-nocheck 
-import Link from 'next/link';
+import NavLink from './NavLink';
 import { BlogTitle } from '@/components/blog-title';
 import { cn } from '@/lib/utils';
 import { allPages } from '../.contentlayer/generated';
@@ -17,16 +17,18 @@ export function NavigationBar({ className }: NavigationBarProps) {
       )}
     >
       
-      <Link href="/" activeClassName="bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent"
-      className="scroll-smooth transition hover:-translate-y-px font-semibold hover:text-accent dark:hover:text-accent-dark">
+      <NavLink href="/">
+        <span className="bg-clip-text text-transparent scroll-smooth transition hover:-translate-y-px font-semibold hover:text-accent dark:hover:text-accent-dark">
         Home
-      </Link>
-      <Link
-        href="/about" activeClassName="bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent"
-        className="scroll-smooth transition hover:-translate-y-px font-semibold hover:text-accent dark:hover:text-accent-dark"
+        </span>
+      </NavLink>
+      <NavLink
+        href="/about"> 
+        <span className="scroll-smooth transition hover:-translate-y-px font-semibold hover:text-accent dark:hover:text-accent-dark"
       >
         About
-      </Link>
+        </span>
+      </NavLink>
       <Link
     href='/#books' activeClassName="bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent"
         className="scroll-smooth transition hover:-translate-y-px font-semibold hover:text-accent dark:hover:text-accent-dark"
