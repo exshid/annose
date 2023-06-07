@@ -13,7 +13,6 @@ const CookieBanner = () => {
       const cookiesAccepted = localStorage.getItem('cookiesAccepted');
       if (cookiesAccepted) {
         setShowBanner(false);
-        setAcceptedCookies(JSON.parse(cookiesAccepted)); 
       }
     }, []);
   
