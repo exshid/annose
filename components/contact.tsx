@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 import { blogConfig } from '@/config';
 import React, {useState, useEffect, FormEvent } from 'react';
-import PageWrapper from '@/components/wrapper';
+import {ScrollWrapper} from '@/components/wrapper';
 
 import { initializeApp } from 'firebase/app';
 import { getDatabase, ref, set, push } from "firebase/database";
@@ -62,7 +62,7 @@ function handleSubmit(event: Event) {
       
       
     return (
-      <PageWrapper>
+      <ScrollWrapper>
     <div id="contact">
     <section className="min-h-screen flex flex-col lg:flex-row items-stretch text-white ">
         <div className="lg:flex w-full p-8 lg:w-1/2 bg-gradient-to-r from-rose-600 to-rose-900 relative items-center">
@@ -111,6 +111,6 @@ function handleSubmit(event: Event) {
     </section>
 </div>
 
-</PageWrapper>
+</ScrollWrapper>
 );
   }
