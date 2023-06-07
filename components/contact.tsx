@@ -3,7 +3,6 @@
 import { blogConfig } from '@/config';
 import React, {useState, useEffect, FormEvent } from 'react';
 import PageWrapper from '@/components/wrapper';
-import { blogConfig } from '@/config';
 
 import { initializeApp } from 'firebase/app';
 import { getDatabase, ref, set, push } from "firebase/database";
