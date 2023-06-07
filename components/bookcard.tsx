@@ -20,7 +20,7 @@ type BookCardProps = {
       setTimeout(() => {
         setTransitionClassText("transition translate-x-[0px]");
 
-      }, 100);
+      }, 300);
   
     }
 

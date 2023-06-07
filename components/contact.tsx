@@ -63,8 +63,7 @@ function handleSubmit(event: Event) {
       <PageWrapper>
     <div id="contact">
     <section className="min-h-screen flex flex-col lg:flex-row items-stretch text-white ">
-        <div className="lg:flex w-full p-8 lg:w-1/2 bg-gradient-to-r from-emerald-400 to-cyan-400 relative items-center">
-            <div className="absolute bg-darkish opacity-60 inset-0 z-0"></div>
+        <div className="lg:flex w-full p-8 lg:w-1/2 bg-gradient-to-r from-rose-600 to-rose-900 relative items-center">
             <div className="w-full px-2 xl:px-24 z-10">
                 <h1 className="text-5xl font-bold text-left tracking-wide">Get In Touch</h1>
 
