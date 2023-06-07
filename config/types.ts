@@ -97,7 +97,7 @@ export type BlogConfig = {
    * Topics to show in the hero section typing animation.
    */
   topics: string[];
-  testimonials: string[];
+  testimonials: any;
   books: any;
   services: any;
   aboutTop: string;
