@@ -28,7 +28,7 @@ export const Testimonials = () => {
     <swiper-container ref={swiperElRef}
       slides-per-view="3"
       direction="vertical" pagination="true" pagination-clickable="true">
-      {blogConfig.map((slide, index) => (
+      {blogConfig.testimonials.map((slide, index) => (
         <swiper-slide key={Math.random()}><p>{slide.text}</p><p>{slide.writerName}</p></swiper-slide>
         ))}
   </swiper-container>
