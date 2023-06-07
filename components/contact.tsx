@@ -1,5 +1,7 @@
 //@ts-nocheck 
 'use client'
+import Link from 'next/link';
+
 import { blogConfig } from '@/config';
 import React, {useState, useEffect, FormEvent } from 'react';
 import PageWrapper from '@/components/wrapper';
