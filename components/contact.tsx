@@ -2,7 +2,7 @@
 import { blogConfig } from '@/config';
 import React, {useState, useEffect, FormEvent } from 'react';
 import { initializeApp } from 'firebase/app';
-import { getDatabase, ref } from "firebase/database";
+import { getDatabase, ref, set } from "firebase/database";
 
   export const Contact = () => {
     const { footerLinks } = blogConfig;
@@ -27,9 +27,15 @@ const app = initializeApp(firebaseConfig);
       const form = event.target as HTMLFormElement;
       const formData = new FormData(form);
       const data = Object.fromEntries(formData.entries());
-      const db = getDatabase().ref('form-submissions');
-      db.push(data);
+  
+      const db = getDatabase();
+      set(ref(db, data), {
+        name: data.name,
+        email: data.email,
+        email : data.email
+      });
     
+  
       setMessageReceived(true);
       console.log(data);
     
