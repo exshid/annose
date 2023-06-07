@@ -1,9 +1,5 @@
-import Image from 'next/image'
 import {BookCard} from '@/components/bookcard';
 
-type BooksProps = {
-    photo: string;
-  };
   
   export function Books() {
     

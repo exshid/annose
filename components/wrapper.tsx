@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion"
 import React, { ReactNode,useState  } from 'react';
 type Props = {
   children: ReactNode;
-  className?: string;
+  className?: any;
 };
 
   
