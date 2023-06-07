@@ -36,17 +36,19 @@ export const Testimonials = () => {
 
   return (
     <ScrollWrapper>
-              <div id="books" className="flex justify-evenly bg-white dark:bg-moredarkish h-auto lg:h-[50vh] w-full items-center">
+              <div id="books" className="flex justify-evenly bg-white dark:bg-moredarkish h-[50vh] w-full items-center">
+              <h3 className="heading-font pt-5 text-2xl md:text-3xl lg:text-5xl font-black uppercase bg-gradient-to-r from-rose-600 to-rose-900 bg-clip-text text-transparent">
+        Testimonials</h3>
 
       <div className="z-30 relative items-center justify-center w-full h-full">
           
-          <div className="inset-0 z-30 flex flex-col items-center justify-center">
+          <div className="inset-0 z-30 h-full flex flex-col items-center justify-center">
               <div className={`z-[55] flex-row rounded-lg items-center justify-center
-              flex w-full h-4/5 lg:w-[840px] bg-cover bg-centertransition ${transitionClassText}`}>
+              flex w-full lg:w-[840px] bg-cover bg-centertransition ${transitionClassText}`}>
 
 <div className="flex h-full flex-col justify-evenly relative w-full p-5 text-white">
   <div><p className={`heading-font font-black text-3xl lg:text-5xl transition ${transitionClassText}`}>{blogConfig.testimonials[count].text}</p>
-<p className={`jakarta-font transition text-xl ${transitionClassText}`}>— {blogConfig.testimonials[count].writerName}</p></div>
+<p className={`jakarta-font transition text-xl lg:text-2xl ${transitionClassText}`}>— {blogConfig.testimonials[count].writerName}</p></div>
 </div>
               </div>
           </div>
@@ -59,7 +61,6 @@ export const Testimonials = () => {
 }
 </div>
 </div>
-
-        )</ScrollWrapper>
+      </ScrollWrapper>
   );
 };
