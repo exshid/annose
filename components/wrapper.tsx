@@ -12,9 +12,9 @@ const PageWrapper: React.FC<Props> = ({ children }) => {
  return (
     <AnimatePresence>
 <motion.div
-  initial={{ opacity: 0, y:15 }}
+  initial={{ opacity: 0, y:150 }}
   animate={{ opacity: 1, y:0 }}
-  exit={{ opacity: 0, y:15 }}
+  exit={{ opacity: 0, y:150 }}
 transition={{delay:0.5}}
 >
     {children}

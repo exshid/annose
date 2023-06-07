@@ -9,18 +9,18 @@ type BookCardProps = {
   
   export function BookCard() {
     console.log(blogConfig.books);
-    const [transitionClassText, setTransitionClassText] = useState("transition translate-x-[0px]");
+    const [transitionClassText, setTransitionClassText] = useState("transition -translate-x-[0px]");
     
 
     const [count, setCount] = useState(0);
     function classNames() {
       setCount((count + 1) % blogConfig.books.length);
-      setTransitionClassText("transition -translate-y-[110px]");
+      setTransitionClassText("transition -translate-x-[110px]");
 
       setTimeout(() => {
-        setTransitionClassText("transition translate-x-[0px]");
+        setTransitionClassText("transition -translate-x-[0px]");
 
-      }, 300);
+      }, 500);
   
     }
 

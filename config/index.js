@@ -65,8 +65,11 @@ const blogConfig = {
   {title: 'Book edit', description:'Lorem ipsum, dolor sit amet consectetur adipisicing elit.'},
   {title: 'Line edit', description:'Lorem ipsum, dolor sit amet consectetur adipisicing elit.'},
   {title: 'Book edit', description:'Lorem ipsum, dolor sit amet consectetur adipisicing elit.'},
+  {title: 'Book edit', description:'Lorem ipsum, dolor sit amet consectetur adipisicing elit.'},
   {title: 'Line edit', description:'Nam sequi, fugit ipsum placeat ad laudantium.'},
-  ],
+  {title: 'Book edit', description:'Lorem ipsum, dolor sit amet consectetur adipisicing elit.'},
+
+],
 
 };
 
