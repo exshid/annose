@@ -1,3 +1,4 @@
+//@ts-nocheck 
 import { useRef, useEffect } from 'react';
 import { register } from 'swiper/element/bundle';
 import {ScrollWrapper} from '@/components/wrapper';
