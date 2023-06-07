@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { blogConfig } from '@/config';
+import React, { ReactNode } from 'react';
 
 type Props = {
     children: ReactNode;
