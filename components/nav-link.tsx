@@ -12,7 +12,7 @@ type Props = {
   const NavLink: React.FC<Props> = ({ href, children }) => {
   
   const router = useRouter();
-activeClass= blogConfig.firstColor
+const activeClass= blogConfig.firstColor
   // Check if the current route matches the href prop of the Link component
   const isActive = router.pathname === href;
 
