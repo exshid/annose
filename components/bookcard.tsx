@@ -15,12 +15,12 @@ type BookCardProps = {
     const [count, setCount] = useState(0);
     function classNames() {
       setCount((count + 1) % blogConfig.books.length);
-      setTransitionClassText("transition translate-x-[4px]");
+      setTransitionClassText("transition -translate-y-[110px]");
 
       setTimeout(() => {
         setTransitionClassText("transition translate-x-[0px]");
 
-      }, 500);
+      }, 100);
   
     }
 
