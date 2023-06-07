@@ -1,22 +1,14 @@
 'use client'
 import { blogConfig } from '@/config';
 import React, {useState, useEffect, FormEvent } from 'react';
-import firebase, { initializeApp } from 'firebase/app';
-import 'firebase/firestore';
-
+import firebase from 'firebase';
 import { getAnalytics } from "firebase/analytics";
 
   export const Contact = () => {
     const { footerLinks } = blogConfig;
     
     const [messageReceived, setMessageReceived] = useState(false); 
-    function handleSubmit(event: Event) {
-      event.preventDefault();
-      const form = event.target as HTMLFormElement;
-      const formData = new FormData(form);
-      const data = Object.fromEntries(formData.entries());
-    
-    
+
 const firebaseConfig = {
   apiKey: "AIzaSyDuce5ezJHGy_qwPabkxXqMBOze5BBn6O4",
   authDomain: "porto-cb860.firebaseapp.com",
@@ -27,22 +19,25 @@ const firebaseConfig = {
   measurementId: "G-RLJ2QEEXCX"
 };
 
-const app = initializeApp(firebaseConfig);
+const app = firebase.initializeApp(firebaseConfig);
+const database = firebase.database();
+
 const analytics = getAnalytics(app);    
 
-const db = firebase.firestore();
-db.collection('forms').add(data)
-  .then(() => {
-    setMessageReceived(true);
-    console.log('Form data sent to Firebase:', data);
-  })
-  .catch((error) => {
-    console.error('Error sending form data to Firebase:', error);
-  });
-}
+    function handleSubmit(event: Event) {
 
-
-
+      event.preventDefault();
+      const form = event.target as HTMLFormElement;
+      const formData = new FormData(form);
+      const data = Object.fromEntries(formData.entries());
+      const db = firebase.database().ref('form-submissions');
+      db.push(data);
+    
+      setMessageReceived(true);
+      console.log(data);
+    
+    }
+    
       useEffect(() => {
         const form = document.querySelector('.contact-form');
         if (form) {
