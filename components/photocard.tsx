@@ -1,9 +1,6 @@
 import Image from 'next/image'
 import placeholder from '../public/images/placeholder.svg'
 import { HeroSection } from '@/components/hero-section';
-type PhotoCardProps = {
-    photo: string;
-  };
   
   export function PhotoCard() {
     
