@@ -1,19 +1,41 @@
 'use client'
 import { blogConfig } from '@/config';
 import React, {useState, useEffect, FormEvent } from 'react';
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
 
   export const Contact = () => {
     const { footerLinks } = blogConfig;
     
     const [messageReceived, setMessageReceived] = useState(false); 
 
+const firebaseConfig = {
+  apiKey: "AIzaSyDuce5ezJHGy_qwPabkxXqMBOze5BBn6O4",
+  authDomain: "porto-cb860.firebaseapp.com",
+  projectId: "porto-cb860",
+  storageBucket: "porto-cb860.appspot.com",
+  messagingSenderId: "722646135047",
+  appId: "1:722646135047:web:ede72e540cba09a72c55a2",
+  measurementId: "G-RLJ2QEEXCX"
+};
+
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);    
+
     function handleSubmit(event: Event) {
-        event.preventDefault(); 
-        const form = event.target as HTMLFormElement; 
-        const formData = new FormData(form); 
-        const data = Object.fromEntries(formData.entries()); 
-        setMessageReceived(true);
-        console.log(data); 
+
+      event.preventDefault();
+      const form = event.target as HTMLFormElement;
+      const formData = new FormData(form);
+      const data = Object.fromEntries(formData.entries());
+    
+      // Send data to Firebase Realtime Database
+      const db = firebase.database().ref('form-submissions');
+      db.push(data);
+    
+      setMessageReceived(true);
+      console.log(data);
+    
     }
     
       useEffect(() => {

@@ -18,6 +18,7 @@
     "@next/font": "^13.2.3",
     "framer-motion":"10.12.16",
     "@vercel/analytics": "^0.1.10",
+    "firebase": "latest",
     "@vercel/og": "^0.1.0",
     "clsx": "^1.2.1",
     "contentlayer": "^0.3.0",
