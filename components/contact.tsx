@@ -3,6 +3,7 @@
 import { blogConfig } from '@/config';
 import React, {useState, useEffect, FormEvent } from 'react';
 import PageWrapper from '@/components/wrapper';
+import { blogConfig } from '@/config';
 
 import { initializeApp } from 'firebase/app';
 import { getDatabase, ref, set, push } from "firebase/database";
@@ -88,7 +89,7 @@ function handleSubmit(event: Event) {
                     </div>
                     <div className="relative pb-2 pt-4">
                         <button className=
-                        {`uppercase block w-full p-4 text-lg text-white rounded focus:outline-none transition hover:-translate-y-[4px] ${firstColor}`}>Send</button>
+                        {`uppercase block w-full p-4 text-lg text-white rounded focus:outline-none transition hover:-translate-y-[4px] ${blogConfig.firstColor}`}>Send</button>
                     </div>
                     {messageReceived && (
                       <>
