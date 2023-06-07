@@ -23,10 +23,10 @@ const blogConfig = {
 
 
   //Biography in About me page
-  about: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam sequi, fugit ipsum placeat ad laudantium. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam sequi, fugit ipsum placeat ad laudantium.
-  Distinctio voluptate iste doloremque harum similique quod! Voluptatem incidunt dignissimos vero consequuntur laborum. Rem nobis odit assumenda mollitia animi et possimus est.
-  Consectetur adipisicing elit. Distinctio voluptate iste doloremque harum similique quod! Voluptatem incidunt dignissimos vero consequuntur laborum. Rem nobis odit assumenda mollitia animi et possimus est.
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio voluptate iste doloremque harum similique quod! Voluptatem incidunt dignissimos vero consequuntur laborum. Rem nobis odit assumenda mollitia animi et possimus est.`,
+about: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam sequi, fugit ipsum placeat ad laudantium. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam sequi, fugit ipsum placeat ad laudantium.
+Distinctio voluptate iste doloremque harum similique quod! Voluptatem incidunt dignissimos vero consequuntur laborum. Rem nobis odit assumenda mollitia animi et possimus est.
+Consectetur adipisicing elit. Distinctio voluptate iste doloremque harum similique quod! Voluptatem incidunt dignissimos vero consequuntur laborum. Rem nobis odit assumenda mollitia animi et possimus est.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio voluptate iste doloremque harum similique quod! Voluptatem incidunt dignissimos vero consequuntur laborum. Rem nobis odit assumenda mollitia animi et possimus est.`,
     //Biography in top of the main page
   aboutTop: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
 //Biography in about secion of the main page

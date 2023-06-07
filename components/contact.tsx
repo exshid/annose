@@ -87,7 +87,8 @@ function handleSubmit(event: Event) {
                         <textarea required className="contact-placeholder bg-white block w-full p-4 text-lg border min-h-[151px] dark:border-white rounded-sm dark:bg-darkish" name="message" id="message" placeholder="Your message..." />
                     </div>
                     <div className="relative pb-2 pt-4">
-                        <button className="uppercase block w-full p-4 text-lg text-white rounded bg-gradient-to-r from-emerald-400 to-cyan-400 focus:outline-none transition hover:-translate-y-[4px]">Send</button>
+                        <button className=
+                        {`uppercase block w-full p-4 text-lg text-white rounded focus:outline-none transition hover:-translate-y-[4px] ${firstColor}`}>Send</button>
                     </div>
                     {messageReceived && (
                       <>
