@@ -1,6 +1,6 @@
-import { Home, XCircle } from 'lucide-react';
+import Link from 'next/link';
 
-import { Button } from '@/components/button';
+import { Home, XCircle } from 'lucide-react';
 
 export default function NotFound() {
   return (
@@ -9,7 +9,11 @@ export default function NotFound() {
       <h2 className="text-3xl font-bold text-slate-700 dark:text-rose-50">
         Page not found
       </h2>
-      <Button href="/" label="Home" icon={<Home className="h-4 w-4" />} />
+      <Link href="/">
+        <button label="home"
+     className="uppercase block transition w-full p-4 text-lg text-white rounded bg-gradient-to-r from-rose-600 to-rose-900 focus:outline-none">Home Page</button>
+     </Link>
+                    
     </div>
   );
 }
