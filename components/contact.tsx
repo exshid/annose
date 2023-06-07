@@ -28,8 +28,6 @@ const analytics = getAnalytics(app);
       const form = event.target as HTMLFormElement;
       const formData = new FormData(form);
       const data = Object.fromEntries(formData.entries());
-    
-      // Send data to Firebase Realtime Database
       const db = firebase.database().ref('form-submissions');
       db.push(data);
     
