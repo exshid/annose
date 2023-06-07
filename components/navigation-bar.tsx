@@ -1,5 +1,5 @@
 //@ts-nocheck 
-import NavLink from './NavLink';
+import NavLink from './nav-link';
 import { BlogTitle } from '@/components/blog-title';
 import { cn } from '@/lib/utils';
 import { allPages } from '../.contentlayer/generated';
