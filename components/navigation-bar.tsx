@@ -31,7 +31,7 @@ export function NavigationBar({ className }: NavigationBarProps) {
         </span>
       </Link>
       <Link
-    href="/" as="/#books" 
+    href="/" as="#books" 
         className="scroll-smooth transition hover:-translate-y-px font-semibold hover:text-accent dark:hover:text-accent-dark"
       >
         Books
