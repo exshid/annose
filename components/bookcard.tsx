@@ -2,7 +2,6 @@
 import React, { useState } from 'react';
 import Image from 'next/image'
 import { blogConfig } from '@/config';
-import {ScrollWrapper} from '@/components/wrapper';
 
 type BookCardProps = {
     photo: string;
