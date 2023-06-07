@@ -26,9 +26,9 @@ const CookieBanner = () => {
       return null;
     }
   return (
-    <div className={`cookie-banner w-full fixed bottom-0 ${blogConfig.firstColor}`}>
-      <p>We use cookies to improve your experience on our website. <Link className="text-gray" href="/policies">Learn more.</Link></p>
-      <button onClick={handleAcceptCookies}>Accept</button>
+    <div className={`cookie-banner p-3 z-[666] text-white w-full fixed bottom-0 ${blogConfig.firstColor}`}>
+      <p className="inline-block">We use cookies to improve your experience on our website. <Link className="text-gray" href="/policies">Learn more.</Link></p>
+      <button label="accept" className="ml-5" onClick={handleAcceptCookies}>Accept</button>
     </div>
   );
 };

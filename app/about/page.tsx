@@ -10,6 +10,7 @@ import { NameCard} from '@/components/name' ;
 import { blogConfig } from '@/config';
 import { Button } from '@/components/button';
 import PageWrapper from '@/components/wrapper';
+import  CookieBanner  from '@/components/cookies';
 
 const { title, description } = blogConfig.pages.home;
 const pageTitle = "About Me — "
@@ -73,6 +74,8 @@ export default function About() {
   </div>
 </div>
     </div>
+    <CookieBanner/>
+
     <Contact/>
     </PageWrapper>
   
