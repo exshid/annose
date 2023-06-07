@@ -1,6 +1,6 @@
 //@ts-nocheck 
 'use client'
-import {  useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import {ScrollWrapper} from '@/components/wrapper';
 import { blogConfig } from '@/config';
 
