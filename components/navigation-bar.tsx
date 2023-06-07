@@ -30,24 +30,24 @@ export function NavigationBar({ className }: NavigationBarProps) {
         About
         </span>
       </Link>
-      <Link
-    href="/" as="#books" 
+      <a
+    href="#books" 
         className="scroll-smooth transition hover:-translate-y-px font-semibold hover:text-accent dark:hover:text-accent-dark"
       >
         Books
-      </Link>
+      </a>
          
-      <Link
-        href="/" as="/#services"
+      <a
+        href="#services"
         className="scroll-smooth transition hover:-translate-y-px font-semibold hover:text-accent dark:hover:text-accent-dark"
       >
         Editorial Services
-      </Link>
-      <Link
-href="https://portfoliodemo.vercel.app#contact" className="scroll-smooth transition hover:-translate-y-px font-semibold hover:text-accent dark:hover:text-accent-dark"
+      </a>
+      <a
+href="#contact" className="scroll-smooth transition hover:-translate-y-px font-semibold hover:text-accent dark:hover:text-accent-dark"
       >
         Contact
-      </Link>
+      </a>
 
 
       {allPages.map((page) => (
