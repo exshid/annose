@@ -1,5 +1,6 @@
 'use client';
 import Link from 'next/link';
+import {ScrollWrapper} from '@/components/wrapper';
 import { blogConfig } from '@/config';
 import React,{useEffect} from "react";
 import Image from 'next/image'
@@ -12,7 +13,7 @@ type IntroProps = {
   export function Intro() {
 
 return (
-<>
+<ScrollWrapper>
     
       <div id="about" className="flex flex-col h-auto md:min-h-[75vh] lg:min-h-[83vh] xl:min-h-screen pt-5 lg:pt-0 bg-darkerlight dark:bg-lightdarkish justify-center items-center">
           <h3 className="heading-font pt-5 text-2xl md:text-3xl lg:text-5xl font-black uppercase bg-gradient-to-r from-rose-600 to-rose-900 bg-clip-text text-transparent">
@@ -39,6 +40,6 @@ return (
 </div>
 </div>
 </div>
-</>
+</ScrollWrapper>
       );
   }

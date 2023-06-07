@@ -1,9 +1,11 @@
 //@ts-nocheck 
 import { blogConfig } from '@/config';
+import {ScrollWrapper} from '@/components/wrapper';
   
   export function Service() {
     
     return (
+      <ScrollWrapper>
         <div id="services" className="bg-darkerlight py-5 dark:bg-darkish text-darkish dark:text-white flex justify-center h-auto w-full">
         <div className="w-full md:w-[97%] xl:w-8/12 flex flex-col items-center">
          <h3 className={`heading-font text-2xl md:text-5xl p-5 font-black uppercase bg-clip-text text-transparent ${blogConfig.firstColor}`}>
@@ -19,6 +21,6 @@ import { blogConfig } from '@/config';
     
  </div>
  </div>
- 
+ </ScrollWrapper>
 );
   }

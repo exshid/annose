@@ -26,11 +26,10 @@ transition={{delay:0.5}}
 
 export const ScrollWrapper: React.FC<Props> = ({ children }) => {
 return <motion.div
-  initial={{ opacity: 0, y:150 }}
+  initial={{ opacity: 0, y:100 }}
   whileInView={{ opacity: 1, y:0 }}
   viewport={{ once: true }}
-
-transition={{delay:0.5}}
+transition={{delay:0}}
 >
     {children}
 </motion.div>

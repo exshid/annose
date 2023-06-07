@@ -70,7 +70,20 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio voluptate is
   {title: 'Book edit', description:'Lorem ipsum, dolor sit amet consectetur adipisicing elit.'},
 
 ],
+    /**
+   * List of testimonials here.
+   * To add a new testimonial, copy those {}s and fill the fields. Important: Do not forget to seperae books using a comma.
+   */
 
+    testimonials: [{writerName: 'Jean', text:'Lorem ipsum, dolor sit amet consectetur adipisicing elit.'},
+    {writerName: 'John', text:'Lorem ipsum, dolor sit amet consectetur adipisicing elit.'},
+    {writerName: 'Jean', text:'Lorem ipsum, dolor sit amet consectetur adipisicing elit.'},
+    {writerName: 'John', text:'Lorem ipsum, dolor sit amet consectetur adipisicing elit.'},
+    {writerName: 'Jean', text:'Lorem ipsum, dolor sit amet consectetur adipisicing elit.'},
+    {writerName: 'John', text:'Lorem ipsum, dolor sit amet consectetur adipisicing elit.'},
+  
+  ],
+  
 };
 
 module.exports = { blogConfig };
