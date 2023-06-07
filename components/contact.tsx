@@ -90,13 +90,18 @@ function handleSubmit(event: Event) {
                         <button className=
                         {`uppercase block w-full p-4 text-lg text-white rounded focus:outline-none transition hover:-translate-y-[4px] ${blogConfig.firstColor}`}>Send</button>
                     </div>
+                    <>
+                    <p className="text-xs xs:text-sm text-[gray]">By submitting this form you agree to <Link href="policies">
+  <span> our privacy policy</span>
+     </Link>
+</p>
                     {messageReceived && (
-                      <>
-        <p className="py-5 text-green-600">Message received!</p>
+        <p className="py-5 text-green-600">Message received!</p>)}
+        {messageFailed && (
         <p className="py-5 text-red-600">Something went wrong. Try again.</p>
+        
+        )}
         </>
-
-)}
 
                 </form>
             </div>

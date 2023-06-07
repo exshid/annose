@@ -1,4 +1,5 @@
 'use client';
+import Link from 'next/link';
 
 import {
   AtSign,
@@ -91,10 +92,14 @@ export function Footer() {
       </button>
       <div className="flex h-6 flex-row items-center justify-center space-x-1 text-slate-600 dark:text-slate-300">
         <Copyright className="h-4 w-4" aria-label="Copyright" />
-        <span className="text-xs xs:text-sm">2023 · {blogConfig.author}</span>
+        <span className="text-xs xs:text-sm">{new Date().getFullYear()} · {blogConfig.author}</span>
       </div>
 
-<div></div>
+<div>
+<Link href="policies">
+  <span className="text-xs xs:text-sm">Policies</span>
+     </Link>
+</div>
     </footer>
   );
 }

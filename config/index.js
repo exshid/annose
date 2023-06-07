@@ -17,7 +17,7 @@ const blogConfig = {
     },
   },
   //First color; use tailwindcomponents.com/gradient-generator to generate your favorite color
-  firstColor: 'bg-gradient-to-r from-red-500 to-orange-500',
+  firstColor: 'bg-gradient-to-r from-rose-600 to-rose-900',
   //Second color
   secondColor: 'bg-gradient-to-r from-blue-200 to-cyan-200',
 
