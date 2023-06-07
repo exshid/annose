@@ -56,7 +56,7 @@ export default function About() {
 <div className="w-full h-full py-2 self-start"><h2 className="inline-block text-2xl md:text-3xl lg:text-4xl pb-5 text-gray-800 font-black dark:text-white heading-font">
   My Services</h2>
   <div>
-      {blogConfig.services((book, index) => (
+      {blogConfig.services.map((book, index) => (
         <div key={index} className="w-full border dark:border-white border-slate-300 rounded-lg p-5">
           <h3 className="text-gray-800 dark:text-white font-bold text-xl">{book.title}</h3>
           <p className="text-darkish dark:text-white jakarta-font">{book.description}</p>
