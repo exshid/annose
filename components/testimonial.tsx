@@ -36,18 +36,15 @@ export const Testimonials = () => {
 
   return (
     <ScrollWrapper>
-              <div id="books" className="flex justify-evenly bg-white dark:bg-moredarkish h-auto lg:min-h-[50vh] w-full items-center">
+              <div id="books" className="flex justify-evenly bg-white dark:bg-moredarkish h-auto lg:h-[50vh] w-full items-center">
 
-      <div className="z-30 relative items-center justify-center w-full h-auto min-h-full lg:overflow-auto">
-          <div className="transition ease-in-out inset-0 bg-cover transition ease-in-out opacity-100 bg-center bg-fixed">
-          </div>
+      <div className="z-30 relative items-center justify-center w-full h-full">
           
-          <div className="absolute inset-0 z-20 flex items-center justify-center h-auto w-full bg-gray-900 bg-opacity-75"></div>
-          <div className="absolute inset-0 z-30 flex flex-col items-center justify-center backdrop-blur-md">
-              <div className={`z-[55] flex-row rounded-lg lg:overflow-hidden items-center justify-center
+          <div className="inset-0 z-30 flex flex-col items-center justify-center">
+              <div className={`z-[55] flex-row rounded-lg items-center justify-center
               flex w-full h-4/5 lg:w-[840px] bg-cover bg-centertransition ${transitionClassText}`}>
 
-<div className="flex h-full flex-col justify-evenly rounded-lg lg:rounded-none relative w-full p-5 text-white">
+<div className="flex h-full flex-col justify-evenly relative w-full p-5 text-white">
   <div><p className={`heading-font font-black text-3xl lg:text-5xl transition ${transitionClassText}`}>{blogConfig.testimonials[count].text}</p>
 <p className={`jakarta-font transition text-xl ${transitionClassText}`}>— {blogConfig.testimonials[count].writerName}</p></div>
 </div>
