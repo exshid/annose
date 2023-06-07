@@ -2,8 +2,10 @@
 'use client'
 import { blogConfig } from '@/config';
 import React, {useState, useEffect, FormEvent } from 'react';
+import PageWrapper from '@/components/wrapper';
+
 import { initializeApp } from 'firebase/app';
-import { getDatabase, ref, set } from "firebase/database";
+import { getDatabase, ref, set, push } from "firebase/database";
 
   export const Contact = () => {
     const { footerLinks } = blogConfig;
@@ -57,6 +59,7 @@ const app = initializeApp(firebaseConfig);
       
       
     return (
+      <PageWrapper>
     <div id="contact">
     <section className="min-h-screen flex flex-col lg:flex-row items-stretch text-white ">
         <div className="lg:flex w-full p-8 lg:w-1/2 bg-gradient-to-r from-emerald-400 to-cyan-400 relative items-center">
@@ -96,6 +99,6 @@ const app = initializeApp(firebaseConfig);
     </section>
 </div>
 
-
+</PageWrapper>
 );
   }

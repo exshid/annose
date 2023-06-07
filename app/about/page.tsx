@@ -9,6 +9,7 @@ import { FileText } from 'lucide-react';
 import { NameCard} from '@/components/name' ;
 import { blogConfig } from '@/config';
 import { Button } from '@/components/button';
+import PageWrapper from '@/components/wrapper';
 
 const { title, description } = blogConfig.pages.home;
 
@@ -36,7 +37,7 @@ export const metadata: Metadata = {
 export default function About() {
 
   return (
-    <>
+    <PageWrapper>
     <div className="flex h-full items-center flex-col w-full py-24 lg:pt-40">
       <p className="font-black heading-font px-2 md:px-5 lg:px-10 mb-10 xl:px-80 text-3xl md:text-4xl lg:text-5xl text-darkish dark:text-white">About Me</p>
       <div className="relative lg:rounded-2xl mb-10 w-full lg:w-9/12 flex flex-col lg:flex-row justify-between my-2 bg-gradient-to-r from-rose-600 to-rose-900 h-[60vh]">
@@ -69,7 +70,7 @@ export default function About() {
 </div>
     </div>
     <Contact/>
-    </>
+    </PageWrapper>
   
   );
 }

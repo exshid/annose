@@ -55,8 +55,7 @@ type BookCardProps = {
           
           <div className="absolute inset-0 z-20 flex items-center justify-center h-auto lg:h-screen w-full bg-gray-900 bg-opacity-75"></div>
           <div className="absolute inset-0 z-30 flex flex-col items-center justify-center backdrop-blur-md">
-              <div data-aos="fade-right" data-aos-once="true"
-              className={`z-[55] flex-col lg:bg-gradient-to-r from-emerald-400 to-cyan-400
+              <div className={`z-[55] flex-col lg:bg-gradient-to-r from-emerald-400 to-cyan-400
               lg:flex-row rounded-lg lg:overflow-hidden items-center justify-center
               flex w-11/12 h-4/5 lg:w-[840px] lg:h-[555px] bg-cover bg-centertransition ${transitionClassText}`}>
       <div className="w-full flex justify-center lg:w-2/5 h-full overflow-hidden">
