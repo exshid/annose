@@ -1,8 +1,8 @@
 'use client'
 import { blogConfig } from '@/config';
 import React, {useState, useEffect, FormEvent } from 'react';
-import firebase from 'firebase';
-import { getAnalytics } from "firebase/analytics";
+import { initializeApp } from 'firebase/app';
+import { getDatabase, ref } from "firebase/database";
 
   export const Contact = () => {
     const { footerLinks } = blogConfig;
@@ -19,10 +19,7 @@ const firebaseConfig = {
   measurementId: "G-RLJ2QEEXCX"
 };
 
-const app = firebase.initializeApp(firebaseConfig);
-const database = firebase.database();
-
-const analytics = getAnalytics(app);    
+const app = initializeApp(firebaseConfig);
 
     function handleSubmit(event: Event) {
 
@@ -30,7 +27,7 @@ const analytics = getAnalytics(app);
       const form = event.target as HTMLFormElement;
       const formData = new FormData(form);
       const data = Object.fromEntries(formData.entries());
-      const db = firebase.database().ref('form-submissions');
+      const db = getDatabase().ref('form-submissions');
       db.push(data);
     
       setMessageReceived(true);
