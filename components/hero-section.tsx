@@ -1,6 +1,4 @@
 'use client';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 import {
   AtSign,
   Copyright,
@@ -55,10 +53,6 @@ export function HeroSection() {
       isPaused: false,
     },
   );
-  useEffect(() => {
-    AOS.init();
-  }, [])
-
   const { footerLinks } = blogConfig;
   return (
     <div
@@ -114,12 +108,10 @@ export function HeroSection() {
       </div>
 
 
-<p data-aos="fade-up" data-aos-once="true" data-aos-offset="20" className="jakarta-font mb-5 lg:mb-10 text-darkish dark:text-white p-2">
+<p className="jakarta-font mb-5 lg:mb-10 text-darkish dark:text-white p-2">
   {blogConfig.aboutTop}
 </p>
-         <h1 data-aos="fade-right"
-     data-aos-once="true"
-className='hero-font font-black uppercase bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent'>
+         <h1 className='hero-font font-black uppercase bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent'>
           {blogConfig.author}
           </h1>
       <h2 className="heading-font text-center flex justify-start min-h-[7vh] lg:min-h-[10vh] min-w-[20vw] text-2xl md:text-3xl lg:text-5xl font-black uppercase bg-gradient-to-r from-rose-600 to-rose-900 bg-clip-text text-transparent">
