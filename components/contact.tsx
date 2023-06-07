@@ -1,3 +1,4 @@
+//@ts-nocheck 
 'use client'
 import { blogConfig } from '@/config';
 import React, {useState, useEffect, FormEvent } from 'react';
@@ -31,7 +32,7 @@ const app = initializeApp(firebaseConfig);
       const db = getDatabase();
       set(ref(db, data), {
         name: data.name,
-        email: data.email,
+        message: data.message,
         email : data.email
       });
     
