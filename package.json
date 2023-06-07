@@ -14,7 +14,6 @@
   },
   "dependencies": {
     "@giscus/react": "^2.2.6",
-    "react-scroll":"latest",
     "@next/font": "^13.2.3",
     "framer-motion":"10.12.16",
     "@vercel/analytics": "^0.1.10",
@@ -38,7 +37,7 @@
     "react-typist-component": "^1.0.5",
     "react-wrap-balancer": "^0.4.0",
     "rehype-autolink-headings": "^6.1.1",
-    "daisyui":"latest",
+    "daisyui":"3.0.3",
     "rehype-pretty-code": "^0.9.4",
     "rehype-slug": "^5.1.0",
     "remark-gfm": "^3.0.1",
