@@ -11,6 +11,8 @@ import { getDatabase, ref, set, push } from "firebase/database";
     const { footerLinks } = blogConfig;
     
     const [messageReceived, setMessageReceived] = useState(false); 
+    const [messageFailed, setMessageFailed] = useState(false); 
+
 
 const firebaseConfig = {
   apiKey: "AIzaSyDuce5ezJHGy_qwPabkxXqMBOze5BBn6O4",
@@ -24,26 +26,25 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 
-    function handleSubmit(event: Event) {
+function handleSubmit(event: Event) {
+  event.preventDefault();
+  const form = event.target as HTMLFormElement;
+  const formData = new FormData(form);
+  const data = Object.fromEntries(formData.entries());
 
-      event.preventDefault();
-      const form = event.target as HTMLFormElement;
-      const formData = new FormData(form);
-      const data = Object.fromEntries(formData.entries());
-  
-      const db = getDatabase();
-      const newPostRef = push(ref(db, 'posts')); // Generate a new unique key
-      set(newPostRef, {
-        name: data.name,
-        message: data.message,
-        email: data.email,
-      });
-        
-  
-      setMessageReceived(true);
-      console.log(data);
-    
-    }
+  const db = getDatabase();
+  const newPostRef = push(ref(db, 'posts')); // Generate a new unique key
+  set(newPostRef, {
+    name: data.name,
+    message: data.message,
+    email: data.email,
+  }).then(() => {
+    setMessageReceived(true);
+  }).catch((error) => {
+    setMessageFailed(true);
+
+  });
+}
     
       useEffect(() => {
         const form = document.querySelector('.contact-form');
@@ -90,8 +91,12 @@ const app = initializeApp(firebaseConfig);
                         <button className="uppercase block w-full p-4 text-lg text-white rounded bg-gradient-to-r from-emerald-400 to-cyan-400 focus:outline-none transition hover:-translate-y-[4px]">Send</button>
                     </div>
                     {messageReceived && (
+                      <>
         <p className="py-5 text-green-600">Message received!</p>
-      )}
+        <p className="py-5 text-red-600">Something went wrong. Try again.</p>
+        </>
+
+)}
 
                 </form>
             </div>
