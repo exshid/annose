@@ -48,10 +48,7 @@ export default function Home() {
 <Books/>}
 <Service/>
 <Contact/>
- {/* 
 <Testimonials/>
-      */} 
-
     </div>
     </PageWrapper>
   );
