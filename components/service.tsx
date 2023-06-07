@@ -7,7 +7,7 @@ import { blogConfig } from '@/config';
         <div id="services" className="bg-darkerlight py-5 dark:bg-darkish text-darkish dark:text-white flex justify-center h-auto w-full">
         <div className="w-full md:w-[97%] xl:w-8/12 flex flex-col items-center">
      
-    <h3 className="heading-font text-2xl md:text-5xl p-5 font-black uppercase bg-gradient-to-r from-rose-600 to-rose-900 bg-clip-text text-transparent">
+    <h3 className={`heading-font text-2xl md:text-5xl p-5 font-black uppercase bg-clip-text text-transparent" + secondColor ${blogConfig.secondColor}`}>
         Editorial Services</h3>
 <ul className="jakarta-title justify-items-center pt-5 pb-10 grid grid-cols-1 grid-rows-auto lg:grid-cols-3 lg:grid-rows-auto gap-8">
 {blogConfig.services.map((book, index) => (

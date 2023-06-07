@@ -12,22 +12,26 @@ import { Button } from '@/components/button';
 import PageWrapper from '@/components/wrapper';
 
 const { title, description } = blogConfig.pages.home;
+const pageTitle = "About Me — "
 
 const ogImage = {
   url: `${blogConfig.url}/og`,
 };
 
 export const metadata: Metadata = {
+  pageTitle,
   title,
   description,
   openGraph: {
     type: 'website',
     url: blogConfig.url,
+    pageTitle,
     title,
     description,
     images: [ogImage],
   },
   twitter: {
+    pageTitle,
     description,
     images: ogImage,
     card: 'summary_large_image',
