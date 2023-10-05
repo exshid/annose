@@ -1,5 +1,7 @@
 import React from 'react';
 import { type Metadata } from 'next/types';
+import ActionAreaCard from  '@/components/card';
+import TemporaryDrawer from '@/components/drawer';
 import { blogConfig } from '@/config';
 import { HeroSection } from '@/components/hero-section';
 import { Contact } from '@/components/contact';
@@ -44,9 +46,9 @@ export default function Home() {
 <div className="flex h-full flex-col">
 <PhotoCard/>
 <Intro />
-{blogConfig.books.length >= 1 &&
-<Books/>}
+<ActionAreaCard/>
 <Service/>
+<TemporaryDrawer/>
 <Testimonials/>
 <CookieBanner/>
 
