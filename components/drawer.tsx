@@ -1,3 +1,4 @@
+'use client'
 import React, { useState,KeyboardEvent, MouseEvent, Fragment} from 'react';
 import Box from '@mui/material/Box';
 import Drawer from '@mui/material/Drawer';
