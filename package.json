@@ -19,6 +19,7 @@
     "@emotion/react": "latest",
     "@emotion/styled": "latest",
     "@mui/material": "5.14.12",
+    "@mui/icons-material": "latest",
     "framer-motion":"10.12.16",
     "@vercel/analytics": "^0.1.10",
     "firebase": "latest",
