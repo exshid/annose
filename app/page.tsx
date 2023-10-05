@@ -1,4 +1,3 @@
-'use client'
 import React from 'react';
 import { type Metadata } from 'next/types';
 import ActionAreaCard from  '@/components/card';
@@ -49,7 +48,6 @@ export default function Home() {
 <Intro />
 <ActionAreaCard/>
 <Service/>
-<TemporaryDrawer/>
 <Testimonials/>
 <CookieBanner/>
 
