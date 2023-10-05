@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, { useState,KeyboardEvent, MouseEvent, Fragment} from 'react';
 import Box from '@mui/material/Box';
 import Drawer from '@mui/material/Drawer';
 import Button from '@mui/material/Button';
@@ -14,7 +14,7 @@ import MailIcon from '@mui/icons-material/Mail';
 type Anchor = 'top' | 'left' | 'bottom' | 'right';
 
 export default function TemporaryDrawer() {
-  const [state, setState] = React.useState({
+  const [state, setState] = useState({
     top: false,
     left: false,
     bottom: false,
@@ -23,11 +23,11 @@ export default function TemporaryDrawer() {
 
   const toggleDrawer =
     (anchor: Anchor, open: boolean) =>
-    (event: React.KeyboardEvent | React.MouseEvent) => {
+    (event: KeyboardEvent | MouseEvent) => {
       if (
         event.type === 'keydown' &&
-        ((event as React.KeyboardEvent).key === 'Tab' ||
-          (event as React.KeyboardEvent).key === 'Shift')
+        ((event as KeyboardEvent).key === 'Tab' ||
+          (event as KeyboardEvent).key === 'Shift')
       ) {
         return;
       }
@@ -73,7 +73,7 @@ export default function TemporaryDrawer() {
   return (
     <div>
       {(['left', 'right', 'top', 'bottom'] as const).map((anchor) => (
-        <React.Fragment key={anchor}>
+        <Fragment key={anchor}>
           <Button onClick={toggleDrawer(anchor, true)}>{anchor}</Button>
           <Drawer
             anchor={anchor}
@@ -82,7 +82,7 @@ export default function TemporaryDrawer() {
           >
             {list(anchor)}
           </Drawer>
-        </React.Fragment>
+        </Fragment>
       ))}
     </div>
   );
